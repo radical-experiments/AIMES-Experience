@@ -1,0 +1,10 @@
+# Set up Radical Pilot execution environment
+export RADICAL_PILOT_DBURL="mongodb://54.221.194.147:24242/aimes-experience" 
+export RADICAL_SAGA_VERBOSE=debug
+export RADICAL_PILOT_VERBOSE=debug
+export RADICAL_UTILS_VERBOSE=debug
+export RADICAL_DEBUG_FILE=`pwd`/logs/radical_debug.log
+export RADICAL_PILOT_LOG_TARGET=$RADICAL_DEBUG_FILE
+export RADICAL_SAGA_LOG_TARGET=$RADICAL_DEBUG_FILE
+export RADICAL_UTILS_LOG_TARGET=$RADICAL_DEBUG_FILE
+export RADICAL_PILOT_PROFILE=True
