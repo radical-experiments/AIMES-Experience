@@ -120,18 +120,6 @@ if __name__ == "__main__":
         # Wait for all compute units to reach a terminal state(DONE or FAILED).
         umgr.wait_units()
 
-        print 'units all completed'
-        print '-------------------'
-
-        for unit in units:
-            unit.wait()
-
-        for unit in units:
-            print "- Task %s(executed @ %s) state %s, exit code: %s, started: %s, finished: %s, stdout: %s" \
-                % (unit.uid, unit.execution_locations, unit.state,
-                   unit.exit_code, unit.start_time, unit.stop_time,
-                   unit.stdout)
-
     except Exception as e:
         # Something unexpected happened in the pilot code above
         print "caught Exception: %s" % e
