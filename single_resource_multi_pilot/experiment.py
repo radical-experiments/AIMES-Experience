@@ -5,14 +5,15 @@ import radical.pilot as rp
 __copyright__ = "Copyright 2013-2014, http://radical.rutgers.edu"
 __license__   = "MIT"
 
-# N_UNITS = 2048
 N_UNITS = 2048
 U_CORES = 1
 U_TIME = 15
 RESOURCE = 'xsede.comet'
 N_PILOTS = 4
-P_CORES = int(math.ceil(N_UNITS/float(N_PILOTS)))
-P_WALLTIME = (U_TIME * N_PILOTS) + 15
+#P_CORES = int(math.ceil(N_UNITS/float(N_PILOTS)))
+P_CORES = 512
+#P_WALLTIME = (U_TIME * N_PILOTS) + 15
+P_WALLTIME = 75
 PROJECT = 'TG-MCB090174'
 
 
