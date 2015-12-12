@@ -19,7 +19,7 @@ Related paper at: https://bitbucket.org/shantenujha/aimes
   ```
   virtualenv ~/ve/aimes-experience
   . ~/ve/aimes-experience/bin/activate
-  pip install radical-pilot
+  pip install radical.pilot
   ```
 
 1. Move into the ```AIMES-Experience``` directory.
