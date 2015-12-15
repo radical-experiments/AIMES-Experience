@@ -8,13 +8,19 @@ __license__   = "MIT"
 N_UNITS = 2048
 U_CORES = 1
 U_TIME = 15
-RESOURCE = 'xsede.comet'
+
+# 4 pilots; 4 resources
+RESOURCES = ['xsede.comet', 'xsede.stampede', 'xsede.supermic', 'xsede.gordon']
 N_PILOTS = 4
-#P_CORES = int(math.ceil(N_UNITS/float(N_PILOTS)))
-P_CORES = 512
-#P_WALLTIME = (U_TIME * N_PILOTS) + 15
-P_WALLTIME = 75
+P_CORES = 128
+P_WALLTIME = 240
 PROJECT = 'TG-MCB090174'
+
+# 4 pilots; 1 resource
+# RESOURCES = ['xsede.comet']
+# N_PILOTS = 4
+# P_CORES = 512
+# P_WALLTIME = 75
 
 
 # -----------------------------------------------------------------------------
@@ -80,13 +86,14 @@ if __name__ == "__main__":
 
         # Describe pilots.
         pds = []
-        for p in range(N_PILOTS):
-            pd = rp.ComputePilotDescription()
-            pd.resource = RESOURCE
-            pd.project = PROJECT
-            pd.runtime = P_WALLTIME
-            pd.cores = P_CORES
-            pds.append(pd)
+        for r in RESOURCES:
+            for p in range(N_PILOTS):
+                pd = rp.ComputePilotDescription()
+                pd.resource = r
+                pd.project = PROJECT
+                pd.runtime = P_WALLTIME
+                pd.cores = P_CORES
+                pds.append(pd)
 
         # Launch the pilots.
         pilots = pmgr.submit_pilots(pds)
