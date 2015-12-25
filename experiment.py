@@ -9,18 +9,26 @@ N_UNITS = 2048
 U_CORES = 1
 U_TIME = 15
 
-# 4 pilots; 4 resources
-RESOURCES = ['xsede.comet', 'xsede.stampede', 'xsede.supermic', 'xsede.gordon']
-N_PILOTS = 4
-P_CORES = 128
-P_WALLTIME = 240
-PROJECT = 'TG-MCB090174'
-
 # 4 pilots; 1 resource
 # RESOURCES = ['xsede.comet']
 # N_PILOTS = 4
 # P_CORES = 512
 # P_WALLTIME = 75
+
+# 4 pilots; 1 resources
+RESOURCES = ['xsede.comet', 'xsede.stampede', 'xsede.supermic', 'xsede.gordon']
+N_PILOTS = 1
+P_CORES = 512
+P_WALLTIME = 120
+PROJECT = 'TG-MCB090174'
+
+# 4 pilots; 4 resources
+# RESOURCES = ['xsede.comet', 'xsede.stampede', 'xsede.supermic', 'xsede.gordon']
+# N_PILOTS = 4
+# P_CORES = 128
+# P_WALLTIME = 240
+# PROJECT = 'TG-MCB090174'
+
 
 
 # -----------------------------------------------------------------------------

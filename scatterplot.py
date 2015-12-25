@@ -14,7 +14,7 @@ else:
 cachedir = os.getcwd()
 dburl = os.environ['RADICAL_PILOT_DBURL']
 mongo, db, dbname, cname, pname = ru.mongodb_connect(str(dburl))
-sf, pf, uf, docs = rpu.get_session_frames(session, db, cachedir)
+sf, pf, uf = rpu.get_session_frames(session, db, cachedir)
 
 sctr = uf[['pid', 'PendingInputStaging', 'Done']]
 
