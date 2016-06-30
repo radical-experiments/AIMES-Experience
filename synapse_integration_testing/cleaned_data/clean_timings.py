@@ -2,7 +2,7 @@ import csv
 
 timings = []
 
-with open('timings_84.csv', 'r') as csvfile:
+with open('timings_emulate.csv', 'r') as csvfile:
     c_file = csv.reader(csvfile)
 
     for row in c_file:
@@ -28,7 +28,7 @@ for resource in range(len(timings)):
     timings_cvt.append(tmp_cvt)
         
         
-with open('timings_84_cleaned.csv', 'wib') as csvfile:
+with open('timings_emulate_cleaned.csv', 'wib') as csvfile:
     c_write = csv.writer(csvfile, delimiter=',')
     c_write.writerows(timings_cvt)
 
