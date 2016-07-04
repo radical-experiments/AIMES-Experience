@@ -1,0 +1,2481 @@
+{
+    "pilot": [
+        {
+            "_id": "pilot.0000", 
+            "agent_config": {
+                "agent_launch_method": "SSH", 
+                "agent_layout": {
+                    "agent_0": {
+                        "bridges": [
+                            "agent_staging_input_queue", 
+                            "agent_scheduling_queue", 
+                            "agent_executing_queue", 
+                            "agent_staging_output_queue", 
+                            "agent_unschedule_pubsub", 
+                            "agent_reschedule_pubsub", 
+                            "agent_command_pubsub", 
+                            "agent_state_pubsub"
+                        ], 
+                        "components": {
+                            "AgentExecutingComponent": 1, 
+                            "AgentSchedulingComponent": 1, 
+                            "AgentStagingInputComponent": 1, 
+                            "AgentStagingOutputComponent": 1
+                        }, 
+                        "pull_units": true, 
+                        "sub_agents": [], 
+                        "target": "local"
+                    }
+                }, 
+                "bulk_collection_time": 1.0, 
+                "clone": {
+                    "AgentExecutingComponent": {
+                        "input": 1, 
+                        "output": 1
+                    }, 
+                    "AgentSchedulingComponent": {
+                        "input": 1, 
+                        "output": 1
+                    }, 
+                    "AgentStagingInputComponent": {
+                        "input": 1, 
+                        "output": 1
+                    }, 
+                    "AgentStagingOutputComponent": {
+                        "input": 1, 
+                        "output": 1
+                    }, 
+                    "AgentWorker": {
+                        "input": 1, 
+                        "output": 1
+                    }
+                }, 
+                "cores": 16, 
+                "db_poll_sleeptime": 0.1, 
+                "debug": 10, 
+                "drop": {
+                    "AgentExecutingComponent": {
+                        "input": 1, 
+                        "output": 1
+                    }, 
+                    "AgentSchedulingComponent": {
+                        "input": 1, 
+                        "output": 1
+                    }, 
+                    "AgentStagingInputComponent": {
+                        "input": 1, 
+                        "output": 1
+                    }, 
+                    "AgentStagingOutputComponent": {
+                        "input": 1, 
+                        "output": 1
+                    }, 
+                    "AgentWorker": {
+                        "input": 1, 
+                        "output": 1
+                    }
+                }, 
+                "heartbeat_interval": 10, 
+                "lrms": "SLURM", 
+                "max_io_loglength": 1024, 
+                "mongodb_url": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "mpi_launch_method": "MPIRUN_RSH", 
+                "pilot_id": "pilot.0000", 
+                "runtime": 21, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.radical.mingtha.016986.0005", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_scheme": "staging", 
+                "task_launch_method": "SSH"
+            }, 
+            "callbackhistory": [
+                {
+                    "state": "PendingLaunch", 
+                    "timestamp": 1467600274.467507
+                }, 
+                {
+                    "state": "Launching", 
+                    "timestamp": 1467600276.365816
+                }, 
+                {
+                    "state": "PendingActive", 
+                    "timestamp": 1467600309.513063
+                }, 
+                {
+                    "state": "Active", 
+                    "timestamp": 1467600383.727792
+                }, 
+                {
+                    "state": "Canceled", 
+                    "timestamp": 1467601173.69119
+                }
+            ], 
+            "commands": [], 
+            "cores_per_node": null, 
+            "description": {
+                "_config": null, 
+                "access_schema": null, 
+                "candidate_hosts": null, 
+                "cleanup": true, 
+                "cores": 16, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-MCB090174", 
+                "queue": null, 
+                "resource": "xsede.stampede", 
+                "runtime": 21, 
+                "sandbox": null
+            }, 
+            "finished": 1467601173.905029, 
+            "global_sandbox": "/work/03662/tg829619/radical.pilot.sandbox", 
+            "health_check_enabled": true, 
+            "heartbeat": null, 
+            "input_transfer_finished": null, 
+            "input_transfer_started": null, 
+            "log": [
+                {
+                    "message": "Using bootstrapper /home/mingtha/ve/ve.aimes_experience/lib/python2.7/site-packages/radical/pilot/bootstrapper/bootstrap_1.sh", 
+                    "timestamp": 1467600282.224623
+                }, 
+                {
+                    "message": "Copying bootstrapper 'file://localhost/home/mingtha/ve/ve.aimes_experience/lib/python2.7/site-packages/radical/pilot/bootstrapper/bootstrap_1.sh' to agent sandbox (<saga.filesystem.directory.Directory object at 0x7fbc369742d0>).", 
+                    "timestamp": 1467600282.224798
+                }, 
+                {
+                    "message": "Copying sdist 'file://localhost/home/mingtha/ve/ve.aimes_experience/local/lib/python2.7/site-packages/radical/utils/radical.utils-v0.41.1-9-gff0f8b1-devel.tar.gz' to sandbox (sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/).", 
+                    "timestamp": 1467600284.305281
+                }, 
+                {
+                    "message": "Copying sdist 'file://localhost/home/mingtha/ve/ve.aimes_experience/local/lib/python2.7/site-packages/saga/saga-python-v0.41-40-g0754105-feature-osg-optimizations.tar.gz' to sandbox (sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/).", 
+                    "timestamp": 1467600285.614856
+                }, 
+                {
+                    "message": "Copying sdist 'file://localhost/home/mingtha/ve/ve.aimes_experience/local/lib/python2.7/site-packages/radical/pilot/controller/..//radical.pilot-0.40.3.tar.gz' to sandbox (sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/).", 
+                    "timestamp": 1467600286.963731
+                }, 
+                {
+                    "message": "Writing agent configuration to file '/tmp/rp_agent_cfg_dirMFOagN/agent_0.cfg'.", 
+                    "timestamp": 1467600288.182789
+                }, 
+                {
+                    "message": "Copying agent configuration file 'file://localhost/tmp/rp_agent_cfg_dirMFOagN/agent_0.cfg' to sandbox (sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/).", 
+                    "timestamp": 1467600288.183628
+                }, 
+                {
+                    "message": "Submitting SAGA job with description: {'Project': 'TG-MCB090174', 'Executable': '/bin/bash', 'TotalPhysicalMemory': None, 'WorkingDirectory': '/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/', 'Queue': 'normal', 'Environment': {}, 'WallTimeLimit': 21, 'Arguments': ['-l bootstrap_1.sh', \" -d 'radical.utils-v0.41.1-9-gff0f8b1-devel.tar.gz:saga-python-v0.41-40-g0754105-feature-osg-optimizations.tar.gz:radical.pilot-0.40.3.tar.gz' -m 'create' -p 'pilot.0000' -r 'local' -s 'rp.session.radical.mingtha.016986.0005' -v '/work/03662/tg829619/radical.pilot.sandbox/ve_stampede' -b 'default' -a 'multicore' -e 'module purge' -e 'module load TACC' -e 'module load intel/15.0.2' -e 'module load python/2.7.9' -e 'module unload xalt' -e 'source ~train00/ssi_sourceme' -e 'export TACC_DELETE_FILES=TRUE' -w 'export PATH=$PATH' -w 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH' -x 'lue'\"], 'ProcessesPerHost': None, 'Error': 'bootstrap_1.err', 'Output': 'bootstrap_1.out', 'CandidateHosts': None, 'TotalCPUCount': 16}", 
+                    "timestamp": 1467600297.502771
+                }, 
+                {
+                    "message": "SAGA job submitted with job id [slurm+ssh://stampede.tacc.utexas.edu/]-[7274413]", 
+                    "timestamp": 1467600309.403538
+                }, 
+                {
+                    "message": "CANCEL received. Terminating.", 
+                    "timestamp": 1467601173.905029
+                }, 
+                {
+                    "message": "real 1467601173.920015 sec | user 11.132 sec | system 3.393 sec | mem 57508.00 kB", 
+                    "timestamp": 1467601173.905029
+                }
+            ], 
+            "logfile": null, 
+            "nodes": null, 
+            "output_transfer_finished": null, 
+            "output_transfer_started": null, 
+            "pilotmanager": "pmgr.0000", 
+            "saga_job_id": "[slurm+ssh://stampede.tacc.utexas.edu/]-[7274413]", 
+            "sagajobid": null, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "started": 1467600383.557042, 
+            "state": "Canceled", 
+            "statehistory": [
+                {
+                    "state": "PendingLaunch", 
+                    "timestamp": 1467600274.249435
+                }, 
+                {
+                    "state": "Launching", 
+                    "timestamp": 1467600275.469613
+                }, 
+                {
+                    "state": "PendingActive", 
+                    "timestamp": 1467600309.403817
+                }, 
+                {
+                    "state": "Active", 
+                    "timestamp": 1467600383.557042
+                }, 
+                {
+                    "state": "Canceled", 
+                    "timestamp": 1467601173.905029
+                }
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "submitted": 1467600274.249435, 
+            "unit_ids": [
+                "unit.000001", 
+                "unit.000008", 
+                "unit.000009", 
+                "unit.000010", 
+                "unit.000006", 
+                "unit.000003", 
+                "unit.000004", 
+                "unit.000011", 
+                "unit.000014", 
+                "unit.000002", 
+                "unit.000013", 
+                "unit.000000", 
+                "unit.000012", 
+                "unit.000015", 
+                "unit.000005", 
+                "unit.000007"
+            ], 
+            "unitmanager": "umgr.0000"
+        }
+    ], 
+    "pmgr": [
+        {
+            "_id": "pmgr.0000", 
+            "data": {}, 
+            "pilot_launcher_workers": 1
+        }
+    ], 
+    "session": {
+        "_id": "rp.session.radical.mingtha.016986.0005", 
+        "connected": 1467600266.814037, 
+        "created": 1467600266.814037, 
+        "name": null
+    }, 
+    "umgr": [
+        {
+            "_id": "umgr.0000", 
+            "input_transfer_workers": 2, 
+            "output_transfer_workers": 2, 
+            "scheduler": "direct_submission"
+        }
+    ], 
+    "unit": [
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000001", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.679119
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.827372
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600929.109457
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_1", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600276.326213
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600277.095642
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467600928.387338
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000001", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.505883
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600276.994713
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600276.994713
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.935312
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.938703
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.94918
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.9526
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.037633
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467600927.63956
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467600927.691888
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467600927.694249
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467600928.285944
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600928.387338
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.505883, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000008", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.680543
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.829057
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467600929.109081
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600932.612183
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_8", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600276.928475
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600277.69794
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467600929.663091
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000008", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.508388
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600277.596762
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600277.596762
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.98398
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.987526
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.989222
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.992629
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.04857
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467600929.346168
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467600929.348364
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467600929.355486
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467600929.560889
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600929.663091
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.508388, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000009", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.678031
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.825749
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600932.410163
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_9", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600277.532965
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600278.305487
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467600930.792949
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000009", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.508731
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600278.204467
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.204467
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600389.025148
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600389.030452
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600389.032142
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600389.033975
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.085825
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467600929.949484
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467600929.951515
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467600929.960173
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467600930.689966
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600930.792949
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.508731, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000010", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.678778
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.826823
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600932.511191
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_10", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600277.230338
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600278.10039
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467600930.966526
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000010", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.509074
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600277.9995
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600277.9995
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600389.004502
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600389.00805
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600389.011347
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600389.015021
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.054498
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467600930.0513
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467600930.053375
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467600930.057175
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467600930.865174
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600930.966526
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.509074, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000006", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.68134
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.829554
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600932.710834
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_6", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600277.131792
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600277.899214
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467600931.168331
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000006", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.507702
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600277.800065
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600277.800065
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.99766
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600389.001191
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600389.002886
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600389.006349
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.052212
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467600931.156239
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467600931.158892
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467600931.163892
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467600931.067258
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600931.168331
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.507702, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000003", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.680374
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.828834
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467600932.611917
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600936.116776
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_3", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600277.431117
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600278.298317
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467600932.472793
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000003", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.506605
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600278.199299
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.199299
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600389.018316
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600389.023533
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600389.026866
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600389.028752
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.075195
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467600932.160627
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467600932.162634
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467600932.166464
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467600932.370081
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467600932.472793
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.506605, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000004", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.680192
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.828607
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601034.901146
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601038.205719
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_4", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600276.127364
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600276.894029
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467601035.114006
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000004", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.506962
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600276.793416
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600276.793416
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.925046
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.926768
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.937016
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.940526
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.013167
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601034.755198
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467601034.806199
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601034.808088
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467601035.012635
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601035.114006
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.506962, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000011", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.680793
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.829282
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601110.975854
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_11", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600277.33099
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600278.103821
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467601109.11662
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000011", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.509414
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600278.001194
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.001194
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600389.009654
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600389.016718
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600389.020015
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600389.021828
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.064954
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601108.632612
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467601108.684115
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601108.686321
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467601109.015767
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601109.11662
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.509414, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000014", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.678596
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.826538
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601120.976411
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_14", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600277.0307
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600277.898582
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467601119.224784
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000014", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.510442
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600277.797402
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600277.797402
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.990811
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.994353
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.99606
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.999492
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.050398
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601118.353809
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467601118.404747
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601118.406702
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467601119.123329
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601119.224784
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.510442, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000002", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.678952
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.827099
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601127.693071
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601131.099072
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_2", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600276.027152
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600276.895265
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467601128.16287
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000002", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.506244
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600276.794722
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600276.794722
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.921419
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.923424
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.931862
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.933693
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600388.954431
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601127.169544
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467601127.22282
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601127.224741
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467601128.061175
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601128.16287
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.506244, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000013", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.679284
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.827634
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601127.692692
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601130.998411
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_13", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600276.527693
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600277.295117
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467601128.243268
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000013", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.510099
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600277.196241
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600277.196241
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.95077
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.95613
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.964719
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.966547
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.041261
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601127.220891
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467601127.22664
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601127.228571
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467601128.14156
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601128.243268
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.510099, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000000", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.678401
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.826238
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601130.997972
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601134.506281
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_0", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600276.626475
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600277.498199
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467601131.669452
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000000", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.505508
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600277.395604
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600277.395604
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.961224
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.962914
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.96983
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.973344
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.043074
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601130.675804
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467601130.726693
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601130.728565
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467601131.56927
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601131.669452
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.505508, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000012", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.681566
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.829976
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601138.004296
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_12", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600276.729004
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600277.496077
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467601137.25583
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000012", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.509756
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600277.397178
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600277.397178
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.96815
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.97152
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.97709
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.978945
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.044911
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601136.984815
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467601137.035513
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601137.03738
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467601137.156824
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601137.25583
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.509756, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000015", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.67961
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.828146
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601137.903038
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_15", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600276.827405
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600277.6986
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467601137.375254
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000015", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.510784
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600277.597421
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600277.597421
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.975014
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.980648
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.982349
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.985822
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.046745
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601137.285865
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467601137.28775
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601137.289607
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467601137.274381
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601137.375254
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.510784, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000005", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.679949
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.828377
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601141.411507
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_5", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600276.426981
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600277.296056
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467601140.76079
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000005", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.50732
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600277.193259
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600277.193259
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.942149
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.947493
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.957819
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.959627
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.039454
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601140.390571
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467601140.441285
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601140.443158
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467601140.658956
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601140.76079
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.50732, 
+            "unitmanager": "umgr.0000"
+        }, 
+        {
+            "Agent_Input_Directives": [], 
+            "Agent_Input_Status": null, 
+            "Agent_Output_Directives": [], 
+            "Agent_Output_Status": null, 
+            "FTW_Input_Directives": [], 
+            "FTW_Input_Status": null, 
+            "FTW_Output_Directives": [], 
+            "FTW_Output_Status": null, 
+            "_id": "unit.000007", 
+            "callbackhistory": [
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600278.67945
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600390.827912
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601164.629351
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601167.928368
+                }
+            ], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "aimes-skeleton-synapse.py", 
+                "input_staging": null, 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_7", 
+                "output_staging": null, 
+                "post_exec": null, 
+                "pre_exec": [
+                    "module load python", 
+                    "source $HOME/bin/ve.synapse/bin/activate"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exec_locs": null, 
+            "exit_code": 0, 
+            "finished": null, 
+            "log": [
+                {
+                    "message": "Scheduled for data transfer to ComputePilot pilot.0000.", 
+                    "timestamp": 1467600276.227725
+                }, 
+                {
+                    "message": "push unit to agent after ftw staging", 
+                    "timestamp": 1467600277.092711
+                }, 
+                {
+                    "message": "Output transfer completed.", 
+                    "timestamp": 1467601165.110725
+                }
+            ], 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000/", 
+            "restartable": false, 
+            "sandbox": "sftp://stampede.tacc.utexas.edu/work/03662/tg829619/radical.pilot.sandbox/rp.session.radical.mingtha.016986.0005-pilot.0000//unit.000007", 
+            "started": null, 
+            "state": "Done", 
+            "statehistory": [
+                {
+                    "state": "Scheduling", 
+                    "timestamp": 1467600275.508047
+                }, 
+                {
+                    "state": "StagingInput", 
+                    "timestamp": 1467600276.993978
+                }, 
+                {
+                    "state": "AgentStagingInputPending", 
+                    "timestamp": 1467600276.993978
+                }, 
+                {
+                    "state": "AgentStagingInput", 
+                    "timestamp": 1467600388.928395
+                }, 
+                {
+                    "state": "AllocatingPending", 
+                    "timestamp": 1467600388.930126
+                }, 
+                {
+                    "state": "Allocating", 
+                    "timestamp": 1467600388.943869
+                }, 
+                {
+                    "state": "ExecutingPending", 
+                    "timestamp": 1467600388.945798
+                }, 
+                {
+                    "state": "Executing", 
+                    "timestamp": 1467600389.035807
+                }, 
+                {
+                    "state": "AgentStagingOutputPending", 
+                    "timestamp": 1467601164.83123
+                }, 
+                {
+                    "state": "AgentStagingOutput", 
+                    "timestamp": 1467601164.882349
+                }, 
+                {
+                    "state": "PendingOutputStaging", 
+                    "timestamp": 1467601164.884221
+                }, 
+                {
+                    "state": "StagingOutput", 
+                    "timestamp": 1467601165.007995
+                }, 
+                {
+                    "state": "Done", 
+                    "timestamp": 1467601165.110725
+                }
+            ], 
+            "stderr": "", 
+            "stdout": "serial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "submitted": 1467600275.508047, 
+            "unitmanager": "umgr.0000"
+        }
+    ]
+}
