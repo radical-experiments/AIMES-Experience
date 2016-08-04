@@ -1,7 +1,7 @@
 {
     "mongodb"      : "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb",
     "workload_type": "skeleton",
-    "scales"       : [16],
+    "scales"       : [2],
     "bindings"     : ["late"],
     "time_distribs": ["uniform"],
     "iterations"   : 1,
@@ -33,9 +33,9 @@
                 "xd-login.opensciencegrid.org": {
                     "sched": "condor",
                     "fconf": "conf/osg.json",
-                    "num_pilots"  :   1,
+                    "num_pilots"  :   2,
                     "cores"       :   1,
-                    "walltime"    : 21600  
+                    "walltime"    : 270000  
                 }
             }
         }
@@ -45,7 +45,8 @@
         "tasks": {
             "duration": {
                 "max" : 900,
-                "min" : 900
+                "min" : 900,
+                "flops" : 1715750072310
             }
         }
     }

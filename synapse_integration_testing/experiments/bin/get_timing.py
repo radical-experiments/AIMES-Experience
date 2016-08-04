@@ -336,7 +336,7 @@ if __name__ == '__main__':
     q_pilots = None
     timing = None
     timings = {}
-    pdir = os.environ['PLOT_DIR']
+    #pdir = os.environ['PLOT_DIR']
 
     cachedir = os.getcwd()
     dburl = 'mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb'
@@ -432,6 +432,7 @@ if __name__ == '__main__':
     timings['Tx'] = get_Toverlap(units, 'Executing', 'AgentStagingOutputPending')
     timings['Ts'] = timings['Ti'] + timings['To']
 
+    print u_frame
 #
 #   The following code was used to investigate the state diagram of RP 0.40. This has since been resolved
 #

@@ -1,0 +1,121 @@
+{
+    "pilot": [
+        {
+            "_id": "pilot.0000", 
+            "cmd": [], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": null, 
+                "candidate_hosts": null, 
+                "cleanup": null, 
+                "cores": 1, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-CCR140028", 
+                "queue": "normal", 
+                "resource": "osg.xsede-virt-clust", 
+                "runtime": 10, 
+                "sandbox": null
+            }, 
+            "log": [], 
+            "pmgr": "pmgr.0000", 
+            "resource": "osg.xsede-virt-clust", 
+            "sandbox": null, 
+            "session": "rp.session.radical.mingtha.016993.0003", 
+            "state": "NEW", 
+            "states": [
+                "NEW"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "pilot", 
+            "uid": "pilot.0000", 
+            "unit_ids": []
+        }
+    ], 
+    "pmgr": [
+        {
+            "_id": "pmgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:35056", 
+                        "addr_out": "tcp://144.76.72.175:42298", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:37014", 
+                        "addr_out": "tcp://144.76.72.175:35549", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "pmgr_launching_queue": {
+                        "addr_in": "tcp://144.76.72.175:36041", 
+                        "addr_out": "tcp://144.76.72.175:46679", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:46603", 
+                        "addr_out": "tcp://144.76.72.175:46126", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "components": {
+                    "PMGRLaunchingComponent": 1
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mlab.com:53838/hicomb", 
+                "heart": "rp.session.radical.mingtha.016993.0003", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "owner": "pmgr.0000", 
+                "session_id": "rp.session.radical.mingtha.016993.0003"
+            }, 
+            "type": "pmgr", 
+            "uid": "pmgr.0000"
+        }
+    ], 
+    "session": {
+        "_id": "rp.session.radical.mingtha.016993.0003", 
+        "cfg": {
+            "bridges": {
+                "control_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "log_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "state_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }
+            }, 
+            "components": {
+                "UpdateWorker": 1
+            }, 
+            "debug": "DEBUG", 
+            "heartbeat_interval": 10, 
+            "heartbeat_timeout": 300, 
+            "logdir": "/home/mingtha/repos/AIMES-Experience/synapse_integration_testing/bin/timings_84/rp.session.radical.mingtha.016993.0003", 
+            "owner": "rp.session.radical.mingtha.016993.0003"
+        }, 
+        "connected": 1468273194.927423, 
+        "created": 1468273194.333787, 
+        "type": "session", 
+        "uid": "rp.session.radical.mingtha.016993.0003"
+    }, 
+    "umgr": [], 
+    "unit": []
+}
