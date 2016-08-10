@@ -1,8 +1,8 @@
 import os
 import radical.pilot as rp
 
-UNITS = 1
-TIME = 60 * 72
+UNITS = 64
+TIME = 60 * 6
 pdesc_stampede = {
     'resource'      : 'xsede.stampede',
     'cores'         : 16,
@@ -74,7 +74,9 @@ try:
     #pdescs.append(rp.ComputePilotDescription(pdesc_supermic))
     #pdescs.append(rp.ComputePilotDescription(pdesc_bw))
     pdescs.append(rp.ComputePilotDescription(pdesc_osg))
-    #pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
 
     pilots = pmgr.submit_pilots(pdescs)
 
@@ -130,7 +132,7 @@ try:
         #cud.executable = 'radical-synapse-version'
         cuds.append(cud)
 
-    umgr = rp.UnitManager(session=session, scheduler='round_robin')
+    umgr = rp.UnitManager(session=session, scheduler='backfilling')
     umgr.add_pilots(pilots)
     units = umgr.submit_units(cuds)
     umgr.wait_units()
