@@ -1,8 +1,8 @@
 import os
 import radical.pilot as rp
 
-UNITS = 64
-TIME = 60 * 6
+UNITS = 4
+TIME = 60 * 24
 pdesc_stampede = {
     'resource'      : 'xsede.stampede',
     'cores'         : 16,
@@ -60,6 +60,11 @@ pdesc_osg = {
 #    'queue'         : 'normal'
 }
 
+pdesc_localhost = {
+    'resource'      : 'local.localhost',
+    'cores'         : 1,
+    'runtime'       : TIME,
+}
 session = rp.Session()
 try:
 
@@ -73,10 +78,12 @@ try:
     #pdescs.append(rp.ComputePilotDescription(pdesc_gordon))
     #pdescs.append(rp.ComputePilotDescription(pdesc_supermic))
     #pdescs.append(rp.ComputePilotDescription(pdesc_bw))
-    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
-    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
-    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
-    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    #pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    #pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    #pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    #pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+
+    pdescs.append(rp.ComputePilotDescription(pdesc_localhost))
 
     pilots = pmgr.submit_pilots(pdescs)
 
@@ -84,7 +91,7 @@ try:
     cuds = list()
     for i in range(UNITS):
         cud = rp.ComputeUnitDescription()
-        #cud.pre_exec = ['pip install radical.synapse']
+        """
         cud.pre_exec = [#'module load python',
                         #'export LMOD_CMD=/opt/apps/lmod/lmod/libexec/lmod',
                         #'export LMOD_SYSTEM_DEFAULT_MODULES=TACC',
@@ -95,6 +102,11 @@ try:
                         #'module load intel'
                         #'echo $PWD',
                         #'whoami'
+                       ]
+        """
+        
+        
+        cud.pre_exec = [
                         ('echo $HOME ; '
                         'if test ! -d $HOME/ve.synapse; ' 
                         'then virtualenv $HOME/ve.synapse ; '
@@ -103,24 +115,19 @@ try:
                         'pip install $HOME/radical.utils-0.41.1/. ; '
                         'wget -qO- https://github.com/applicationskeleton/Skeleton/archive/v1.2.tar.gz | tar -xzv -C $HOME/ ; '
                         'pip install $HOME/Skeleton-1.2/. ; '
-                        #'pip install radical.synapse ; '
-                        #'pip install radical.utils ; '
                         'wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; '
                         'pip install $HOME/radical.synapse-0.44/. ; '
                         'wget -P $HOME/ https://raw.githubusercontent.com/applicationskeleton/Skeleton/feature/task_flops/bin/aimes-skeleton-synapse.py ; '
                         'chmod u+x $HOME/aimes-skeleton-synapse.py ; '
                         'PATH=$PATH:$HOME ; '
                         'export PATH ; '
-                        #'pip install radical.utils ; '
-                        #'pip install git+https://github.com/radical-cybertools/radical.synapse@devel ; '
-                        #'pip install git+https://github.com/applicationskeleton/Skeleton@feature/task_flops ; '
-                        #'git clone -b synapse_tasks https://github.com/radical-cybertools/radical.synapse.git $HOME/radical.synapse ; '
                         'else source $HOME/ve.synapse/bin/activate ; '
                         'PATH=$PATH:$HOME ; '
                         'export PATH ; '
                         'fi ; '
                         )
                        ]
+        
         #cud.executable = 'echo'
         #cud.arguments = ['$PATH']
         #cud.arguments = ['-l', '$HOME/aimes-skeleton-synapse.py']
@@ -130,6 +137,7 @@ try:
         #cud.executable = '/bin/sleep'
         #cud.arguments = ['30']
         #cud.executable = 'radical-synapse-version'
+        #cud.executable = '/bin/date'
         cuds.append(cud)
 
     umgr = rp.UnitManager(session=session, scheduler='backfilling')
