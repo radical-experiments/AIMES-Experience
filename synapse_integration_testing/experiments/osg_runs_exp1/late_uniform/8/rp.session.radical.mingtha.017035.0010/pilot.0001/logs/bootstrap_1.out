@@ -1,0 +1,1567 @@
+bootstrap_1 stderr redirected to stdout
+---------------------------------------------------------------------
+bootstrap_1 running on host: cmswn2206.fnal.gov.
+bootstrap_1 started as     : './bootstrap_1.sh -d radical.utils-v0.41.1-36-gd33fc65-experiment-aimes.tar.gz:saga-python-v0.41-52-g7b2b3e6-experiment-aimes.tar.gz:radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes.tar.gz -p pilot.0001 -s rp.session.radical.mingtha.017035.0010 -m create -r debug -b default -v ./ve_xd-login -y 4510 -x lu -e source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash -e module load python/2.7 -e module load gcc'
+Environment of bootstrap_1 process:
+
+ [ $? = 0 ] && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+BASH_FUNC_ml()=() {  eval $($LMOD_DIR/ml_cmd "$@")
+BASH_FUNC_module()=() {  eval $($LMOD_CMD bash "$@");
+BATCH_SYSTEM=HTCondor
+CMS_PATH=/cvmfs/oasis.opensciencegrid.org/cmssoft/cms
+CONDORCE_COLLECTOR_HOST=cmsosgce3.fnal.gov:9619
+CONDOR_CONFIG=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/condor_config
+CONDOR_PARENT_ID=cmswn2206:41252:1471882885
+CONDOR_PROCD_ADDRESS=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/log/procd_address
+CONDOR_PROCD_ADDRESS_BASE=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/log/procd_address
+CVMFS_ams_cern_ch_REVISION=519
+CVMFS_atlas_cern_ch_REVISION=17365
+CVMFS_cms_cern_ch_REVISION=26560
+CVMFS_icecube_opensciencegrid_org_REVISION=180
+CVMFS_oasis_opensciencegrid_org_REVISION=6042
+CVMFS_oasis_opensciencegrid_org_TIMESTAMP=1471455770
+CVSROOT=:gserver:cmssw.cvs.cern.ch:/local/reps/CMSSW
+CVS_RSH=ssh
+GLIDECLIENT_Group=main_fnal_nocerts
+GLIDECLIENT_Group_Signature=43e4b988d02c038492f355cbc390adc6e30a7da8
+GLIDECLIENT_Name=osg-flock-grid-iu-edu_OSG_gWMSFrontend.main_fnal_nocerts
+GLIDECLIENT_OSG_VO=OSG
+GLIDECLIENT_Signature=8e1f9ba06ec73f805cc98e1607304050b0152f6a
+GLIDEIN_CMSSite=T1_US_FNAL
+GLIDEIN_CPUS=8
+GLIDEIN_ClusterId=3665235
+GLIDEIN_Country=US
+GLIDEIN_Entry_Name=CMS_T1_US_FNAL_condce3
+GLIDEIN_Entry_Signature=07535252c479da92cd42163f4dd7cdb7f94182c2
+GLIDEIN_Expose_Grid_Env=True
+GLIDEIN_Factory=OSGGOC
+GLIDEIN_Gatekeeper=cmsosgce3.fnal.gov cmsosgce3.fnal.gov:9619
+GLIDEIN_Glexec_Use=NEVER
+GLIDEIN_GridType=condor
+GLIDEIN_LOCAL_TMP_DIR=/tmp/glide_osg_WWBhyg
+GLIDEIN_Monitoring_Enabled=False
+GLIDEIN_Name=gfactory_instance
+GLIDEIN_ProcId=0
+GLIDEIN_Proxy_URL=squid.fnal.gov:3128
+GLIDEIN_REQUIRE_GLEXEC_USE=False
+GLIDEIN_REQUIRE_VOMS=False
+GLIDEIN_ResourceName=USCMS-FNAL-WC1
+GLIDEIN_SEs=cmssrm.fnal.gov,cmssrmdisk.fnal.gov
+GLIDEIN_Schedd=schedd_glideins9@glidein.grid.iu.edu
+GLIDEIN_Signature=7ca8e3b9fbaca5337e008dd6039ba16e12645007
+GLIDEIN_Site=FNAL
+GLIDEIN_Tmp_Dir=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/tmp
+GLITE_LOCAL_COPY_RETRY_COUNT=2
+GLITE_LOCAL_COPY_RETRY_FIRST_WAIT=120
+GLOBUS_LOCATION=/usr
+GRIDMAP=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/grid-mapfile
+GSI_AUTHZ_CONF=/dev/null
+GUC_PATH=/usr/bin/globus-url-copy
+GUC_VERIFIED=True
+G_BROKEN_FILENAMES=1
+HAS_BLAST=False
+HAS_CVMFS_ams_cern_ch=True
+HAS_CVMFS_atlas_cern_ch=True
+HAS_CVMFS_cms_cern_ch=True
+HAS_CVMFS_icecube_opensciencegrid_org=True
+HAS_CVMFS_oasis_opensciencegrid_org=True
+HAS_FILE_lib64_libgcc_s_so_1=True
+HAS_FILE_lib64_libglib_2_0_so_0=True
+HAS_FILE_usr_lib64_libXt_so_6=True
+HAS_FILE_usr_lib64_libgfortran_so_3=True
+HAS_FILE_usr_lib64_libglib_2_0_so=False
+HAS_FILE_usr_lib64_libgmp_so_3=True
+HAS_FILE_usr_lib64_libgsl_so_0=False
+HAS_FILE_usr_lib64_libgslcblas_so_0=False
+HAS_FILE_usr_lib64_libgtk_x11_2_0_so_0=True
+HAS_FILE_usr_lib64_libstdc___so_6=True
+HAS_GLIB2_228=True
+HAS_JAVA=True
+HAS_MODULES=True
+HAS_NUMPY=False
+HAS_PHSW=True
+HAS_R=False
+HAS_SCP=True
+HAS_SQUID=True
+HAS_TCSH=True
+HAS_TIMEOUT=True
+HAS_XRDCP=True
+HISTCONTROL=ignoredups
+HISTSIZE=1000
+HOLD_GRACE_TIME=0
+HOME=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252
+HOSTNAME=cmswn2206.fnal.gov
+LANG=C
+LD_LIBRARY_PATH=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LMOD_CMD=/cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/5.8.6/lmod/lmod/libexec/lmod
+LMOD_DIR=/cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/5.8.6/lmod/lmod/libexec
+LMOD_PACKAGE_PATH=/cvmfs/oasis.opensciencegrid.org/osg/modules/modulefiles/Core
+LMOD_PKG=/cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/5.8.6/lmod/lmod
+LOGNAME=osg
+MAIL=/var/spool/mail/osg
+MANPATH=/cvmfs/oasis.opensciencegrid.org/cmssoft/cms/share/man:/cvmfs/oasis.opensciencegrid.org/cmssoft/cms/share/man:
+MATLAB_COMPATIBLE=HAS_MODULES && HAS_FILE_usr_lib64_libXt_so_6
+MODULEPATH=/cvmfs/oasis.opensciencegrid.org/osg/modules/modulefiles/Core
+MODULEPATH_ROOT=/cvmfs/oasis.opensciencegrid.org/osg/modules/modulefiles/
+MODULESHOME=/cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/5.8.6/lmod/lmod
+OMP_NUM_THREADS=1
+OSGVO_BENCH_STATUS=Skipped
+OSGVO_CMSSW_Path=/cvmfs/oasis.opensciencegrid.org/cmssoft/cms/
+OSGVO_CMSSW_Revision=1129 - /cvmfs/oasis.opensciencegrid.org/cmssoft/cms//etc/cms-common/revision
+OSGVO_CPU_MODEL=Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
+OSGVO_Data_EIC1=False
+OSGVO_Data_EIC_A1=False
+OSGVO_Data_EIC_A40=False
+OSGVO_OS_NAME=RHEL
+OSGVO_OS_STRING=RHEL 6
+OSGVO_OS_VERSION=6
+OSGVO_PILOT_DF=3440950176
+OSGVO_PROJECT_NAME=TG-CCR140028
+OSGVO_SUBMITTER=mha@xd-login.opensciencegrid.org
+OSG_APP=/cvmfs/oasis.opensciencegrid.org
+OSG_DATA=UNAVAILABLE
+OSG_DEFAULT_SE=cmssrm.fnal.gov
+OSG_GLEXEC_LOCATION=/usr/sbin/glexec
+OSG_GLIDEIN_VERSION=107
+OSG_GRID=/etc/osg/wn-client/
+OSG_HOSTNAME=cmsosgce3.fnal.gov
+OSG_SITE_NAME=cmsosgce3.fnal.gov
+OSG_SQUID_LOCATION=squid.fnal.gov:3128
+OSG_STORAGE_ELEMENT=True
+OSG_WN_TMP=/storage/local/data1/condor/execute/dir_32421
+PATH=/usr/krb5/bin:/opt/puppetlabs/bin:/cvmfs/cms.cern.ch/common:/cvmfs/cms.cern.ch/bin:/cvmfs/oasis.opensciencegrid.org/osg/modules/lua/bin:/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/main/condor/libexec:/bin:/usr/bin:/usr/krb5/bin:/usr/lib64/qt-3.3/bin:/opt/puppetlabs/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/cvmfs/cms.cern.ch/common:/cvmfs/cms.cern.ch/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/sbin:/opt/puppetlabs/bin
+PREEMPT_GRACE_TIME=10000000
+PWD=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252
+PYTHON_VERSION=2.6.6
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+RADICAL_PILOT_PROFILE=TRUE
+RP_BOOTSTRAP_1_REDIR=True
+SCRAM_ARCH=slc6_amd64_gcc472
+SHLVL=4
+SLOTS_LAYOUT=partitionable
+TEMP=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252
+TMP=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252
+TMPDIR=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252
+USER=osg
+X509_CERT_DIR=/etc/grid-security/certificates/
+X509_USER_CERT=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/hostcert.pem
+X509_USER_KEY=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/hostkey.pem
+X509_USER_PROXY=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/ticket/myproxy
+_=/bin/env
+_CHIRP_DELAYED_UPDATE_PREFIX=Chirp*
+_CONDOR_ANCESTOR_38891=38894:1471730343:4042419718
+_CONDOR_ANCESTOR_38894=41252:1471882885:1228123252
+_CONDOR_ANCESTOR_41252=41515:1471882886:118694894
+_CONDOR_CHIRP_CONFIG=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/.chirp.config
+_CONDOR_EXECUTE=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute
+_CONDOR_JOB_AD=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/.job.ad
+_CONDOR_JOB_IWD=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252
+_CONDOR_JOB_PIDS=
+_CONDOR_MACHINE_AD=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/.machine.ad
+_CONDOR_SCRATCH_DIR=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252
+_CONDOR_SLOT=slot1_6
+_CONDOR_WRAPPER_ERROR_FILE=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/.job_wrapper_failure
+_JAVA_OPTIONS=-Xmx1024m
+}
+}
+---------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_1 command
+# cmd: source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
+#
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_1 command
+# cmd: module load python/2.7
+#
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_1 command
+# cmd: module load gcc
+#
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+create gtod
+build gtod with cc... success
+0.0025,bootstrap_1,pilot.0001,ACTIVE_PENDING,bootstrap start,
+VIRTENV : ./ve_xd-login
+VIRTENV : /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login (normalized)
+PYTHON: /cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/bin/python
+PIP   : /cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/bin/pip
+0.1179,bootstrap_1,pilot.0001,ACTIVE_PENDING,virtenv_setup start,
+virtenv_create   : TRUE
+virtenv_update   : FALSE
+removed `./radical.utils-v0.41.1-36-gd33fc65-experiment-aimes.tar.gz'
+removed `./saga-python-v0.41-52-g7b2b3e6-experiment-aimes.tar.gz'
+removed `./radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes.tar.gz'
+rp install sources:  radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/ saga-python-v0.41-52-g7b2b3e6-experiment-aimes/ radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/
+rp install target : SANDBOX
+rp install lock   : FALSE
+rp lock for ve create
+obtained lock /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login.lock
+0.2891,bootstrap_1,pilot.0001,ACTIVE_PENDING,virtenv_create start,
+
+# -------------------------------------------------------------------
+#
+# Download virtualenv tgz
+# cmd: curl -k -O 'https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.9.tar.gz'
+#
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 1957k  100 1957k    0     0  3889k      0 --:--:-- --:--:-- --:--:-- 7798k
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# unpacking virtualenv tgz
+# cmd: tar zxmf 'virtualenv-1.9.tar.gz'
+#
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Create virtualenv
+# cmd: /cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/bin/python virtualenv-1.9/virtualenv.py /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login
+#
+New python executable in /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/python
+Installing setuptools............done.
+Installing pip...............done.
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+PYTHON: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/python
+PIP   : /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/pip
+PYTHON INTERPRETER: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/python
+PYTHON_VERSION    : 2.7
+VE_MOD_PREFIX     : /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib/python2.7/site-packages
+PIP installer     : /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/pip
+PIP version       : pip 1.3 from /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib/python2.7/site-packages/pip-1.3-py2.7.egg (python 2.7)
+activated virtenv
+VIRTENV      : /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login
+VE_MOD_PREFIX: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib/python2.7/site-packages
+RP_MOD_PREFIX: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/rp_install/lib/python2.7/site-packages
+PYTHONPATH   : /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib/python2.7/site-packages:
+
+# -------------------------------------------------------------------
+#
+# update setuptools
+# cmd: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/pip install --upgrade setuptools==0.6c11
+#
+Requirement already up-to-date: setuptools==0.6c11 in ./ve_xd-login/lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg
+Cleaning up...
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# update pip
+# cmd: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/pip install --upgrade pip==1.4.1
+#
+Downloading/unpacking pip==1.4.1
+  Running setup.py egg_info for package pip
+    
+    warning: no files found matching '*.html' under directory 'docs'
+    warning: no previously-included files matching '*.rst' found under directory 'docs/_build'
+    no previously-included directories found matching 'docs/_build/_sources'
+Installing collected packages: pip
+  Found existing installation: pip 1.3
+    Uninstalling pip:
+      Successfully uninstalled pip
+  Running setup.py install for pip
+    
+    warning: no files found matching '*.html' under directory 'docs'
+    warning: no previously-included files matching '*.rst' found under directory 'docs/_build'
+    no previously-included directories found matching 'docs/_build/_sources'
+    Installing pip script to /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin
+    Installing pip-2.7 script to /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin
+Successfully installed pip
+Cleaning up...
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+PYTHON: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/python
+PIP   : /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/pip
+
+# -------------------------------------------------------------------
+#
+# install apache-libcloud
+# cmd: easy_install --upgrade apache-libcloud
+#
+Creating /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib/python2.7/site-packages/site.py
+Searching for apache-libcloud
+Reading http://pypi.python.org/simple/apache-libcloud/
+Best match: apache-libcloud 1.1.0
+Downloading https://pypi.python.org/packages/49/0b/cb82ec61c9afaa32d672d0da5a087a70b4c6afe8dcc41b29cb5327a20a6a/apache-libcloud-1.1.0.zip#md5=6d127e120583f167a15e790e336d7907
+Processing apache-libcloud-1.1.0.zip
+Running apache-libcloud-1.1.0/setup.py -q bdist_egg --dist-dir /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/easy_install-dQQs3L/apache-libcloud-1.1.0/egg-dist-tmp-VRS180
+no previously-included directories found matching 'libcloud/test/secrets.py'
+Adding apache-libcloud 1.1.0 to easy-install.pth file
+
+Installed /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib/python2.7/site-packages/apache_libcloud-1.1.0-py2.7.egg
+Processing dependencies for apache-libcloud
+Searching for backports.ssl-match-hostname
+Reading http://pypi.python.org/simple/backports.ssl_match_hostname/
+Best match: backports.ssl-match-hostname 3.5.0.1
+Downloading https://pypi.python.org/packages/76/21/2dc61178a2038a5cb35d14b61467c6ac632791ed05131dda72c20e7b9e23/backports.ssl_match_hostname-3.5.0.1.tar.gz#md5=c03fc5e2c7b3da46b81acf5cbacfe1e6
+Processing backports.ssl_match_hostname-3.5.0.1.tar.gz
+Running backports.ssl_match_hostname-3.5.0.1/setup.py -q bdist_egg --dist-dir /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/easy_install-6EUT0p/backports.ssl_match_hostname-3.5.0.1/egg-dist-tmp-sl_kND
+zip_safe flag not set; analyzing archive contents...
+backports.__init__: module references __path__
+Adding backports.ssl-match-hostname 3.5.0.1 to easy-install.pth file
+
+Installed /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1-py2.7.egg
+Finished processing dependencies for apache-libcloud
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# install pymongo==2.8 apache-libcloud colorama python-hostlist ntplib pyzmq netifaces setproctitle msgpack-python
+# cmd: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/pip install pymongo==2.8 apache-libcloud colorama python-hostlist ntplib pyzmq netifaces setproctitle msgpack-python
+#
+Downloading/unpacking pymongo==2.8
+  Running setup.py egg_info for package pymongo
+    
+Requirement already satisfied (use --upgrade to upgrade): apache-libcloud in ./ve_xd-login/lib/python2.7/site-packages/apache_libcloud-1.1.0-py2.7.egg
+Downloading/unpacking colorama
+  Downloading colorama-0.3.7.zip
+  Running setup.py egg_info for package colorama
+    
+Downloading/unpacking python-hostlist
+  Downloading python-hostlist-1.16.tar.gz
+  Running setup.py egg_info for package python-hostlist
+    
+Downloading/unpacking ntplib
+  Downloading ntplib-0.3.3.tar.gz
+  Running setup.py egg_info for package ntplib
+    
+Downloading/unpacking pyzmq
+  Running setup.py egg_info for package pyzmq
+    
+    warning: no files found matching 'tox.ini'
+    no previously-included directories found matching 'docs/build'
+    no previously-included directories found matching 'docs/gh-pages'
+    warning: no previously-included files found matching 'bundled/zeromq/src/Makefile*'
+    warning: no previously-included files found matching 'bundled/zeromq/src/platform.hpp'
+    warning: no previously-included files found matching 'setup.cfg'
+    warning: no previously-included files found matching 'zmq/libzmq*'
+    warning: no previously-included files matching '__pycache__/*' found anywhere in distribution
+    warning: no previously-included files matching '.deps/*' found anywhere in distribution
+    warning: no previously-included files matching '*.so' found anywhere in distribution
+    warning: no previously-included files matching '*.pyd' found anywhere in distribution
+    warning: no previously-included files matching '.git*' found anywhere in distribution
+    warning: no previously-included files matching '.DS_Store' found anywhere in distribution
+    warning: no previously-included files matching '.mailmap' found anywhere in distribution
+    warning: no previously-included files matching 'Makefile.am' found anywhere in distribution
+    warning: no previously-included files matching 'Makefile.in' found anywhere in distribution
+Downloading/unpacking netifaces
+  Downloading netifaces-0.10.4.tar.gz
+  Running setup.py egg_info for package netifaces
+    
+Downloading/unpacking setproctitle
+  Downloading setproctitle-1.1.10.tar.gz
+  Running setup.py egg_info for package setproctitle
+    
+Downloading/unpacking msgpack-python
+  Running setup.py egg_info for package msgpack-python
+    
+Requirement already satisfied (use --upgrade to upgrade): backports.ssl-match-hostname in ./ve_xd-login/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1-py2.7.egg (from apache-libcloud)
+Installing collected packages: pymongo, colorama, python-hostlist, ntplib, pyzmq, netifaces, setproctitle, msgpack-python
+  Running setup.py install for pymongo
+    building 'bson._cbson' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Ibson -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bson/_cbsonmodule.c -o build/temp.linux-x86_64-2.7/bson/_cbsonmodule.o
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Ibson -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bson/time64.c -o build/temp.linux-x86_64-2.7/bson/time64.o
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Ibson -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bson/buffer.c -o build/temp.linux-x86_64-2.7/bson/buffer.o
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Ibson -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bson/encoding_helpers.c -o build/temp.linux-x86_64-2.7/bson/encoding_helpers.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/bson/_cbsonmodule.o build/temp.linux-x86_64-2.7/bson/time64.o build/temp.linux-x86_64-2.7/bson/buffer.o build/temp.linux-x86_64-2.7/bson/encoding_helpers.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/bson/_cbson.so
+    building 'pymongo._cmessage' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Ibson -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c pymongo/_cmessagemodule.c -o build/temp.linux-x86_64-2.7/pymongo/_cmessagemodule.o
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Ibson -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bson/buffer.c -o build/temp.linux-x86_64-2.7/bson/buffer.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/pymongo/_cmessagemodule.o build/temp.linux-x86_64-2.7/bson/buffer.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/pymongo/_cmessage.so
+    
+  Running setup.py install for colorama
+    
+  Running setup.py install for python-hostlist
+    changing mode of build/scripts-2.7/hostlist from 664 to 775
+    changing mode of build/scripts-2.7/hostgrep from 664 to 775
+    changing mode of build/scripts-2.7/pshbak from 664 to 775
+    changing mode of build/scripts-2.7/dbuck from 664 to 775
+    
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/dbuck to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/hostlist to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/pshbak to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/hostgrep to 775
+  Running setup.py install for ntplib
+    
+  Running setup.py install for pyzmq
+    Did not find libzmq via pkg-config.
+    {'libraries': ['zmq'], 'extra_link_args': [], 'runtime_library_dirs': [], 'library_dirs': ['/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib'], 'include_dirs': ['/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/include']}
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/include -c build/temp.linux-x86_64-2.7/scratch/check_sys_un.c -o build/temp.linux-x86_64-2.7/scratch/check_sys_un.o
+    gcc -pthread build/temp.linux-x86_64-2.7/scratch/check_sys_un.o -L/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib -Wl,-R/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib -o build/temp.linux-x86_64-2.7/scratch/check_sys_un
+    Configure: Autodetecting ZMQ settings...
+        Custom ZMQ dir:
+    ************************************************
+    cc -c /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createLEMlLx.c -o build/temp.linux-x86_64-2.7/scratch/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createLEMlLx.o
+    cc build/temp.linux-x86_64-2.7/scratch/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createLEMlLx.o -o build/temp.linux-x86_64-2.7/scratch/a.out
+    build/temp.linux-x86_64-2.7/scratch/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createLEMlLx.o: In function `main':
+    timer_createLEMlLx.c:(.text+0x15): undefined reference to `timer_create'
+    collect2: ld returned 1 exit status
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -c build/temp.linux-x86_64-2.7/scratch/vers.c -o build/temp.linux-x86_64-2.7/scratch/vers.o
+    build/temp.linux-x86_64-2.7/scratch/vers.c:4:17: fatal error: zmq.h: No such file or directory
+     #include "zmq.h"
+                     ^
+    compilation terminated.
+    
+    error: command 'gcc' failed with exit status 1
+    
+    Failed with default libzmq, trying again with /usr/local
+    {'libraries': ['zmq'], 'extra_link_args': [], 'runtime_library_dirs': [], 'library_dirs': ['/usr/local/lib'], 'include_dirs': ['/usr/local/include']}
+    Configure: Autodetecting ZMQ settings...
+        Custom ZMQ dir:       /usr/local
+    ************************************************
+    cc -c /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createnyOM4p.c -o build/temp.linux-x86_64-2.7/scratch/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createnyOM4p.o
+    Assembler messages:
+    Fatal error: can't create build/temp.linux-x86_64-2.7/scratch/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createnyOM4p.o: No such file or directory
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/usr/local/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -c build/temp.linux-x86_64-2.7/scratch/vers.c -o build/temp.linux-x86_64-2.7/scratch/vers.o
+    build/temp.linux-x86_64-2.7/scratch/vers.c:4:17: fatal error: zmq.h: No such file or directory
+     #include "zmq.h"
+                     ^
+    compilation terminated.
+    
+    error: command 'gcc' failed with exit status 1
+    
+    Warning: Couldn't find an acceptable libzmq on the system.
+    
+    If you expected pyzmq to link against an installed libzmq, please check to make sure:
+    
+        * You have a C compiler installed
+        * A development version of Python is installed (including headers)
+        * A development version of ZMQ >= 3.2 is installed (including headers)
+        * If ZMQ is not in a default location, supply the argument --zmq=<path>
+        * If you did recently install ZMQ to a default location,
+          try rebuilding the ld cache with `sudo ldconfig`
+          or specify zmq's location with `--zmq=/usr/local`
+    
+    You can skip all this detection/waiting nonsense if you know
+    you want pyzmq to bundle libzmq as an extension by passing:
+    
+        `--zmq=bundled`
+    
+    I will now try to build libzmq as a Python extension
+    unless you interrupt me (^C) in the next 10 seconds...
+    
+    ************************************************
+    10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+    Using bundled libzmq
+    already have bundled/zeromq
+    attempting ./configure to generate platform.hpp
+    Warning: failed to configure libzmq:
+    /bin/sh: ./configure: No such file or directory
+    
+    staging platform.hpp from: buildutils/include_linux
+    checking for timer_create
+    ************************************************
+    ************************************************
+    cc -c /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createAqgwZL.c -o build/temp.linux-x86_64-2.7/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createAqgwZL.o
+    cc build/temp.linux-x86_64-2.7/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createAqgwZL.o -o build/temp.linux-x86_64-2.7/a.out
+    build/temp.linux-x86_64-2.7/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/timer_createAqgwZL.o: In function `main':
+    timer_createAqgwZL.c:(.text+0x15): undefined reference to `timer_create'
+    collect2: ld returned 1 exit status
+    no timer_create, linking librt
+    ************************************************
+    building 'zmq.libzmq' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c buildutils/initlibzmq.c -o build/temp.linux-x86_64-2.7/buildutils/initlibzmq.o
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/tcp.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tcp.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/select.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/select.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/io_thread.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/io_thread.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/trie.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/trie.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/pgm_socket.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pgm_socket.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/poller_base.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/poller_base.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/devpoll.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/devpoll.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/thread.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/thread.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/tipc_connecter.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tipc_connecter.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/req.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/req.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/address.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/address.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/gssapi_client.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/gssapi_client.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/ip.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/ip.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/plain_server.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/plain_server.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/own.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/own.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/null_mechanism.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/null_mechanism.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/pgm_receiver.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pgm_receiver.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/clock.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/clock.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/pub.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pub.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/sub.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/sub.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/precompiled.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/precompiled.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/tcp_listener.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tcp_listener.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/tipc_listener.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tipc_listener.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/random.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/random.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/stream_engine.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/stream_engine.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/lb.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/lb.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/fq.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/fq.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/mechanism.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/mechanism.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/zmq_utils.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/zmq_utils.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/raw_decoder.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/raw_decoder.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/ctx.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/ctx.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/norm_engine.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/norm_engine.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/tipc_address.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tipc_address.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/xpub.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/xpub.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/curve_server.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/curve_server.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/v2_decoder.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/v2_decoder.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/poll.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/poll.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/socket_base.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/socket_base.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/dealer.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/dealer.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/v1_encoder.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/v1_encoder.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/kqueue.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/kqueue.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/pgm_sender.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pgm_sender.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/ipc_address.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/ipc_address.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/proxy.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/proxy.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/zmq.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/zmq.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/ipc_listener.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/ipc_listener.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/epoll.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/epoll.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/mailbox.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/mailbox.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/ipc_connecter.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/ipc_connecter.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/tcp_address.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tcp_address.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/v2_encoder.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/v2_encoder.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/push.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/push.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/session_base.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/session_base.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/curve_client.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/curve_client.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/gssapi_server.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/gssapi_server.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/socks.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/socks.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/xsub.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/xsub.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/plain_client.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/plain_client.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/options.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/options.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/raw_encoder.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/raw_encoder.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/dist.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/dist.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/err.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/err.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/tcp_connecter.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tcp_connecter.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/object.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/object.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/reaper.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/reaper.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/msg.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/msg.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/pull.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pull.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/socks_connecter.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/socks_connecter.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/metadata.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/metadata.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/pair.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pair.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/signaler.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/signaler.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/mtrie.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/mtrie.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/stream.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/stream.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/pipe.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pipe.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/v1_decoder.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/v1_decoder.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/gssapi_mechanism_base.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/gssapi_mechanism_base.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/io_object.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/io_object.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/rep.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/rep.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/src/router.cpp -o build/temp.linux-x86_64-2.7/bundled/zeromq/src/router.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/tweetnacl/src/tweetnacl.c -o build/temp.linux-x86_64-2.7/bundled/zeromq/tweetnacl/src/tweetnacl.o
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DZMQ_HAVE_CURVE=1 -DZMQ_USE_TWEETNACL=1 -DZMQ_USE_EPOLL=1 -Ibundled/zeromq/include -Ibundled/zeromq/tweetnacl/src -Ibundled/zeromq/tweetnacl/contrib/randombytes -Ibundled -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c bundled/zeromq/tweetnacl/contrib/randombytes/devurandom.c -o build/temp.linux-x86_64-2.7/bundled/zeromq/tweetnacl/contrib/randombytes/devurandom.o
+    g++ -pthread -shared build/temp.linux-x86_64-2.7/buildutils/initlibzmq.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tcp.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/select.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/io_thread.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/trie.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pgm_socket.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/poller_base.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/devpoll.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/thread.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tipc_connecter.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/req.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/address.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/gssapi_client.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/ip.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/plain_server.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/own.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/null_mechanism.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pgm_receiver.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/clock.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pub.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/sub.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/precompiled.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tcp_listener.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tipc_listener.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/random.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/stream_engine.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/lb.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/fq.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/mechanism.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/zmq_utils.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/raw_decoder.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/ctx.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/norm_engine.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tipc_address.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/xpub.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/curve_server.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/v2_decoder.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/poll.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/socket_base.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/dealer.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/v1_encoder.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/kqueue.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pgm_sender.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/ipc_address.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/proxy.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/zmq.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/ipc_listener.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/epoll.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/mailbox.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/ipc_connecter.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tcp_address.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/v2_encoder.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/push.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/session_base.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/curve_client.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/gssapi_server.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/socks.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/xsub.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/plain_client.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/options.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/raw_encoder.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/dist.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/err.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/tcp_connecter.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/object.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/reaper.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/msg.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pull.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/socks_connecter.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/metadata.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pair.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/signaler.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/mtrie.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/stream.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/pipe.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/v1_decoder.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/gssapi_mechanism_base.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/io_object.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/rep.o build/temp.linux-x86_64-2.7/bundled/zeromq/src/router.o build/temp.linux-x86_64-2.7/bundled/zeromq/tweetnacl/src/tweetnacl.o build/temp.linux-x86_64-2.7/bundled/zeromq/tweetnacl/contrib/randombytes/devurandom.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lrt -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/libzmq.so
+    building 'zmq.devices.monitoredqueue' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_UN_H=1 -Ibundled/zeromq/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c zmq/devices/monitoredqueue.c -o build/temp.linux-x86_64-2.7/zmq/devices/monitoredqueue.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/zmq/devices/monitoredqueue.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/devices/monitoredqueue.so
+    building 'zmq.backend.cython._device' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_UN_H=1 -Ibundled/zeromq/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c zmq/backend/cython/_device.c -o build/temp.linux-x86_64-2.7/zmq/backend/cython/_device.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/zmq/backend/cython/_device.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/backend/cython/_device.so
+    building 'zmq.backend.cython._poll' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_UN_H=1 -Ibundled/zeromq/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c zmq/backend/cython/_poll.c -o build/temp.linux-x86_64-2.7/zmq/backend/cython/_poll.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/zmq/backend/cython/_poll.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/backend/cython/_poll.so
+    building 'zmq.backend.cython._version' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_UN_H=1 -Ibundled/zeromq/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c zmq/backend/cython/_version.c -o build/temp.linux-x86_64-2.7/zmq/backend/cython/_version.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/zmq/backend/cython/_version.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/backend/cython/_version.so
+    building 'zmq.backend.cython.constants' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_UN_H=1 -Ibundled/zeromq/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c zmq/backend/cython/constants.c -o build/temp.linux-x86_64-2.7/zmq/backend/cython/constants.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/zmq/backend/cython/constants.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/backend/cython/constants.so
+    building 'zmq.backend.cython.context' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_UN_H=1 -Ibundled/zeromq/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c zmq/backend/cython/context.c -o build/temp.linux-x86_64-2.7/zmq/backend/cython/context.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/zmq/backend/cython/context.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/backend/cython/context.so
+    building 'zmq.backend.cython.error' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_UN_H=1 -Ibundled/zeromq/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c zmq/backend/cython/error.c -o build/temp.linux-x86_64-2.7/zmq/backend/cython/error.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/zmq/backend/cython/error.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/backend/cython/error.so
+    building 'zmq.backend.cython.message' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_UN_H=1 -Ibundled/zeromq/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c zmq/backend/cython/message.c -o build/temp.linux-x86_64-2.7/zmq/backend/cython/message.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/zmq/backend/cython/message.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/backend/cython/message.so
+    building 'zmq.backend.cython.socket' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_UN_H=1 -Ibundled/zeromq/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c zmq/backend/cython/socket.c -o build/temp.linux-x86_64-2.7/zmq/backend/cython/socket.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/zmq/backend/cython/socket.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/backend/cython/socket.so
+    building 'zmq.backend.cython.utils' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_UN_H=1 -Ibundled/zeromq/include -Izmq/utils -Izmq/backend/cython -Izmq/devices -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c zmq/backend/cython/utils.c -o build/temp.linux-x86_64-2.7/zmq/backend/cython/utils.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/zmq/backend/cython/utils.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/zmq/backend/cython/utils.so
+    
+    warning: no files found matching 'tox.ini'
+    no previously-included directories found matching 'docs/build'
+    no previously-included directories found matching 'docs/gh-pages'
+    warning: no previously-included files found matching 'bundled/zeromq/src/Makefile*'
+    warning: no previously-included files found matching 'setup.cfg'
+    warning: no previously-included files found matching 'zmq/libzmq*'
+    warning: no previously-included files matching '__pycache__/*' found anywhere in distribution
+    warning: no previously-included files matching '.deps/*' found anywhere in distribution
+    warning: no previously-included files matching '*.so' found anywhere in distribution
+    warning: no previously-included files matching '*.pyd' found anywhere in distribution
+    warning: no previously-included files matching '.git*' found anywhere in distribution
+    warning: no previously-included files matching '.DS_Store' found anywhere in distribution
+    warning: no previously-included files matching '.mailmap' found anywhere in distribution
+    warning: no previously-included files matching 'Makefile.am' found anywhere in distribution
+    warning: no previously-included files matching 'Makefile.in' found anywhere in distribution
+  Running setup.py install for netifaces
+    checking for getifaddrs...found.
+    checking for getnameinfo...found.
+    checking for optional header files...netash/ash.h netatalk/at.h netax25/ax25.h neteconet/ec.h netipx/ipx.h netpacket/packet.h linux/irda.h linux/atm.h linux/llc.h linux/tipc.h linux/dn.h.
+    checking whether struct sockaddr has a length field...no.
+    checking which sockaddr_xxx structs are defined...at ax25 in in6 ipx un ash ec ll atmpvc atmsvc dn irda llc.
+    checking for routing socket support...no.
+    checking for sysctl(CTL_NET...) support...no.
+    checking for netlink support...yes.
+    will use netlink to read routing table
+    building 'netifaces' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DNETIFACES_VERSION=0.10.4 -DHAVE_GETIFADDRS=1 -DHAVE_GETNAMEINFO=1 -DHAVE_NETASH_ASH_H=1 -DHAVE_NETATALK_AT_H=1 -DHAVE_NETAX25_AX25_H=1 -DHAVE_NETECONET_EC_H=1 -DHAVE_NETIPX_IPX_H=1 -DHAVE_NETPACKET_PACKET_H=1 -DHAVE_LINUX_IRDA_H=1 -DHAVE_LINUX_ATM_H=1 -DHAVE_LINUX_LLC_H=1 -DHAVE_LINUX_TIPC_H=1 -DHAVE_LINUX_DN_H=1 -DHAVE_SOCKADDR_AT=1 -DHAVE_SOCKADDR_AX25=1 -DHAVE_SOCKADDR_IN=1 -DHAVE_SOCKADDR_IN6=1 -DHAVE_SOCKADDR_IPX=1 -DHAVE_SOCKADDR_UN=1 -DHAVE_SOCKADDR_ASH=1 -DHAVE_SOCKADDR_EC=1 -DHAVE_SOCKADDR_LL=1 -DHAVE_SOCKADDR_ATMPVC=1 -DHAVE_SOCKADDR_ATMSVC=1 -DHAVE_SOCKADDR_DN=1 -DHAVE_SOCKADDR_IRDA=1 -DHAVE_SOCKADDR_LLC=1 -DHAVE_PF_NETLINK=1 -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c netifaces.c -o build/temp.linux-x86_64-2.7/netifaces.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/netifaces.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/netifaces.so
+    
+  Running setup.py install for setproctitle
+    building 'setproctitle' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_PRCTL_H=1 -DSPT_VERSION=1.1.10 -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c src/setproctitle.c -o build/temp.linux-x86_64-2.7/src/setproctitle.o
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_PRCTL_H=1 -DSPT_VERSION=1.1.10 -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c src/spt_debug.c -o build/temp.linux-x86_64-2.7/src/spt_debug.o
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_PRCTL_H=1 -DSPT_VERSION=1.1.10 -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c src/spt_setup.c -o build/temp.linux-x86_64-2.7/src/spt_setup.o
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_PRCTL_H=1 -DSPT_VERSION=1.1.10 -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c src/spt_status.c -o build/temp.linux-x86_64-2.7/src/spt_status.o
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SYS_PRCTL_H=1 -DSPT_VERSION=1.1.10 -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c src/spt_strlcpy.c -o build/temp.linux-x86_64-2.7/src/spt_strlcpy.o
+    gcc -pthread -shared build/temp.linux-x86_64-2.7/src/setproctitle.o build/temp.linux-x86_64-2.7/src/spt_debug.o build/temp.linux-x86_64-2.7/src/spt_setup.o build/temp.linux-x86_64-2.7/src/spt_status.o build/temp.linux-x86_64-2.7/src/spt_strlcpy.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/setproctitle.so
+    
+  Running setup.py install for msgpack-python
+    building 'msgpack._packer' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -D__LITTLE_ENDIAN__=1 -I. -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c msgpack/_packer.cpp -o build/temp.linux-x86_64-2.7/msgpack/_packer.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    g++ -pthread -shared build/temp.linux-x86_64-2.7/msgpack/_packer.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/msgpack/_packer.so
+    building 'msgpack._unpacker' extension
+    gcc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -D__LITTLE_ENDIAN__=1 -I. -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c msgpack/_unpacker.cpp -o build/temp.linux-x86_64-2.7/msgpack/_unpacker.o
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    In file included from msgpack/_unpacker.cpp:285:0:
+    msgpack/unpack.h: In function 'int unpack_callback_ext(unpack_user*, const char*, const char*, unsigned int, PyObject**)':
+    msgpack/unpack.h:268:94: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         py = PyObject_CallFunction(u->ext_hook, "(is#)", (int)typecode, pos, (Py_ssize_t)length-1);
+                                                                                                  ^
+    g++ -pthread -shared build/temp.linux-x86_64-2.7/msgpack/_unpacker.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/msgpack/_unpacker.so
+    
+Successfully installed pymongo colorama python-hostlist ntplib pyzmq netifaces setproctitle msgpack-python
+Cleaning up...
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+removed `/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login.lock'
+do not update virtenv /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login
+140.6727,bootstrap_1,pilot.0001,ACTIVE_PENDING,rp_install start,
+Using RADICAL-Pilot install sources ' radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/ saga-python-v0.41-52-g7b2b3e6-experiment-aimes/ radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/'
+VE_MOD_PREFIX: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/lib/python2.7/site-packages
+VIRTENV      : /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login
+SANDBOX      : /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252
+VE_LOC_PREFIX: 
+using local install tree
+PYTHONPATH: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages::
+rp_install: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages
+radicalmod: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages/radical/
+created radical namespace in /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages/radical//__init__.py
+
+# -------------------------------------------------------------------
+#
+# update radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/ via pip
+# cmd: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/pip install  --src '/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/src' --build '/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/build' --install-option='--prefix=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install' radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/
+#
+Unpacking ./radical.utils-v0.41.1-36-gd33fc65-experiment-aimes
+  Running setup.py egg_info for package from file:///storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/radical.utils-v0.41.1-36-gd33fc65-experiment-aimes
+    version: v0.41.1-36-gd33fc65@experiment-aimes (v0.41.1-36-gd33fc65@experiment-aimes)
+    
+    warning: no files found matching '*' under directory 'radical'
+Requirement already satisfied (use --upgrade to upgrade): colorama in ./ve_xd-login/lib/python2.7/site-packages (from radical.utils==v0.41.1-36-gd33fc65-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): netifaces in ./ve_xd-login/lib/python2.7/site-packages (from radical.utils==v0.41.1-36-gd33fc65-experiment-aimes)
+Installing collected packages: radical.utils
+  Running setup.py install for radical.utils
+    version: v0.41.1-36-gd33fc65@experiment-aimes (v0.41.1-36-gd33fc65@experiment-aimes)
+    warning: no files found matching '*' under directory 'radical'
+    warning: sdist: standard file not found: should have one of README, README.txt
+    
+    making hard links in radical.utils-v0.41.1-36-gd33fc65-experiment-aimes...
+    hard linking CHANGES.md -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes
+    hard linking LICENSE.md -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes
+    hard linking MANIFEST.in -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes
+    hard linking README.md -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes
+    hard linking VERSION -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes
+    hard linking setup.cfg -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes
+    hard linking setup.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes
+    hard linking bin/radical-utils-fix-headers.pl -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/bin
+    hard linking bin/radical-utils-mongodb.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/bin
+    hard linking bin/radical-utils-pylint.sh -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/bin
+    hard linking bin/radical-utils-version -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/bin
+    hard linking src/radical/__init__.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical
+    hard linking src/radical.utils.egg-info/PKG-INFO -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical.utils.egg-info
+    hard linking src/radical.utils.egg-info/SOURCES.txt -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical.utils.egg-info
+    hard linking src/radical.utils.egg-info/dependency_links.txt -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical.utils.egg-info
+    hard linking src/radical.utils.egg-info/namespace_packages.txt -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical.utils.egg-info
+    hard linking src/radical.utils.egg-info/not-zip-safe -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical.utils.egg-info
+    hard linking src/radical.utils.egg-info/requires.txt -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical.utils.egg-info
+    hard linking src/radical.utils.egg-info/top_level.txt -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical.utils.egg-info
+    hard linking src/radical/utils/SDIST -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/VERSION -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/__init__.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/algorithms.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/benchmark.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/daemonize.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/debug.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/dict_mixin.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/get_version.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/ids.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/lease_manager.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/lockable.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/logger.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/misc.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/object_cache.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/plugin_manager.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/read_json.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/regex.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/registry.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/reporter.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/signatures.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/singleton.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/test_config.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/testing.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/threads.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/timing.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/tracer.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/url.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/which.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils
+    hard linking src/radical/utils/atfork/__init__.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/atfork
+    hard linking src/radical/utils/atfork/atfork.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/atfork
+    hard linking src/radical/utils/atfork/stdlib_fixer.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/atfork
+    hard linking src/radical/utils/config/__init__.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/config
+    hard linking src/radical/utils/config/config.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/config
+    hard linking src/radical/utils/config/configfile.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/config
+    hard linking src/radical/utils/contrib/__init__.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/contrib
+    hard linking src/radical/utils/contrib/urlparse25.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/contrib
+    hard linking src/radical/utils/plugins/__init__.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/plugins
+    hard linking src/radical/utils/plugins/unittests_1/__init__.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/plugins/unittests_1
+    hard linking src/radical/utils/plugins/unittests_1/plugin_unittests_default_1.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/plugins/unittests_1
+    hard linking src/radical/utils/plugins/unittests_1/plugin_unittests_default_2.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/plugins/unittests_1
+    hard linking src/radical/utils/plugins/unittests_2/__init__.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/plugins/unittests_2
+    hard linking src/radical/utils/plugins/unittests_2/plugin_unittests_default_1.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/plugins/unittests_2
+    hard linking src/radical/utils/plugins/unittests_2/plugin_unittests_default_2.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/plugins/unittests_2
+    hard linking src/radical/utils/queue_network/__init__.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/queue_network
+    hard linking src/radical/utils/queue_network/network.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/queue_network
+    hard linking src/radical/utils/queue_network/node.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/queue_network
+    hard linking src/radical/utils/queue_network/queue.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/src/radical/utils/queue_network
+    hard linking tests/run_tests.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests
+    hard linking tests/configs/default.cfg -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/configs
+    hard linking tests/unittests/test_config.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_dict_mixin.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_ids.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_lease_manager.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_lockable.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_logger.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_misc.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_object_cache.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_plugin_manager.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_read_json.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_regex.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_signatures.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_singleton.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_url.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    hard linking tests/unittests/test_which.py -> radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/tests/unittests
+    Writing radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/setup.cfg
+    Creating tar archive
+    removing 'radical.utils-v0.41.1-36-gd33fc65-experiment-aimes' (and everything under it)
+    version: v0.41.1-36-gd33fc65@experiment-aimes (v0.41.1-36-gd33fc65@experiment-aimes)
+    changing mode of build/scripts-2.7/radical-utils-mongodb.py from 664 to 775
+    changing mode of build/scripts-2.7/radical-utils-version from 664 to 775
+    Skipping installation of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages/radical/__init__.py (namespace package)
+    
+    warning: no files found matching '*' under directory 'radical'
+    Installing /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages/radical.utils-v0.41.1_36_gd33fc65_experiment_aimes-py2.7-nspkg.pth
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radical-utils-version to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radical-utils-fix-headers.pl to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radical-utils-pylint.sh to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radical-utils-mongodb.py to 775
+Successfully installed radical.utils
+Cleaning up...
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+purge install source at radical.utils-v0.41.1-36-gd33fc65-experiment-aimes/
+
+# -------------------------------------------------------------------
+#
+# update saga-python-v0.41-52-g7b2b3e6-experiment-aimes/ via pip
+# cmd: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/pip install  --src '/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/src' --build '/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/build' --install-option='--prefix=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install' saga-python-v0.41-52-g7b2b3e6-experiment-aimes/
+#
+Unpacking ./saga-python-v0.41-52-g7b2b3e6-experiment-aimes
+  Running setup.py egg_info for package from file:///storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/saga-python-v0.41-52-g7b2b3e6-experiment-aimes
+    version: v0.41-52-g7b2b3e6@experiment-aimes (v0.41-52-g7b2b3e6@experiment-aimes)
+    
+Requirement already satisfied (use --upgrade to upgrade): apache-libcloud in ./ve_xd-login/lib/python2.7/site-packages/apache_libcloud-1.1.0-py2.7.egg (from saga-python==v0.41-52-g7b2b3e6-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): radical.utils in ./rp_install/lib/python2.7/site-packages (from saga-python==v0.41-52-g7b2b3e6-experiment-aimes)
+Downloading/unpacking parse (from saga-python==v0.41-52-g7b2b3e6-experiment-aimes)
+  Downloading parse-1.6.6.tar.gz
+  Running setup.py egg_info for package parse
+    
+Requirement already satisfied (use --upgrade to upgrade): backports.ssl-match-hostname in ./ve_xd-login/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1-py2.7.egg (from apache-libcloud->saga-python==v0.41-52-g7b2b3e6-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): colorama in ./ve_xd-login/lib/python2.7/site-packages (from radical.utils->saga-python==v0.41-52-g7b2b3e6-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): netifaces in ./ve_xd-login/lib/python2.7/site-packages (from radical.utils->saga-python==v0.41-52-g7b2b3e6-experiment-aimes)
+Installing collected packages: parse, saga-python
+  Running setup.py install for parse
+    
+  Running setup.py install for saga-python
+    version: v0.41-52-g7b2b3e6@experiment-aimes (v0.41-52-g7b2b3e6@experiment-aimes)
+    warning: sdist: standard file not found: should have one of README, README.txt
+    
+    making hard links in saga-python-v0.41-52-g7b2b3e6-experiment-aimes...
+    hard linking CHANGES.md -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes
+    hard linking LICENSE.md -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes
+    hard linking MANIFEST.in -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes
+    hard linking README.md -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes
+    hard linking VERSION -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes
+    hard linking setup.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes
+    hard linking setup.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes
+    hard linking bin/sagapython-version -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/bin
+    hard linking src/saga/SDIST -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/VERSION -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/async.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/attributes.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/base.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/constants.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/context.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/exceptions.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/monitorable.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/session.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/task.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/url.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga
+    hard linking src/saga/adaptors/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors
+    hard linking src/saga/adaptors/base.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors
+    hard linking src/saga/adaptors/aws/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/aws
+    hard linking src/saga/adaptors/aws/ec2_resource.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/aws
+    hard linking src/saga/adaptors/condor/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/condor
+    hard linking src/saga/adaptors/condor/condorjob.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/condor
+    hard linking src/saga/adaptors/context/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/context
+    hard linking src/saga/adaptors/context/myproxy.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/context
+    hard linking src/saga/adaptors/context/ssh.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/context
+    hard linking src/saga/adaptors/context/userpass.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/context
+    hard linking src/saga/adaptors/context/x509.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/context
+    hard linking src/saga/adaptors/cpi/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi
+    hard linking src/saga/adaptors/cpi/async.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi
+    hard linking src/saga/adaptors/cpi/attributes.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi
+    hard linking src/saga/adaptors/cpi/base.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi
+    hard linking src/saga/adaptors/cpi/context.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi
+    hard linking src/saga/adaptors/cpi/decorators.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi
+    hard linking src/saga/adaptors/cpi/advert/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/advert
+    hard linking src/saga/adaptors/cpi/advert/directory.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/advert
+    hard linking src/saga/adaptors/cpi/advert/entry.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/advert
+    hard linking src/saga/adaptors/cpi/filesystem/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/filesystem
+    hard linking src/saga/adaptors/cpi/filesystem/directory.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/filesystem
+    hard linking src/saga/adaptors/cpi/filesystem/file.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/filesystem
+    hard linking src/saga/adaptors/cpi/job/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/job
+    hard linking src/saga/adaptors/cpi/job/job.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/job
+    hard linking src/saga/adaptors/cpi/job/service.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/job
+    hard linking src/saga/adaptors/cpi/namespace/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/namespace
+    hard linking src/saga/adaptors/cpi/namespace/directory.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/namespace
+    hard linking src/saga/adaptors/cpi/namespace/entry.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/namespace
+    hard linking src/saga/adaptors/cpi/replica/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/replica
+    hard linking src/saga/adaptors/cpi/replica/logical_directory.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/replica
+    hard linking src/saga/adaptors/cpi/replica/logical_file.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/replica
+    hard linking src/saga/adaptors/cpi/resource/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/resource
+    hard linking src/saga/adaptors/cpi/resource/manager.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/resource
+    hard linking src/saga/adaptors/cpi/resource/resource.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/cpi/resource
+    hard linking src/saga/adaptors/globus_online/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/globus_online
+    hard linking src/saga/adaptors/globus_online/go_file.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/globus_online
+    hard linking src/saga/adaptors/http/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/http
+    hard linking src/saga/adaptors/http/http_file.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/http
+    hard linking src/saga/adaptors/irods/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/irods
+    hard linking src/saga/adaptors/irods/irods_replica.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/irods
+    hard linking src/saga/adaptors/loadl/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/loadl
+    hard linking src/saga/adaptors/loadl/loadljob.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/loadl
+    hard linking src/saga/adaptors/lsf/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/lsf
+    hard linking src/saga/adaptors/lsf/lsfjob.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/lsf
+    hard linking src/saga/adaptors/pbs/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/pbs
+    hard linking src/saga/adaptors/pbs/pbsjob.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/pbs
+    hard linking src/saga/adaptors/pbspro/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/pbspro
+    hard linking src/saga/adaptors/pbspro/pbsprojob.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/pbspro
+    hard linking src/saga/adaptors/redis/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/redis
+    hard linking src/saga/adaptors/redis/redis_1.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/redis
+    hard linking src/saga/adaptors/redis/redis_2.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/redis
+    hard linking src/saga/adaptors/redis/redis_advert.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/redis
+    hard linking src/saga/adaptors/redis/redis_cache.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/redis
+    hard linking src/saga/adaptors/redis/redis_namespace.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/redis
+    hard linking src/saga/adaptors/redis/redis_ordered_dict.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/redis
+    hard linking src/saga/adaptors/sge/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/sge
+    hard linking src/saga/adaptors/sge/sgejob.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/sge
+    hard linking src/saga/adaptors/shell/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/shell
+    hard linking src/saga/adaptors/shell/shell_file.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/shell
+    hard linking src/saga/adaptors/shell/shell_job.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/shell
+    hard linking src/saga/adaptors/shell/shell_resource.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/shell
+    hard linking src/saga/adaptors/shell/shell_wrapper.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/shell
+    hard linking src/saga/adaptors/shell/shell_wrapper.sh -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/shell
+    hard linking src/saga/adaptors/slurm/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/slurm
+    hard linking src/saga/adaptors/slurm/slurm_job.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/slurm
+    hard linking src/saga/adaptors/torque/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/torque
+    hard linking src/saga/adaptors/torque/torquejob.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/adaptors/torque
+    hard linking src/saga/advert/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/advert
+    hard linking src/saga/advert/constants.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/advert
+    hard linking src/saga/advert/directory.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/advert
+    hard linking src/saga/advert/entry.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/advert
+    hard linking src/saga/engine/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/engine
+    hard linking src/saga/engine/engine.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/engine
+    hard linking src/saga/engine/registry.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/engine
+    hard linking src/saga/filesystem/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/filesystem
+    hard linking src/saga/filesystem/constants.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/filesystem
+    hard linking src/saga/filesystem/directory.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/filesystem
+    hard linking src/saga/filesystem/file.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/filesystem
+    hard linking src/saga/job/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/job
+    hard linking src/saga/job/constants.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/job
+    hard linking src/saga/job/container.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/job
+    hard linking src/saga/job/description.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/job
+    hard linking src/saga/job/job.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/job
+    hard linking src/saga/job/service.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/job
+    hard linking src/saga/namespace/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/namespace
+    hard linking src/saga/namespace/constants.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/namespace
+    hard linking src/saga/namespace/directory.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/namespace
+    hard linking src/saga/namespace/entry.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/namespace
+    hard linking src/saga/replica/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/replica
+    hard linking src/saga/replica/constants.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/replica
+    hard linking src/saga/replica/logical_directory.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/replica
+    hard linking src/saga/replica/logical_file.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/replica
+    hard linking src/saga/resource/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/resource
+    hard linking src/saga/resource/constants.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/resource
+    hard linking src/saga/resource/description.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/resource
+    hard linking src/saga/resource/manager.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/resource
+    hard linking src/saga/resource/resource.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/resource
+    hard linking src/saga/utils/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/utils
+    hard linking src/saga/utils/misc.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/utils
+    hard linking src/saga/utils/pty_exceptions.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/utils
+    hard linking src/saga/utils/pty_process.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/utils
+    hard linking src/saga/utils/pty_shell.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/utils
+    hard linking src/saga/utils/pty_shell_factory.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/utils
+    hard linking src/saga/utils/test_config.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/utils
+    hard linking src/saga/utils/job/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/utils/job
+    hard linking src/saga/utils/job/transfer_directives.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga/utils/job
+    hard linking src/saga_python.egg-info/PKG-INFO -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga_python.egg-info
+    hard linking src/saga_python.egg-info/SOURCES.txt -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga_python.egg-info
+    hard linking src/saga_python.egg-info/dependency_links.txt -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga_python.egg-info
+    hard linking src/saga_python.egg-info/not-zip-safe -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga_python.egg-info
+    hard linking src/saga_python.egg-info/requires.txt -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga_python.egg-info
+    hard linking src/saga_python.egg-info/top_level.txt -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/src/saga_python.egg-info
+    hard linking tests/README.md -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests
+    hard linking tests/heisenbug.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests
+    hard linking tests/run_tests.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests
+    hard linking tests/_andre/occi_example.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/show_prof.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_advert.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_advert_2.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_engine.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_exceptions.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_file.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_gc.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_jobs.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_libcloud.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_perf.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_perf.sh -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_pty_process.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_pty_shell.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_replica.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_resource.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_scp.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_sftp.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_signatures.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_threads.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_timeout.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/_andre/test_zombies.sh -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/_andre
+    hard linking tests/adaptors/globus_online/go_remote_dir_copy.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/adaptors/globus_online
+    hard linking tests/adaptors/irods/irods_test.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/adaptors/irods
+    hard linking tests/adaptors/loadl/loadl_test.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/adaptors/loadl
+    hard linking tests/adaptors/pbsjob/run_simple_job.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/adaptors/pbsjob
+    hard linking tests/benchmarks/README -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks
+    hard linking tests/benchmarks/benchmark_selftest.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks
+    hard linking tests/benchmarks/job_run.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks
+    hard linking tests/benchmarks/job_run_bulk.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks
+    hard linking tests/benchmarks/job_service.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks
+    hard linking tests/benchmarks/plot_results.plot -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks
+    hard linking tests/benchmarks/run_bench.sh -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks
+    hard linking tests/benchmarks/saga_01_call_stack_overhead_saga.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks
+    hard linking tests/benchmarks/saga_01_call_stack_overhead_ssh.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks
+    hard linking tests/benchmarks/results/benchmark.job_run.fork.localhost.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run.pbs+ssh.india.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run.ssh.boskop.1.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run.ssh.boskop.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run.ssh.india.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run.ssh.localhost.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run.ssh.silver.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run_bulk.fork.localhost.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run_bulk.ssh.india.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run_bulk.ssh.localhost.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run_bulk.ssh.silver.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/benchmark.job_run_bulk_threaded.ssh.india.dat -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/jobs_over_bulks.pdf -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/benchmarks/results/jobs_per_second.pdf -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/benchmarks/results
+    hard linking tests/configs/advert_redis_repex1.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/basetests.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/condor_osg_engage.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/condor_ssh_osg.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/file_localhost.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/fork_localhost.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/gsisftp_kraken.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/gsissh_kraken.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/irods_replica.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/lsf_localhost_yellowstone.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/pbs_gsissh_kraken.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/pbs_gsissh_trestles.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/pbs_ssh_alamo.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/pbs_ssh_archer.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/pbs_ssh_hotel.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/pbs_ssh_india.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/pbs_ssh_sierra.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/pbs_ssh_trestles.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/sftp_india.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/sftp_stampede.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/sge_gsissh_lonestar.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/sge_ssh_lonestar.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/slurm_ssh_stampede.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/ssh_boskop.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/ssh_gw86.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/ssh_india.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/ssh_localhost.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/configs/ssh_silver.cfg -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/configs
+    hard linking tests/issues/color_prompt.sh -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/decorator_exception.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/gc_test.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_104.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_104.sh -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_113.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_114.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_133.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_241.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_260.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_261.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_270.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_271.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_272.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_278.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_293.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_323.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/test_ssh_cleanup.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/yubikey.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues
+    hard linking tests/issues/issue_211/gmihpcworkflows/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues/issue_211/gmihpcworkflows
+    hard linking tests/issues/issue_211/gmihpcworkflows/celery.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues/issue_211/gmihpcworkflows
+    hard linking tests/issues/issue_211/gmihpcworkflows/hpc_tasks.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues/issue_211/gmihpcworkflows
+    hard linking tests/issues/issue_211/gmihpcworkflows/saga_gwa.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues/issue_211/gmihpcworkflows
+    hard linking tests/issues/issue_211/proj/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues/issue_211/proj
+    hard linking tests/issues/issue_211/proj/celery.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues/issue_211/proj
+    hard linking tests/issues/issue_211/proj/tasks.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/issues/issue_211/proj
+    hard linking tests/unittests/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests
+    hard linking tests/unittests/api/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api
+    hard linking tests/unittests/api/test_exceptions.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api
+    hard linking tests/unittests/api/test_url.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api
+    hard linking tests/unittests/api/advert/test_advert.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api/advert
+    hard linking tests/unittests/api/advert/test_advert_2.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api/advert
+    hard linking tests/unittests/api/filesystem/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api/filesystem
+    hard linking tests/unittests/api/filesystem/test_file.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api/filesystem
+    hard linking tests/unittests/api/job/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api/job
+    hard linking tests/unittests/api/job/test_description.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api/job
+    hard linking tests/unittests/api/job/test_job.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api/job
+    hard linking tests/unittests/api/job/test_service.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api/job
+    hard linking tests/unittests/api/replica/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api/replica
+    hard linking tests/unittests/api/replica/test_replica.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/api/replica
+    hard linking tests/unittests/engine/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/engine
+    hard linking tests/unittests/engine/mockadaptor_broken.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/engine
+    hard linking tests/unittests/engine/mockadaptor_enabled.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/engine
+    hard linking tests/unittests/engine/test_config.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/engine
+    hard linking tests/unittests/engine/test_engine.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/engine
+    hard linking tests/unittests/utils/__init__.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/utils
+    hard linking tests/unittests/utils/test_exception.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/utils
+    hard linking tests/unittests/utils/test_pty_process.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/utils
+    hard linking tests/unittests/utils/test_pty_shell.py -> saga-python-v0.41-52-g7b2b3e6-experiment-aimes/tests/unittests/utils
+    Writing saga-python-v0.41-52-g7b2b3e6-experiment-aimes/setup.cfg
+    Creating tar archive
+    removing 'saga-python-v0.41-52-g7b2b3e6-experiment-aimes' (and everything under it)
+    version: v0.41-52-g7b2b3e6@experiment-aimes (v0.41-52-g7b2b3e6@experiment-aimes)
+    changing mode of build/scripts-2.7/sagapython-version from 664 to 775
+    
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/sagapython-version to 775
+Successfully installed parse saga-python
+Cleaning up...
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+purge install source at saga-python-v0.41-52-g7b2b3e6-experiment-aimes/
+
+# -------------------------------------------------------------------
+#
+# update radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/ via pip
+# cmd: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/pip install  --src '/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/src' --build '/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/build' --install-option='--prefix=/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install' radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/
+#
+Unpacking ./radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes
+  Running setup.py egg_info for package from file:///storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes
+    version: v0.40.1-188-g13bf7e1@experiment-aimes (v0.40.1-188-g13bf7e1@experiment-aimes)
+    
+    warning: no files found matching '*.json'
+    warning: no files found matching '*.sh'
+Requirement already satisfied (use --upgrade to upgrade): saga-python in ./rp_install/lib/python2.7/site-packages (from radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): radical.utils in ./rp_install/lib/python2.7/site-packages (from radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): pymongo==2.8 in ./ve_xd-login/lib/python2.7/site-packages (from radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): python-hostlist in ./ve_xd-login/lib/python2.7/site-packages (from radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): netifaces in ./ve_xd-login/lib/python2.7/site-packages (from radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): setproctitle in ./ve_xd-login/lib/python2.7/site-packages (from radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): ntplib in ./ve_xd-login/lib/python2.7/site-packages (from radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): msgpack-python in ./ve_xd-login/lib/python2.7/site-packages (from radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): pyzmq in ./ve_xd-login/lib/python2.7/site-packages (from radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): apache-libcloud in ./ve_xd-login/lib/python2.7/site-packages/apache_libcloud-1.1.0-py2.7.egg (from saga-python->radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): parse in ./rp_install/lib/python2.7/site-packages (from saga-python->radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): colorama in ./ve_xd-login/lib/python2.7/site-packages (from radical.utils->radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Requirement already satisfied (use --upgrade to upgrade): backports.ssl-match-hostname in ./ve_xd-login/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1-py2.7.egg (from apache-libcloud->saga-python->radical.pilot==v0.40.1-188-g13bf7e1-experiment-aimes)
+Installing collected packages: radical.pilot
+  Running setup.py install for radical.pilot
+    version: v0.40.1-188-g13bf7e1@experiment-aimes (v0.40.1-188-g13bf7e1@experiment-aimes)
+    warning: no files found matching '*.json'
+    warning: no files found matching '*.sh'
+    warning: sdist: standard file not found: should have one of README, README.txt
+    
+    making hard links in radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes...
+    hard linking CHANGES.md -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes
+    hard linking LICENSE.md -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes
+    hard linking MANIFEST.in -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes
+    hard linking README.md -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes
+    hard linking VERSION -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes
+    hard linking setup.cfg -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes
+    hard linking setup.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes
+    hard linking bin/radical-pilot-agent -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/bin
+    hard linking bin/radicalpilot-bson2json -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/bin
+    hard linking bin/radicalpilot-cleanup -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/bin
+    hard linking bin/radicalpilot-close-session -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/bin
+    hard linking bin/radicalpilot-fetch-profiles -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/bin
+    hard linking bin/radicalpilot-inspect -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/bin
+    hard linking bin/radicalpilot-stats -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/bin
+    hard linking bin/radicalpilot-stats.plot -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/bin
+    hard linking bin/radicalpilot-version -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/bin
+    hard linking examples/00_getting_started.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/01_unit_details.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/02_failing_units.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/03_multiple_pilots.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/04_scheduler_selection.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/05_unit_input_data.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/06_unit_output_data.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/07_shared_unit_data.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/08_unit_environment.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/09_mpi_units.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/10_pre_and_post_exec.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/config.json -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/error_handling.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/getting_started_osg.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/getting_started_osg_2.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/helloworld_mpi.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/helloworld_threads.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/rp_analytics.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples
+    hard linking examples/cecam_example_SAL/postexec.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/cecam_example_SAL
+    hard linking examples/cecam_example_SAL/simulation_analysis_md_example.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/cecam_example_SAL
+    hard linking examples/data_staging/io_staging_dict.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/data_staging
+    hard linking examples/data_staging/io_staging_pipeline.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/data_staging
+    hard linking examples/data_staging/io_staging_shared.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/data_staging
+    hard linking examples/data_staging/io_staging_simple.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/data_staging
+    hard linking examples/docs/chained_tasks.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/docs
+    hard linking examples/docs/coupled_tasks.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/docs
+    hard linking examples/docs/kmeans_openmp.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/docs
+    hard linking examples/docs/kmeans_seq.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/docs
+    hard linking examples/docs/mpi_tasks.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/docs
+    hard linking examples/docs/simple_bot.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/docs
+    hard linking examples/docs/simple_bot_mult_res.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/docs
+    hard linking examples/kmeans/clustering_the_elements.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/kmeans
+    hard linking examples/kmeans/creating_dataset.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/kmeans
+    hard linking examples/kmeans/finding_the_new_centroids.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/kmeans
+    hard linking examples/kmeans/k-means.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/kmeans
+    hard linking examples/mandelbrot/mandel_lines.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/mandelbrot
+    hard linking examples/mandelbrot/mandelbrot_pilot_cores.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/mandelbrot
+    hard linking examples/misc/backfilling.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/misc
+    hard linking examples/misc/backfilling_recovery.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/misc
+    hard linking examples/misc/benchmark_driver.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/misc
+    hard linking examples/misc/dynamic_ec2_pilot.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/misc
+    hard linking examples/misc/hello_synapse.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/misc
+    hard linking examples/misc/profile_analysis.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/misc
+    hard linking examples/misc/running_mpi_executables.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/examples/misc
+    hard linking src/radical/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical
+    hard linking src/radical.pilot.egg-info/PKG-INFO -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical.pilot.egg-info
+    hard linking src/radical.pilot.egg-info/SOURCES.txt -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical.pilot.egg-info
+    hard linking src/radical.pilot.egg-info/dependency_links.txt -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical.pilot.egg-info
+    hard linking src/radical.pilot.egg-info/namespace_packages.txt -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical.pilot.egg-info
+    hard linking src/radical.pilot.egg-info/not-zip-safe -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical.pilot.egg-info
+    hard linking src/radical.pilot.egg-info/requires.txt -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical.pilot.egg-info
+    hard linking src/radical.pilot.egg-info/top_level.txt -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical.pilot.egg-info
+    hard linking src/radical/pilot/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/compute_pilot.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/compute_pilot_description.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/compute_unit.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/compute_unit_description.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/constants.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/context.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/exceptions.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/logentry.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/pilot_manager.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/resource_config.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/session.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/staging_directives.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/states.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/types.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/unit_manager.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot
+    hard linking src/radical/pilot/agent/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent
+    hard linking src/radical/pilot/agent/agent_0.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent
+    hard linking src/radical/pilot/agent/agent_n.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent
+    hard linking src/radical/pilot/agent/bootstrap_1.sh -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent
+    hard linking src/radical/pilot/agent/bootstrap_3.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent
+    hard linking src/radical/pilot/agent/executing/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/executing
+    hard linking src/radical/pilot/agent/executing/abds.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/executing
+    hard linking src/radical/pilot/agent/executing/base.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/executing
+    hard linking src/radical/pilot/agent/executing/popen.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/executing
+    hard linking src/radical/pilot/agent/executing/shell.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/executing
+    hard linking src/radical/pilot/agent/executing/shell_spawner.sh -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/executing
+    hard linking src/radical/pilot/agent/executing/yarn.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/executing
+    hard linking src/radical/pilot/agent/lm/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/aprun.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/base.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/ccmrun.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/dplace.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/fork.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/ibrun.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/mpiexec.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/mpirun.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/mpirun_ccmrun.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/mpirun_dplace.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/mpirun_rsh.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/orte.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/poe.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/runjob.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/ssh.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/lm/yarn.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/lm
+    hard linking src/radical/pilot/agent/rm/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/rm/base.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/rm/ccm.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/rm/fork.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/rm/loadleveler.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/rm/lsf.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/rm/pbspro.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/rm/sge.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/rm/slurm.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/rm/torque.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/rm/yarn.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/rm
+    hard linking src/radical/pilot/agent/scheduler/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/scheduler
+    hard linking src/radical/pilot/agent/scheduler/base.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/scheduler
+    hard linking src/radical/pilot/agent/scheduler/continuous.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/scheduler
+    hard linking src/radical/pilot/agent/scheduler/scattered.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/scheduler
+    hard linking src/radical/pilot/agent/scheduler/torus.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/scheduler
+    hard linking src/radical/pilot/agent/scheduler/yarn.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/scheduler
+    hard linking src/radical/pilot/agent/staging_input/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/staging_input
+    hard linking src/radical/pilot/agent/staging_input/base.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/staging_input
+    hard linking src/radical/pilot/agent/staging_input/default.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/staging_input
+    hard linking src/radical/pilot/agent/staging_output/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/staging_output
+    hard linking src/radical/pilot/agent/staging_output/base.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/staging_output
+    hard linking src/radical/pilot/agent/staging_output/default.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/agent/staging_output
+    hard linking src/radical/pilot/configs/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/configs
+    hard linking src/radical/pilot/db/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/db
+    hard linking src/radical/pilot/db/database.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/db
+    hard linking src/radical/pilot/pmgr/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/pmgr
+    hard linking src/radical/pilot/pmgr/launching/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/pmgr/launching
+    hard linking src/radical/pilot/pmgr/launching/base.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/pmgr/launching
+    hard linking src/radical/pilot/pmgr/launching/default.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/pmgr/launching
+    hard linking src/radical/pilot/tests/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests
+    hard linking src/radical/pilot/tests/api/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/api
+    hard linking src/radical/pilot/tests/api/test_pilot.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/api
+    hard linking src/radical/pilot/tests/api/test_pilot_manager.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/api
+    hard linking src/radical/pilot/tests/api/test_resource_configs.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/api
+    hard linking src/radical/pilot/tests/api/test_session.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/api
+    hard linking src/radical/pilot/tests/api/test_unit.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/api
+    hard linking src/radical/pilot/tests/api/test_unit_manager.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/api
+    hard linking src/radical/pilot/tests/issues/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/issues
+    hard linking src/radical/pilot/tests/issues/issue_114.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/issues
+    hard linking src/radical/pilot/tests/issues/issue_147.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/issues
+    hard linking src/radical/pilot/tests/issues/issue_163.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/issues
+    hard linking src/radical/pilot/tests/issues/issue_169.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/issues
+    hard linking src/radical/pilot/tests/issues/issue_18.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/issues
+    hard linking src/radical/pilot/tests/issues/issue_213.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/issues
+    hard linking src/radical/pilot/tests/issues/issue_262.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/issues
+    hard linking src/radical/pilot/tests/remote/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/remote
+    hard linking src/radical/pilot/tests/remote/test_remote.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/remote
+    hard linking src/radical/pilot/tests/units/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/tests/units
+    hard linking src/radical/pilot/umgr/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr
+    hard linking src/radical/pilot/umgr/scheduler/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr/scheduler
+    hard linking src/radical/pilot/umgr/scheduler/backfilling.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr/scheduler
+    hard linking src/radical/pilot/umgr/scheduler/base.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr/scheduler
+    hard linking src/radical/pilot/umgr/scheduler/round_robin.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr/scheduler
+    hard linking src/radical/pilot/umgr/staging_input/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr/staging_input
+    hard linking src/radical/pilot/umgr/staging_input/base.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr/staging_input
+    hard linking src/radical/pilot/umgr/staging_input/default.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr/staging_input
+    hard linking src/radical/pilot/umgr/staging_output/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr/staging_output
+    hard linking src/radical/pilot/umgr/staging_output/base.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr/staging_output
+    hard linking src/radical/pilot/umgr/staging_output/default.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/umgr/staging_output
+    hard linking src/radical/pilot/utils/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/utils/analysis.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/utils/component.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/utils/controller.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/utils/db_connection_info.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/utils/db_utils.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/utils/misc.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/utils/prof_utils.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/utils/pubsub.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/utils/queue.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/utils/session.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/utils
+    hard linking src/radical/pilot/worker/__init__.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/worker
+    hard linking src/radical/pilot/worker/heartbeat.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/worker
+    hard linking src/radical/pilot/worker/update.py -> radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/src/radical/pilot/worker
+    Writing radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/setup.cfg
+    Creating tar archive
+    removing 'radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes' (and everything under it)
+    version: v0.40.1-188-g13bf7e1@experiment-aimes (v0.40.1-188-g13bf7e1@experiment-aimes)
+    changing mode of build/scripts-2.7/radicalpilot-bson2json from 664 to 775
+    changing mode of build/scripts-2.7/radicalpilot-fetch-profiles from 664 to 775
+    changing mode of build/scripts-2.7/radicalpilot-inspect from 664 to 775
+    changing mode of build/scripts-2.7/radicalpilot-version from 664 to 775
+    changing mode of build/scripts-2.7/radicalpilot-close-session from 664 to 775
+    changing mode of build/scripts-2.7/radicalpilot-cleanup from 664 to 775
+    changing mode of build/scripts-2.7/radicalpilot-stats from 664 to 775
+    changing mode of build/scripts-2.7/radicalpilot-stats.plot from 664 to 775
+    changing mode of build/scripts-2.7/radical-pilot-agent from 664 to 775
+    Skipping installation of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages/radical/__init__.py (namespace package)
+    
+    warning: no files found matching '*.json'
+    warning: no files found matching '*.sh'
+    Installing /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages/radical.pilot-v0.40.1_188_g13bf7e1_experiment_aimes-py2.7-nspkg.pth
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radicalpilot-version to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radicalpilot-close-session to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radicalpilot-bson2json to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radical-pilot-agent to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radicalpilot-cleanup to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radicalpilot-inspect to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radicalpilot-fetch-profiles to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radicalpilot-stats to 775
+    changing mode of /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radicalpilot-stats.plot to 775
+Successfully installed radical.pilot
+Cleaning up...
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+purge install source at radical.pilot-v0.40.1-188-g13bf7e1-experiment-aimes/
+148.8436,bootstrap_1,pilot.0001,ACTIVE_PENDING,rp_install done,
+148.9005,bootstrap_1,pilot.0001,ACTIVE_PENDING,virtenv_setup end,
+verify python viability: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/python ... ok
+verify module viability: saga            ... ok
+verify module viability: radical.utils   ... ok
+verify module viability: pymongo         ... ok
+verify module viability: hostlist        ... ok
+verify module viability: netifaces       ... ok
+verify module viability: setproctitle    ... ok
+verify module viability: ntplib          ... ok
+verify module viability: msgpack         ... ok
+verify module viability: zmq             ... ok
+
+---------------------------------------------------------------------
+
+Python 2.7.7
+ (/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/python)
+PYTHONPATH: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages::
+utils :  v0.41.1-36-gd33fc65@experiment-aimes /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages/radical/utils/__init__.pyc
+saga  :  v0.41-52-g7b2b3e6@experiment-aimes /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages/saga/__init__.pyc
+pilot :  v0.40.1-188-g13bf7e1@experiment-aimes /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/lib/python2.7/site-packages/radical/pilot/__init__.pyc
+install ok!
+
+---------------------------------------------------------------------
+
+
+# -------------------------------------------------------------------
+# Launching radical-pilot-agent 
+# CMDLINE: /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/ve_xd-login/bin/python /storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/rp_install/bin/radical-pilot-agent
+ntphost: 46.101.140.169
+PING 46.101.140.169 (46.101.140.169) 56(84) bytes of data.
+64 bytes from 46.101.140.169: icmp_seq=1 ttl=51 time=108 ms
+
+--- 46.101.140.169 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 108ms
+rtt min/avg/max/mdev = 108.101/108.101/108.101/0.000 ms
+152.6382,bootstrap_1,pilot.0001,ACTIVE_PENDING,agent start,
+152.6739,bootstrap_1,pilot.0001,ACTIVE_PENDING,sync rel,agent start
+send SIGTERM to 30367
+./bootstrap_1.sh: line 1685: 30367 Terminated              ./bootstrap_2.sh 'agent_0' > agent_0.bootstrap_2.out 2> agent_0.bootstrap_2.err
+send SIGKILL to 30367
+./bootstrap_1.sh: line 1678: kill: (30367) - No such process
+agent 30367 is final
+agent 30367 is final (143)
+986.4199,bootstrap_1,pilot.0001,ACTIVE_PENDING,cleanup start,
+
+# -------------------------------------------------------------------
+# CLEANUP: lu
+#
+rm: cannot remove `/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/agent.*': No such file or directory
+rm: cannot remove `/storage/local/data1/condor/execute/dir_32421/glide_w14mTv/execute/dir_41252/unit.*': No such file or directory
+986.5378,bootstrap_1,pilot.0001,ACTIVE_PENDING,cleanup done,
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Mark final profiling entry ...
+986.6552,bootstrap_1,pilot.0001,ACTIVE_PENDING,QED,
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# We wait for at most 30 seconds for the FS to flush profiles.
+# Success is assumed when all profiles end with a 'QED' event.
+#
+# -------------------------------------------------------------------
+delay profile sync @ 1: 13 != 1
+delay profile sync @ 2: 13 != 1
+delay profile sync @ 3: 13 != 1
+delay profile sync @ 4: 13 != 1
+delay profile sync @ 5: 13 != 1
+delay profile sync @ 6: 13 != 1
+delay profile sync @ 7: 13 != 1
+delay profile sync @ 8: 13 != 1
+delay profile sync @ 9: 13 != 1
+delay profile sync @ 10: 13 != 1
+delay profile sync @ 11: 13 != 1
+delay profile sync @ 12: 13 != 1
+delay profile sync @ 13: 13 != 1
+delay profile sync @ 14: 13 != 1
+delay profile sync @ 15: 13 != 1
+delay profile sync @ 16: 13 != 1
+delay profile sync @ 17: 13 != 1
+delay profile sync @ 18: 13 != 1
+delay profile sync @ 19: 13 != 1
+delay profile sync @ 20: 13 != 1
+delay profile sync @ 21: 13 != 1
+delay profile sync @ 22: 13 != 1
+delay profile sync @ 23: 13 != 1
+delay profile sync @ 24: 13 != 1
+delay profile sync @ 25: 13 != 1
+delay profile sync @ 26: 13 != 1
+delay profile sync @ 27: 13 != 1
+delay profile sync @ 28: 13 != 1
+delay profile sync @ 29: 13 != 1
+abort profile sync @ 30: 13 != 1
+
+# -------------------------------------------------------------------
+#
+# Tarring profiles ...
+-rw-r--r-- 1 osg osg 4904 Aug 22 11:38 pilot.0001.prof.tgz
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Tarring logfiles ...
+-rw-r--r-- 1 osg osg 28243 Aug 22 11:38 pilot.0001.log.tgz
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Done, exiting (143)
+#
+# -------------------------------------------------------------------

@@ -78,12 +78,15 @@ try:
     #pdescs.append(rp.ComputePilotDescription(pdesc_gordon))
     #pdescs.append(rp.ComputePilotDescription(pdesc_supermic))
     #pdescs.append(rp.ComputePilotDescription(pdesc_bw))
-    #pdescs.append(rp.ComputePilotDescription(pdesc_osg))
-    #pdescs.append(rp.ComputePilotDescription(pdesc_osg))
-    #pdescs.append(rp.ComputePilotDescription(pdesc_osg))
-    #pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
+    pdescs.append(rp.ComputePilotDescription(pdesc_osg))
 
-    pdescs.append(rp.ComputePilotDescription(pdesc_localhost))
+    #pdescs.append(rp.ComputePilotDescription(pdesc_localhost))
+    #pdescs.append(rp.ComputePilotDescription(pdesc_localhost))
+    #pdescs.append(rp.ComputePilotDescription(pdesc_localhost))
+    #pdescs.append(rp.ComputePilotDescription(pdesc_localhost))
 
     pilots = pmgr.submit_pilots(pdescs)
 
@@ -105,33 +108,51 @@ try:
                        ]
         """
         
-        
+        """
         cud.pre_exec = [
                         ('echo $HOME ; '
                         'if test ! -d $HOME/ve.synapse; ' 
                         'then virtualenv $HOME/ve.synapse ; '
-                        'source $HOME/ve.synapse/bin/activate ; '
+                        '. $HOME/ve.synapse/bin/activate ; '
                         'wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;'
                         'pip install $HOME/radical.utils-0.41.1/. ; '
                         'wget -qO- https://github.com/applicationskeleton/Skeleton/archive/v1.2.tar.gz | tar -xzv -C $HOME/ ; '
-                        'pip install $HOME/Skeleton-1.2/. ; '
+                        'pip install $HOME/Skeleton-feature-task_prof/. ; '
                         'wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; '
                         'pip install $HOME/radical.synapse-0.44/. ; '
                         'wget -P $HOME/ https://raw.githubusercontent.com/applicationskeleton/Skeleton/feature/task_flops/bin/aimes-skeleton-synapse.py ; '
                         'chmod u+x $HOME/aimes-skeleton-synapse.py ; '
                         'PATH=$PATH:$HOME ; '
                         'export PATH ; '
-                        'else source $HOME/ve.synapse/bin/activate ; '
+                        'else . $HOME/ve.synapse/bin/activate ; '
                         'PATH=$PATH:$HOME ; '
                         'export PATH ; '
                         'fi ; '
                         )
                        ]
+        """
+         
+        cud.pre_exec = [
+                        ('echo $HOME ; '
+                        'if test ! -d $HOME/ve.synapse; ' 
+                        'then virtualenv $HOME/ve.synapse ; '
+                        '. $HOME/ve.synapse/bin/activate ; '
+                        'wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;'
+                        'pip install $HOME/radical.utils-0.41.1/. ; '
+                        'wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; '
+                        'pip install $HOME/Skeleton-feature-task_flops/. ; '
+                        'wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; '
+                        'pip install $HOME/radical.synapse-0.44/. ; '
+                        'else . $HOME/ve.synapse/bin/activate ; '
+                        'fi ; '
+                        )
+                        ]
         
+
         #cud.executable = 'echo'
         #cud.arguments = ['$PATH']
         #cud.arguments = ['-l', '$HOME/aimes-skeleton-synapse.py']
-        cud.executable = 'aimes-skeleton-synapse.py'
+        cud.executable = 'python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py'
         cud.arguments = ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
         #cud.executable = 'echo $PATH; echo $LD_LIBRARY_PATH'
         #cud.executable = '/bin/sleep'
