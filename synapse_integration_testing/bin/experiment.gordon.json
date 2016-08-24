@@ -1,7 +1,7 @@
 {
     "mongodb"      : "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb",
     "workload_type": "skeleton",
-    "scales"       : [1],
+    "scales"       : [1024],
     "bindings"     : ["late"],
     "time_distribs": ["uniform"],
     "iterations"   : 1,
@@ -41,8 +41,9 @@
         "template": "./conf/skeleton.template",
         "tasks": {
             "duration": {
-                "max" : 900,
-                "min" : 900
+                "max" : 600,
+                "min" : 600,
+                "flops" : 1715750072310
             }
         }
     }

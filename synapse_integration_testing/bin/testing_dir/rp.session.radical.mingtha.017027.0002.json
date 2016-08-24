@@ -1,0 +1,88 @@
+{
+    "pilot": [], 
+    "pmgr": [
+        {
+            "_id": "pmgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:41145", 
+                        "addr_out": "tcp://144.76.72.175:36033", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:36888", 
+                        "addr_out": "tcp://144.76.72.175:44303", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "pmgr_launching_queue": {
+                        "addr_in": "tcp://144.76.72.175:34530", 
+                        "addr_out": "tcp://144.76.72.175:33949", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:46428", 
+                        "addr_out": "tcp://144.76.72.175:46707", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "components": {
+                    "PMGRLaunchingComponent": 1
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mlab.com:53838/hicomb", 
+                "heart": "rp.session.radical.mingtha.017027.0002", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "owner": "pmgr.0000", 
+                "session_id": "rp.session.radical.mingtha.017027.0002"
+            }, 
+            "type": "pmgr", 
+            "uid": "pmgr.0000"
+        }
+    ], 
+    "session": {
+        "_id": "rp.session.radical.mingtha.017027.0002", 
+        "cfg": {
+            "bridges": {
+                "control_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "log_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "state_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }
+            }, 
+            "components": {
+                "UpdateWorker": 1
+            }, 
+            "debug": "DEBUG", 
+            "heartbeat_interval": 10, 
+            "heartbeat_timeout": 300, 
+            "logdir": "/home/mingtha/repos/AIMES-Experience/synapse_integration_testing/bin/rp.session.radical.mingtha.017027.0002", 
+            "owner": "rp.session.radical.mingtha.017027.0002"
+        }, 
+        "connected": 1471190122.115883, 
+        "created": 1471190121.509996, 
+        "type": "session", 
+        "uid": "rp.session.radical.mingtha.017027.0002"
+    }, 
+    "umgr": [], 
+    "unit": []
+}

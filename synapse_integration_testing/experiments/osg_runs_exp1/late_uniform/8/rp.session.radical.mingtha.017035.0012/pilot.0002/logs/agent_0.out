@@ -1,0 +1,101 @@
+---------------------------------------------------------------------
+
+PYTHONPATH: ['/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/rp_install/bin', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/ve_xd-login/lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/ve_xd-login/lib/python2.7/site-packages/apache_libcloud-1.1.0-py2.7.egg', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/ve_xd-login/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1-py2.7.egg', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/rp_install/lib/python2.7/site-packages', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/ve_xd-login/lib/python27.zip', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/ve_xd-login/lib/python2.7', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/ve_xd-login/lib/python2.7/plat-linux2', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/ve_xd-login/lib/python2.7/lib-tk', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/ve_xd-login/lib/python2.7/lib-old', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/ve_xd-login/lib/python2.7/lib-dynload', '/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib/python2.7', '/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib/python2.7/plat-linux2', '/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib/python2.7/lib-tk', '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/ve_xd-login/lib/python2.7/site-packages']
+python: 2.7.7 (default, Mar 23 2015, 15:50:58) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]
+utils : v0.41.1-36-gd33fc65@experiment-aimes : /storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/rp_install/lib/python2.7/site-packages/radical/utils/__init__.pyc
+saga  : v0.41-52-g7b2b3e6@experiment-aimes : /storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/rp_install/lib/python2.7/site-packages/saga/__init__.pyc
+pilot : v0.40.1-188-g13bf7e1@experiment-aimes : /storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358/rp_install/lib/python2.7/site-packages/radical/pilot/__init__.pyc
+        type  : multicore
+        gitid : $Id$
+
+---------------------------------------------------------------------
+
+agent_0.bootstrap_3 start
+bootstrap agent agent_0
+startup agent agent_0
+agent_0 10
+[92m                                                                              ok
+[39m[0m{'agent_launch_method': 'FORK',
+ 'agent_layout': {'agent_1': {'components': {'AgentExecutingComponent': 1,
+                                             'AgentSchedulingComponent': 1,
+                                             'AgentStagingInputComponent': 1,
+                                             'AgentStagingOutputComponent': 1},
+                              'target': 'local'}},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://131.225.206.77:33326',
+                                       'addr_out': 'tcp://131.225.206.77:45682',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://131.225.206.77:55358',
+                                         'addr_out': 'tcp://131.225.206.77:40344',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://131.225.206.77:35675',
+                                        'addr_out': 'tcp://131.225.206.77:53213',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://131.225.206.77:50150',
+                                           'addr_out': 'tcp://131.225.206.77:36733',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://131.225.206.77:42084',
+                                            'addr_out': 'tcp://131.225.206.77:44417',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://131.225.206.77:53886',
+                                         'addr_out': 'tcp://131.225.206.77:56774',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://131.225.206.77:57392',
+                                'addr_out': 'tcp://131.225.206.77:33584',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://131.225.206.77:59658',
+                            'addr_out': 'tcp://131.225.206.77:45088',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://131.225.206.77:57355',
+                              'addr_out': 'tcp://131.225.206.77:34981',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'PMGRLaunchingComponent',
+ 'components': {'UpdateWorker': 1},
+ 'cores': 1,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb',
+ 'debug': 10,
+ 'global_sandbox': '/home/mha/radical.pilot.sandbox',
+ 'heart': 'agent_0',
+ 'heartbeat_interval': 10,
+ 'heartbeat_timeout': 300,
+ 'logdir': '.',
+ 'lrms': 'FORK',
+ 'max_io_loglength': 1024,
+ 'mpi_launch_method': '',
+ 'network_interface': 'lo',
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0002',
+ 'pilot_sandbox': '/home/mha/radical.pilot.sandbox/rp.session.radical.mingtha.017035.0012/pilot.0002/',
+ 'runtime': 4510,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.radical.mingtha.017035.0012',
+ 'session_sandbox': '/home/mha/radical.pilot.sandbox/rp.session.radical.mingtha.017035.0012',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'task_launch_method': 'FORK',
+ 'workdir': '/storage/local/data1/condor/execute/dir_30950/glide_8la9ht/execute/dir_2358'}
+start   agent_0
+started agent_0
+[94mclosing session rp.session.radical.mingtha.017035.0012[39m[0m

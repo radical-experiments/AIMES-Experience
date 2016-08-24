@@ -50,9 +50,13 @@ if __name__ == '__main__':
     print cfg
     # TODO: Override with json skeleton config entries.
     cfg['skeleton_task_duration'] = {
-        "max": cfg["skeleton"]["tasks"]["duration"]["max"],
-        "min": cfg["skeleton"]["tasks"]["duration"]["min"]}
+        "max"   : cfg["skeleton"]["tasks"]["duration"]["max"],
+        "min"   : cfg["skeleton"]["tasks"]["duration"]["min"]}
 
+    if "flops" in cfg["skeleton"]["tasks"]["duration"]:
+        cfg["skeleton_task_duration"]["flops"] = cfg["skeleton"]["tasks"]["duration"]["flops"]
+
+    print cfg["skeleton_task_duration"]
     # cfg['bundle_resources']   = {'hopper.nersc.gov'          : 'pbs',
     #                              'stampede.tacc.xsede.org'   : 'slurm'}
     #                              'gordon.sdsc.xsede.org'     : 'pbs'}
