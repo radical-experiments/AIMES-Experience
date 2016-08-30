@@ -1,10 +1,10 @@
 {
     "mongodb"      : "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb",
     "workload_type": "skeleton",
-    "scales"       : [32],
+    "scales"       : [8, 16, 32, 64, 128, 256, 512],
     "bindings"     : ["late"],
     "time_distribs": ["uniform"],
-    "iterations"   : 1,
+    "iterations"   : 4,
     "cores"        : [1],
     "reruns"       : 0,
     "project_ids": {
