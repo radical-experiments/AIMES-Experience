@@ -52,3 +52,7 @@ cd ..
 # Go back to the initial directory
 cd ~/Projects/RADICAL/github/experiments/AIMES-Experience/synapse_integration_testing/bin
 
+echo "RP: `radicalpilot-version`"
+echo "RS: `sagapython-version`"
+echo "RU: `radical-utils-version`"
+

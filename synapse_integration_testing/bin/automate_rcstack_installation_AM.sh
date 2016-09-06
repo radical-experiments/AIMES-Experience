@@ -38,3 +38,7 @@ install  aimes.emgr           feature/osg_run
 
 cd $cwd
 
+echo "RP: `radicalpilot-version`"
+echo "RS: `sagapython-version`"
+echo "RU: `radical-utils-version`"
+
