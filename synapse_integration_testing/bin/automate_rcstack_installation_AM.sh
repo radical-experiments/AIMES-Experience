@@ -32,7 +32,7 @@ install()
 install  radical.utils        experiment/aimes
 install  radical.saga         experiment/aimes
 install  radical.pilot.aimes  experiment/aimes
-install  aimes.skeleton       feature/task_prof
+install  aimes.skeleton       feature/task_flops
 install  aimes.bundle         master
 install  aimes.emgr           feature/osg_run
 
