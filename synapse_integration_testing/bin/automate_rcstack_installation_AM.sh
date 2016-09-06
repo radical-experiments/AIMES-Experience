@@ -24,7 +24,6 @@ install()
     builtin cd $base/$dir
     git co $branch
     git pull
-    pip uninstall -y . || true
     pip install .
 }
 
