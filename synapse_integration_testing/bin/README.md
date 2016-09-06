@@ -52,11 +52,11 @@ pip install -U --no-deps .
 cd ~/aimes_exp_repos/
 ```
 
-Installing aimes.bundle, branch master. Note: bundles requires paramiko that requires in turn the openssl headers to be available in a reachable path at compilation time. On OSX, these headers can be installed via the OSX development tools or (better) brew. If the compilation still fails to find the headers, the following may help:
+Installing aimes.bundle, branch master. Note: bundles requires paramiko that requires in turn the openssl headers to be available in a reachable path at compilation time. On OSX, these headers can be installed via the OSX development tools or (better) brew. If the compilation fails to find the openssl headers, the following may help:
 ```
-EXTRA_CFLAGS="-I/opt/local/include"
-EXTRA_CXXFLAGS="-I/opt/local/include"
-EXTRA_LDFLAGS="-L/opt/local/lib"
+brew install openssl
+export LDFLAGS=-L/usr/local/opt/openssl/lib
+export CPPFLAGS=-I/usr/local/opt/openssl/include
 ```
 To install aimes.bundle:
 ```
