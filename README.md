@@ -19,7 +19,12 @@ Related paper at: https://bitbucket.org/shantenujha/aimes
   ```
   virtualenv ~/ve/aimes-experience
   . ~/ve/aimes-experience/bin/activate
-  pip install radical.pilot
+  git clone git@github.com:radical-cybertools/radical.pilot.git
+  cd radical.pilot; git checkout experiment/aimes; git pull; pip install --upgrade . ; cd ..
+  git clone git@github.com:radical-cybertools/radical.utils.git
+  cd radical.utils; git checkout experiment/aimes; git pull; pip install --upgrade . ; cd ..
+  git clone git@github.com:radical-cybertools/saga-python.git
+  cd saga-python; git checkout experiment/aimes; git pull; pip install --upgrade . ; cd ..
   ```
 
 1. Move into the ```AIMES-Experience``` directory.
