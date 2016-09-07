@@ -32,7 +32,7 @@ cd ..
 
 # Installing Skeleton, branch feature/task_prof
 cd radical.skeleton/
-git checkout feature/task_prof
+git checkout feature/task_flops
 git pull
 pip install .
 cd ..
