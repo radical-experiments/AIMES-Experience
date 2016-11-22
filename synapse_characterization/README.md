@@ -4,9 +4,8 @@ We use Synapse to profile and then emulate a specific simulation performed via
 AMBER, a software package that simulates force fields for the dynamics of
 biomolecules. We profile and emulate exclusively the amount of FLOPS required by
 the specific simulation we choose to perform its computational tasks. We do not
-profile and emulate the I/O patterns distinguishing the execution of the chosen
-simulation, irrespective of whether they are performed in memory, on disk, or
-over the network.
+profile and emulate the I/O patterns of the simulation, irrespective of whether
+they are performed in memory, on disk, or over the network.
 
 Our approach to profile and simulation correlates the time taken to compute a
 certain amount of FLOPS and the speed of the processor on which this computation
@@ -30,12 +29,22 @@ group ... and, as such, represent a real-life use case.
 
 ## Profiler Accuracy and Consistency
 
-*   Accuracy:
-    1.  &#916; #FLOPS AMBER and Synapse
-    2.  &#916; #FLOPS AMBER machine *n* and *m* == &#916; #FLOPS Synapse machine *n* and *m* 
-*   Consistency:
-    1.  &#916; #FLOPS Synapse runs on machine *n*
-    2.  &#916; #FLOPS Synapse runs on machine *n* and machine *m*
+We measure the accuracy of the Synapse profiler against the behavior of an AMBER simulation: the more accurate the profiling, the more similar are the number of FLOPS performed by AMBER and the number of FLOPS returned by the profiler.
+
+We measure the consistency of the profiler against repeated profiling. We
+profile the same AMBER simulation multiple times on a machine and calculate the
+standard deviation (STD) of the obtained set of number of FLOPS. The lower the
+STD, the more consistent the profiling.
+
+We also compare both accuracy and consistency across machines. The more similar
+the accuracy across machine, the more architecture+environment independent the
+accuracy of the profiler. Note: this does not mean that the value of MIPS
+returned by the profiler is the same on each machine but that the difference
+between that value and the one measured for AMBER is (ideally) invariant across
+machines. We use the same reasoning with the STD of multiple profilings on
+multiple machines: the distribution can be different but (ideally) the STD is
+the same.
+
 
 | # Execution | FLOPS Amber M1 | FLOPS Synapse M1 | FLOPS Amber M2 | FLOPS Synapse M2  | FLOPS Amber M3 | FLOPS Synapse M3 |
 | ----------- | -------------- | ---------------- | -------------- | ----------------- | -------------- | ---------------- |
@@ -47,6 +56,5 @@ group ... and, as such, represent a real-life use case.
 | 6           |       N        |        N         |     N          |           N       |        N       |         N        |
 | 7           |       N        |        N         |     N          |           N       |        N       |         N        |
 
-*   Relative error of profile accuracy Machine 1:
-*   Relative error of profile accuracy Machine 2:
-*   Relative error of profile accuracy Machine 3:
+
+## Emulation Accuracy and Consistency
