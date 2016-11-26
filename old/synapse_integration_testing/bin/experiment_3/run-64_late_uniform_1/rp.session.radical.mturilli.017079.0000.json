@@ -1,0 +1,3815 @@
+{
+    "pilot": [
+        {
+            "_id": "pilot.0000", 
+            "cfg": {
+                "agent_launch_method": "FORK", 
+                "agent_layout": {
+                    "agent_1": {
+                        "components": {
+                            "AgentExecutingComponent": 1, 
+                            "AgentSchedulingComponent": 1, 
+                            "AgentStagingInputComponent": 1, 
+                            "AgentStagingOutputComponent": 1
+                        }, 
+                        "target": "local"
+                    }
+                }, 
+                "bridges": {
+                    "agent_executing_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_reschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_scheduling_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_input_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_output_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_unschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "control_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "cname": "PMGRLaunchingComponent", 
+                "components": {
+                    "UpdateWorker": 1
+                }, 
+                "cores": 1, 
+                "cores_per_node": 0, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "debug": 10, 
+                "global_sandbox": "/home/mturilli/radical.pilot.sandbox", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "logdir": ".", 
+                "lrms": "FORK", 
+                "max_io_loglength": 1024, 
+                "mpi_launch_method": "", 
+                "network_interface": "lo", 
+                "owner": "agent_0", 
+                "pilot_id": "pilot.0000", 
+                "pilot_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000/pilot.0000/", 
+                "runtime": 4514, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.radical.mturilli.017079.0000", 
+                "session_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_schema": "staging", 
+                "task_launch_method": "FORK"
+            }, 
+            "cmd": [], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": null, 
+                "candidate_hosts": null, 
+                "cleanup": true, 
+                "cores": 1, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-CCR140028", 
+                "queue": null, 
+                "resource": "osg.xsede-virt-clust", 
+                "runtime": 4514, 
+                "sandbox": null
+            }, 
+            "log": [], 
+            "pmgr": "pmgr.0000", 
+            "resource": "osg.xsede-virt-clust", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000/pilot.0000/", 
+            "session": "rp.session.radical.mturilli.017079.0000", 
+            "state": "FAILED", 
+            "states": [
+                "NEW", 
+                "PMGR_LAUNCHING_PENDING", 
+                "PMGR_LAUNCHING", 
+                "PMGR_ACTIVE_PENDING", 
+                "FAILED"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "pilot", 
+            "uid": "pilot.0000", 
+            "unit_ids": []
+        }, 
+        {
+            "_id": "pilot.0001", 
+            "cfg": {
+                "agent_launch_method": "FORK", 
+                "agent_layout": {
+                    "agent_1": {
+                        "components": {
+                            "AgentExecutingComponent": 1, 
+                            "AgentSchedulingComponent": 1, 
+                            "AgentStagingInputComponent": 1, 
+                            "AgentStagingOutputComponent": 1
+                        }, 
+                        "target": "local"
+                    }
+                }, 
+                "bridges": {
+                    "agent_executing_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_reschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_scheduling_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_input_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_output_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_unschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "control_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "cname": "PMGRLaunchingComponent", 
+                "components": {
+                    "UpdateWorker": 1
+                }, 
+                "cores": 1, 
+                "cores_per_node": 0, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "debug": 10, 
+                "global_sandbox": "/home/mturilli/radical.pilot.sandbox", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "logdir": ".", 
+                "lrms": "FORK", 
+                "max_io_loglength": 1024, 
+                "mpi_launch_method": "", 
+                "network_interface": "lo", 
+                "owner": "agent_0", 
+                "pilot_id": "pilot.0001", 
+                "pilot_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000/pilot.0001/", 
+                "runtime": 4514, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.radical.mturilli.017079.0000", 
+                "session_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_schema": "staging", 
+                "task_launch_method": "FORK"
+            }, 
+            "cmd": [], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": null, 
+                "candidate_hosts": null, 
+                "cleanup": true, 
+                "cores": 1, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-CCR140028", 
+                "queue": null, 
+                "resource": "osg.xsede-virt-clust", 
+                "runtime": 4514, 
+                "sandbox": null
+            }, 
+            "log": [], 
+            "pmgr": "pmgr.0000", 
+            "resource": "osg.xsede-virt-clust", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000/pilot.0001/", 
+            "session": "rp.session.radical.mturilli.017079.0000", 
+            "state": "FAILED", 
+            "states": [
+                "NEW", 
+                "PMGR_LAUNCHING_PENDING", 
+                "PMGR_LAUNCHING", 
+                "PMGR_ACTIVE_PENDING", 
+                "FAILED"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "pilot", 
+            "uid": "pilot.0001", 
+            "unit_ids": []
+        }, 
+        {
+            "_id": "pilot.0002", 
+            "cfg": {
+                "agent_launch_method": "FORK", 
+                "agent_layout": {
+                    "agent_1": {
+                        "components": {
+                            "AgentExecutingComponent": 1, 
+                            "AgentSchedulingComponent": 1, 
+                            "AgentStagingInputComponent": 1, 
+                            "AgentStagingOutputComponent": 1
+                        }, 
+                        "target": "local"
+                    }
+                }, 
+                "bridges": {
+                    "agent_executing_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_reschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_scheduling_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_input_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_output_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_unschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "control_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "cname": "PMGRLaunchingComponent", 
+                "components": {
+                    "UpdateWorker": 1
+                }, 
+                "cores": 1, 
+                "cores_per_node": 0, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "debug": 10, 
+                "global_sandbox": "/home/mturilli/radical.pilot.sandbox", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "logdir": ".", 
+                "lrms": "FORK", 
+                "max_io_loglength": 1024, 
+                "mpi_launch_method": "", 
+                "network_interface": "lo", 
+                "owner": "agent_0", 
+                "pilot_id": "pilot.0002", 
+                "pilot_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000/pilot.0002/", 
+                "runtime": 4514, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.radical.mturilli.017079.0000", 
+                "session_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_schema": "staging", 
+                "task_launch_method": "FORK"
+            }, 
+            "cmd": [], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": null, 
+                "candidate_hosts": null, 
+                "cleanup": true, 
+                "cores": 1, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-CCR140028", 
+                "queue": null, 
+                "resource": "osg.xsede-virt-clust", 
+                "runtime": 4514, 
+                "sandbox": null
+            }, 
+            "log": [], 
+            "pmgr": "pmgr.0000", 
+            "resource": "osg.xsede-virt-clust", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000/pilot.0002/", 
+            "session": "rp.session.radical.mturilli.017079.0000", 
+            "state": "FAILED", 
+            "states": [
+                "NEW", 
+                "PMGR_LAUNCHING_PENDING", 
+                "PMGR_LAUNCHING", 
+                "PMGR_ACTIVE_PENDING", 
+                "FAILED"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "pilot", 
+            "uid": "pilot.0002", 
+            "unit_ids": []
+        }, 
+        {
+            "_id": "pilot.0003", 
+            "cfg": {
+                "agent_launch_method": "FORK", 
+                "agent_layout": {
+                    "agent_1": {
+                        "components": {
+                            "AgentExecutingComponent": 1, 
+                            "AgentSchedulingComponent": 1, 
+                            "AgentStagingInputComponent": 1, 
+                            "AgentStagingOutputComponent": 1
+                        }, 
+                        "target": "local"
+                    }
+                }, 
+                "bridges": {
+                    "agent_executing_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_reschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_scheduling_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_input_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_output_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_unschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "control_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "cname": "PMGRLaunchingComponent", 
+                "components": {
+                    "UpdateWorker": 1
+                }, 
+                "cores": 1, 
+                "cores_per_node": 0, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "debug": 10, 
+                "global_sandbox": "/home/mturilli/radical.pilot.sandbox", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "logdir": ".", 
+                "lrms": "FORK", 
+                "max_io_loglength": 1024, 
+                "mpi_launch_method": "", 
+                "network_interface": "lo", 
+                "owner": "agent_0", 
+                "pilot_id": "pilot.0003", 
+                "pilot_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000/pilot.0003/", 
+                "runtime": 4514, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.radical.mturilli.017079.0000", 
+                "session_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_schema": "staging", 
+                "task_launch_method": "FORK"
+            }, 
+            "cmd": [], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": null, 
+                "candidate_hosts": null, 
+                "cleanup": true, 
+                "cores": 1, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-CCR140028", 
+                "queue": null, 
+                "resource": "osg.xsede-virt-clust", 
+                "runtime": 4514, 
+                "sandbox": null
+            }, 
+            "log": [], 
+            "pmgr": "pmgr.0000", 
+            "resource": "osg.xsede-virt-clust", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017079.0000/pilot.0003/", 
+            "session": "rp.session.radical.mturilli.017079.0000", 
+            "state": "FAILED", 
+            "states": [
+                "NEW", 
+                "PMGR_LAUNCHING_PENDING", 
+                "PMGR_LAUNCHING", 
+                "PMGR_ACTIVE_PENDING", 
+                "FAILED"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "pilot", 
+            "uid": "pilot.0003", 
+            "unit_ids": []
+        }
+    ], 
+    "pmgr": [
+        {
+            "_id": "pmgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:45952", 
+                        "addr_out": "tcp://144.76.72.175:45459", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:41150", 
+                        "addr_out": "tcp://144.76.72.175:41927", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "pmgr_launching_queue": {
+                        "addr_in": "tcp://144.76.72.175:41224", 
+                        "addr_out": "tcp://144.76.72.175:35644", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:34250", 
+                        "addr_out": "tcp://144.76.72.175:45355", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "components": {
+                    "PMGRLaunchingComponent": 1
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "heart": "rp.session.radical.mturilli.017079.0000", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "owner": "pmgr.0000", 
+                "session_id": "rp.session.radical.mturilli.017079.0000"
+            }, 
+            "type": "pmgr", 
+            "uid": "pmgr.0000"
+        }
+    ], 
+    "session": {
+        "_id": "rp.session.radical.mturilli.017079.0000", 
+        "cfg": {
+            "bridges": {
+                "control_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "log_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "state_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }
+            }, 
+            "components": {
+                "UpdateWorker": 1
+            }, 
+            "debug": "DEBUG", 
+            "heartbeat_interval": 10, 
+            "heartbeat_timeout": 300, 
+            "logdir": "/home/mturilli/experiments/AIMES-Experience/synapse_integration_testing/bin/rp.session.radical.mturilli.017079.0000", 
+            "owner": "rp.session.radical.mturilli.017079.0000"
+        }, 
+        "connected": 1475630137.838764, 
+        "created": 1475630137.269026, 
+        "type": "session", 
+        "uid": "rp.session.radical.mturilli.017079.0000"
+    }, 
+    "umgr": [
+        {
+            "_id": "umgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:45952", 
+                        "addr_out": "tcp://144.76.72.175:45459", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:41150", 
+                        "addr_out": "tcp://144.76.72.175:41927", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:34250", 
+                        "addr_out": "tcp://144.76.72.175:45355", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_reschedule_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:37959", 
+                        "addr_out": "tcp://144.76.72.175:39600", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_scheduling_queue": {
+                        "addr_in": "tcp://144.76.72.175:44180", 
+                        "addr_out": "tcp://144.76.72.175:34202", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_staging_input_queue": {
+                        "addr_in": "tcp://144.76.72.175:38057", 
+                        "addr_out": "tcp://144.76.72.175:43177", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_staging_output_queue": {
+                        "addr_in": "tcp://144.76.72.175:41006", 
+                        "addr_out": "tcp://144.76.72.175:42630", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_unschedule_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:36588", 
+                        "addr_out": "tcp://144.76.72.175:44629", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 5.0, 
+                "components": {
+                    "UMGRSchedulingComponent": 1, 
+                    "UMGRStagingInputComponent": 1, 
+                    "UMGRStagingOutputComponent": 1
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "heart": "rp.session.radical.mturilli.017079.0000", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "owner": "umgr.0000", 
+                "scheduler": "backfilling", 
+                "session_id": "rp.session.radical.mturilli.017079.0000"
+            }, 
+            "type": "umgr", 
+            "uid": "umgr.0000"
+        }
+    ], 
+    "unit": [
+        {
+            "_id": "unit.000000", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_0", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_0", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000000", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000001", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_1", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_1", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000001", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000002", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_2", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_2", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000002", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000003", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_3", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_3", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000003", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000004", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_4", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_4", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000004", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000005", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_5", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_5", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000005", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000006", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_6", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_6", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000006", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000007", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_7", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_7", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000007", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000008", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_8", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_8", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000008", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000009", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_9", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_9", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000009", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000010", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_10", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_10", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000010", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000011", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_11", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_11", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000011", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000012", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_12", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_12", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000012", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000013", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_13", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_13", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000013", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000014", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_14", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_14", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000014", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000015", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_15", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_15", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000015", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000016", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_16", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_16", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000016", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000017", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_17", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_17", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000017", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000018", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_18", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_18", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000018", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000019", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_19", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_19", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000019", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000020", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_20", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_20", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000020", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000021", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_21", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_21", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000021", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000022", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_22", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_22", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000022", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000023", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_23", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_23", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000023", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000024", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_24", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_24", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000024", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000025", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_25", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_25", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000025", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000026", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_26", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_26", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000026", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000027", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_27", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_27", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000027", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000028", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_28", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_28", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000028", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000029", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_29", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_29", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000029", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000030", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_30", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_30", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000030", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000031", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_31", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_31", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000031", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000032", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_32", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_32", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000032", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000033", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_33", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_33", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000033", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000034", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_34", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_34", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000034", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000035", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_35", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_35", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000035", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000036", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_36", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_36", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000036", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000037", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_37", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_37", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000037", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000038", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_38", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_38", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000038", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000039", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_39", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_39", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000039", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000040", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_40", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_40", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000040", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000041", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_41", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_41", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000041", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000042", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_42", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_42", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000042", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000043", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_43", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_43", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000043", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000044", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_44", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_44", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000044", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000045", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_45", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_45", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000045", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000046", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_46", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_46", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000046", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000047", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_47", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_47", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000047", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000048", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_48", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_48", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000048", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000049", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_49", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_49", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000049", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000050", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_50", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_50", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000050", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000051", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_51", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_51", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000051", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000052", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_52", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_52", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000052", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000053", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_53", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_53", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000053", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000054", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_54", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_54", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000054", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000055", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_55", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_55", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000055", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000056", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_56", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_56", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000056", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000057", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_57", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_57", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000057", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000058", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_58", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_58", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000058", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000059", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_59", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_59", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000059", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000060", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_60", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_60", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000060", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000061", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_61", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_61", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000061", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000062", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_62", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_62", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000062", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000063", 
+            "cmd": [], 
+            "control": "umgr", 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_63", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": null, 
+            "name": "Stage_1_Stage_1_63", 
+            "pilot": null, 
+            "sandbox": null, 
+            "state": "UMGR_SCHEDULING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "unit", 
+            "uid": "unit.000063", 
+            "umgr": "umgr.0000"
+        }
+    ]
+}

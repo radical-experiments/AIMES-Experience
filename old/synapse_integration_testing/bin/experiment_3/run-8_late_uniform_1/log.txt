@@ -1,0 +1,1905 @@
+=======================================================================
+Run - scale 8; binding late; distribution uniform; iteration 1; rerun 0
+=======================================================================
+
+
+========
+Skeleton
+========
+
+
+Totals:
+	Number of stages             : 1
+	Number of tasks              : 8
+	Input data                   : 0.00 MB
+	Output data                  : 0.00 MB
+	Longest task execution time  : 900 seconds
+	Shortest task execution time : 900 seconds
+	Largest compute task         : 1 core(s)
+	Smallest compute task        : 1 core(s)
+
+Stage_1:
+	Number of tasks   : 8
+	Time distribution : uniform
+	Input files       : 0 for a total of 0.00 MB
+	Output files      : 0 for a total of 0.00 MB
+
+Execution boundaries:
+	Lowest number of cores  : 1
+	longest execution time  : 7200 seconds
+	Highest number of cores : 8.0
+	shortest execution time : 900 seconds
+
+
+==================
+Execution Strategy
+==================
+
+
+Configurations:
+	Type of task-to-resource binding  : late
+
+Heuristics:
+	Degree of concurrency for task execution : 100%
+	Percentage of bundle resources targeted  : 100%
+
+Inferences:
+	Number of target resources      : 4
+	Target resource(s) for pilot(s) : xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org
+	Number of pilots                : 4
+	Total workflow number of cores  : {u'xd-login.opensciencegrid.org': 1}
+	Type of scheduler for RP        : SCHED_BACKFILLING
+	Total workflow compute time     : {u'xd-login.opensciencegrid.org': 270000} seconds
+	Total workflow staging time     : 0 seconds
+	Total RP overhead time          : 632 seconds
+
+
+==================
+Pilot Descriptions
+==================
+
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+
+
+=========================
+Compute Unit Descriptions
+=========================
+
+
+Total tasks submitted  : 8
+Total CU translated    : 8
+Total CU with 1 cores : 0
+
+Print the first units for reference:
+Stage_1_Stage_1_0:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_1:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_2:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_3:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_4:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_5:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_6:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_7:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+
+
+2016-10-03 20:55:26 Pilot pilot.0000                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-03 20:55:26 Pilot pilot.0001                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-03 20:55:26 Pilot pilot.0002                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-03 20:55:26 Pilot pilot.0003                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-03 20:55:26 Pilot pilot.0000                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-03 20:55:26 Pilot pilot.0001                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-03 20:55:26 Pilot pilot.0002                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-03 20:55:26 Pilot pilot.0003                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+=================
+Radical Pilot IDs
+=================
+
+
+Session ID              : rp.session.radical.mturilli.017077.0008
+Pilot manager ID        : pmgr.0000
+Unit manager ID         : umgr.0000
+Pilot ID/resource : pilot.0000 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0001 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0002 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0003 osg.xsede-virt-clust
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING_PENDING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING_PENDING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING_PENDING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING_PENDING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING_PENDING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING_PENDING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING_PENDING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING_PENDING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING
+2016-10-03 20:55:28 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING
+2016-10-03 20:55:56 Pilot pilot.0000                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-03 20:55:56 Pilot pilot.0001                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-03 20:55:56 Pilot pilot.0002                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-03 20:55:56 Pilot pilot.0003                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-03 20:58:39 Pilot pilot.0001                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-03 20:58:45 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT_PENDING
+2016-10-03 20:58:45 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT_PENDING
+2016-10-03 20:58:45 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT
+2016-10-03 20:58:45 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT
+2016-10-03 20:58:45 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 20:58:45 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 20:58:50 Pilot pilot.0000                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-03 20:58:50 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT_PENDING
+2016-10-03 20:58:50 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT_PENDING
+2016-10-03 20:58:50 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT
+2016-10-03 20:58:50 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT
+2016-10-03 20:58:50 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 20:58:50 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 20:58:52 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 20:58:52 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 20:58:53 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 20:58:53 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 20:58:53 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 20:58:53 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 20:58:53 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 20:58:53 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 20:58:56 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 20:58:56 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 20:58:57 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 20:58:57 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 20:58:57 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 20:58:57 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 20:58:57 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 20:58:57 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 20:59:41 Pilot pilot.0003                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-03 20:59:41 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT_PENDING
+2016-10-03 20:59:41 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT_PENDING
+2016-10-03 20:59:41 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT
+2016-10-03 20:59:41 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT
+2016-10-03 20:59:41 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 20:59:41 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 20:59:51 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 20:59:51 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 20:59:53 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 20:59:53 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 20:59:53 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 20:59:53 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 20:59:53 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 20:59:53 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:01:02 Pilot pilot.0002                         is FAILED                    on osg.xsede-virt-clust
+2016-10-03 21:05:21 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:22 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:22 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:22 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:22 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:22 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:22 CU    Stage_1_Stage_1_2    (unit.000002) is DONE                      on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:22 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT_PENDING
+2016-10-03 21:05:22 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT
+2016-10-03 21:05:22 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:32 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:34 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:34 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:05:44 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:05:45 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:05:45 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:05:45 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:05:45 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:05:45 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:05:45 CU    Stage_1_Stage_1_0    (unit.000000) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:05:45 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT_PENDING
+2016-10-03 21:05:45 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT
+2016-10-03 21:05:45 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:05:52 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:05:53 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:05:53 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:07:11 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:07:14 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:07:14 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:07:14 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:07:14 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:07:14 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:07:14 CU    Stage_1_Stage_1_6    (unit.000006) is DONE                      on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:10:37 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:10:38 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:10:38 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:10:38 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:10:38 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:10:38 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:10:38 CU    Stage_1_Stage_1_1    (unit.000001) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:13:13 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:13:14 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:13:14 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:13:14 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:13:14 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:13:14 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:13:14 CU    Stage_1_Stage_1_3    (unit.000003) is DONE                      on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:13:50 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:13:51 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:13:51 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:13:51 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:13:51 CU    Stage_1_Stage_1_7    (unit.000007) is DONE                      on osg.xsede-virt-clust (pilot.0003)
+2016-10-03 21:15:23 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:15:25 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:15:25 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:15:26 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:15:26 CU    Stage_1_Stage_1_4    (unit.000004) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-03 21:20:24 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:20:25 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:20:25 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:20:25 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-03 21:20:25 CU    Stage_1_Stage_1_5    (unit.000005) is DONE                      on osg.xsede-virt-clust (pilot.0001)
+=======================================================================
+Run - scale 8; binding late; distribution uniform; iteration 1; rerun 0
+=======================================================================
+
+
+========
+Skeleton
+========
+
+
+Totals:
+	Number of stages             : 1
+	Number of tasks              : 8
+	Input data                   : 0.00 MB
+	Output data                  : 0.00 MB
+	Longest task execution time  : 900 seconds
+	Shortest task execution time : 900 seconds
+	Largest compute task         : 1 core(s)
+	Smallest compute task        : 1 core(s)
+
+Stage_1:
+	Number of tasks   : 8
+	Time distribution : uniform
+	Input files       : 0 for a total of 0.00 MB
+	Output files      : 0 for a total of 0.00 MB
+
+Execution boundaries:
+	Lowest number of cores  : 1
+	longest execution time  : 7200 seconds
+	Highest number of cores : 8.0
+	shortest execution time : 900 seconds
+
+
+==================
+Execution Strategy
+==================
+
+
+Configurations:
+	Type of task-to-resource binding  : late
+
+Heuristics:
+	Degree of concurrency for task execution : 100%
+	Percentage of bundle resources targeted  : 100%
+
+Inferences:
+	Number of target resources      : 4
+	Target resource(s) for pilot(s) : xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org
+	Number of pilots                : 4
+	Total workflow number of cores  : {u'xd-login.opensciencegrid.org': 1}
+	Type of scheduler for RP        : SCHED_BACKFILLING
+	Total workflow compute time     : {u'xd-login.opensciencegrid.org': 270000} seconds
+	Total workflow staging time     : 0 seconds
+	Total RP overhead time          : 632 seconds
+
+
+==================
+Pilot Descriptions
+==================
+
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+
+
+=========================
+Compute Unit Descriptions
+=========================
+
+
+Total tasks submitted  : 8
+Total CU translated    : 8
+Total CU with 1 cores : 0
+
+Print the first units for reference:
+Stage_1_Stage_1_0:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_1:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_2:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_3:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_4:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_5:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_6:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_7:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+
+
+2016-10-04 00:02:36 Pilot pilot.0000                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 00:02:36 Pilot pilot.0001                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 00:02:36 Pilot pilot.0002                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 00:02:36 Pilot pilot.0003                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 00:02:36 Pilot pilot.0000                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 00:02:36 Pilot pilot.0001                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 00:02:36 Pilot pilot.0002                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 00:02:36 Pilot pilot.0003                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+=================
+Radical Pilot IDs
+=================
+
+
+Session ID              : rp.session.radical.mturilli.017077.0010
+Pilot manager ID        : pmgr.0000
+Unit manager ID         : umgr.0000
+Pilot ID/resource : pilot.0000 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0001 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0002 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0003 osg.xsede-virt-clust
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING_PENDING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING_PENDING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING_PENDING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING_PENDING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING_PENDING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING_PENDING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING_PENDING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING_PENDING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING
+2016-10-04 00:02:38 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING
+2016-10-04 00:03:09 Pilot pilot.0000                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 00:03:09 Pilot pilot.0001                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 00:03:09 Pilot pilot.0002                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 00:03:09 Pilot pilot.0003                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 00:05:59 Pilot pilot.0000                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 00:06:07 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 00:06:07 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 00:06:07 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT
+2016-10-04 00:06:07 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT
+2016-10-04 00:06:07 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:06:07 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:06:16 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:06:16 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:06:18 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:06:18 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:06:18 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:06:18 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:06:18 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:06:18 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:06:30 Pilot pilot.0002                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 00:06:30 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 00:06:30 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 00:06:30 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT
+2016-10-04 00:06:30 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT
+2016-10-04 00:06:30 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:06:30 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:06:41 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:06:41 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:06:42 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:06:42 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:06:42 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:06:42 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:06:42 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:06:42 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:06:46 Pilot pilot.0001                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 00:06:46 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 00:06:46 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 00:06:46 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT
+2016-10-04 00:06:46 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT
+2016-10-04 00:06:46 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:06:46 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:06:51 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:06:51 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:06:52 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:06:52 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:06:52 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:06:52 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:06:52 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:06:52 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:07:27 Pilot pilot.0003                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 00:07:27 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 00:07:27 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 00:07:27 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT
+2016-10-04 00:07:27 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT
+2016-10-04 00:07:27 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:07:27 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:07:36 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:07:36 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:07:38 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:07:38 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:07:38 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:07:38 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:07:38 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:07:38 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:10:01 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:10:02 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:10:02 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:10:02 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:10:02 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:10:03 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:10:03 CU    Stage_1_Stage_1_2    (unit.000002) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:11:11 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:11:12 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:11:12 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:11:12 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:11:12 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:11:12 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:11:12 CU    Stage_1_Stage_1_0    (unit.000000) is DONE                      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:11:47 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:11:48 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:11:48 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:11:48 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:11:48 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:11:48 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:11:48 CU    Stage_1_Stage_1_6    (unit.000006) is DONE                      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:13:28 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:13:29 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:13:29 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:13:29 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:13:29 CU    Stage_1_Stage_1_3    (unit.000003) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 00:15:08 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:15:10 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:15:10 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:15:10 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:15:10 CU    Stage_1_Stage_1_1    (unit.000001) is DONE                      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 00:15:28 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:15:28 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:15:28 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:15:28 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:15:28 CU    Stage_1_Stage_1_4    (unit.000004) is DONE                      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:15:29 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:15:29 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:16:13 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:16:15 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:16:15 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:16:15 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:16:15 CU    Stage_1_Stage_1_7    (unit.000007) is DONE                      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 00:22:41 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:22:42 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:22:42 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:22:42 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 00:22:42 CU    Stage_1_Stage_1_5    (unit.000005) is DONE                      on osg.xsede-virt-clust (pilot.0003)
+=======================================================================
+Run - scale 8; binding late; distribution uniform; iteration 1; rerun 0
+=======================================================================
+
+
+========
+Skeleton
+========
+
+
+Totals:
+	Number of stages             : 1
+	Number of tasks              : 8
+	Input data                   : 0.00 MB
+	Output data                  : 0.00 MB
+	Longest task execution time  : 900 seconds
+	Shortest task execution time : 900 seconds
+	Largest compute task         : 1 core(s)
+	Smallest compute task        : 1 core(s)
+
+Stage_1:
+	Number of tasks   : 8
+	Time distribution : uniform
+	Input files       : 0 for a total of 0.00 MB
+	Output files      : 0 for a total of 0.00 MB
+
+Execution boundaries:
+	Lowest number of cores  : 1
+	longest execution time  : 7200 seconds
+	Highest number of cores : 8.0
+	shortest execution time : 900 seconds
+
+
+==================
+Execution Strategy
+==================
+
+
+Configurations:
+	Type of task-to-resource binding  : late
+
+Heuristics:
+	Degree of concurrency for task execution : 100%
+	Percentage of bundle resources targeted  : 100%
+
+Inferences:
+	Number of target resources      : 4
+	Target resource(s) for pilot(s) : xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org
+	Number of pilots                : 4
+	Total workflow number of cores  : {u'xd-login.opensciencegrid.org': 1}
+	Type of scheduler for RP        : SCHED_BACKFILLING
+	Total workflow compute time     : {u'xd-login.opensciencegrid.org': 270000} seconds
+	Total workflow staging time     : 0 seconds
+	Total RP overhead time          : 632 seconds
+
+
+==================
+Pilot Descriptions
+==================
+
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+
+
+=========================
+Compute Unit Descriptions
+=========================
+
+
+Total tasks submitted  : 8
+Total CU translated    : 8
+Total CU with 1 cores : 0
+
+Print the first units for reference:
+Stage_1_Stage_1_0:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_1:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_2:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_3:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_4:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_5:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_6:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_7:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+
+
+2016-10-04 05:00:42 Pilot pilot.0000                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 05:00:42 Pilot pilot.0001                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 05:00:42 Pilot pilot.0002                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 05:00:42 Pilot pilot.0003                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 05:00:42 Pilot pilot.0000                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 05:00:42 Pilot pilot.0001                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 05:00:42 Pilot pilot.0002                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 05:00:42 Pilot pilot.0003                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+=================
+Radical Pilot IDs
+=================
+
+
+Session ID              : rp.session.radical.mturilli.017078.0001
+Pilot manager ID        : pmgr.0000
+Unit manager ID         : umgr.0000
+Pilot ID/resource : pilot.0000 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0001 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0002 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0003 osg.xsede-virt-clust
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING_PENDING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING_PENDING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING_PENDING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING_PENDING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING_PENDING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING_PENDING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING_PENDING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING_PENDING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING
+2016-10-04 05:00:43 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING
+2016-10-04 05:01:15 Pilot pilot.0000                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 05:01:15 Pilot pilot.0001                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 05:01:15 Pilot pilot.0002                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 05:01:15 Pilot pilot.0003                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 05:03:56 Pilot pilot.0002                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 05:03:57 Pilot pilot.0003                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 05:03:57 Pilot pilot.0001                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 05:04:00 Pilot pilot.0000                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:04:05 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:04:11 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:04:11 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:04:12 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:04:12 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:04:12 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:04:12 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:04:12 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:04:12 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:04:13 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:08:27 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:08:30 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:08:30 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:08:30 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:08:30 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:08:30 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:08:30 CU    Stage_1_Stage_1_0    (unit.000000) is DONE                      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:09:24 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:09:25 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:09:25 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:09:25 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:09:25 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:09:25 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:09:25 CU    Stage_1_Stage_1_6    (unit.000006) is DONE                      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:10:05 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:10:06 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:10:06 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:10:06 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:10:06 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:10:07 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:10:07 CU    Stage_1_Stage_1_4    (unit.000004) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:10:07 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:10:10 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:10:10 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:10:10 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:10:10 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:10:10 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:10:10 CU    Stage_1_Stage_1_2    (unit.000002) is DONE                      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:13:01 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:13:02 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:13:02 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:13:03 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:13:03 CU    Stage_1_Stage_1_1    (unit.000001) is DONE                      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 05:14:04 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:14:06 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:14:06 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:14:06 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:14:06 CU    Stage_1_Stage_1_7    (unit.000007) is DONE                      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 05:15:13 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:15:15 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:15:15 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:15:15 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:15:15 CU    Stage_1_Stage_1_5    (unit.000005) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 05:15:17 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:15:19 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:15:19 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:15:19 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 05:15:19 CU    Stage_1_Stage_1_3    (unit.000003) is DONE                      on osg.xsede-virt-clust (pilot.0002)
+=======================================================================
+Run - scale 8; binding late; distribution uniform; iteration 1; rerun 0
+=======================================================================
+
+
+========
+Skeleton
+========
+
+
+Totals:
+	Number of stages             : 1
+	Number of tasks              : 8
+	Input data                   : 0.00 MB
+	Output data                  : 0.00 MB
+	Longest task execution time  : 900 seconds
+	Shortest task execution time : 900 seconds
+	Largest compute task         : 1 core(s)
+	Smallest compute task        : 1 core(s)
+
+Stage_1:
+	Number of tasks   : 8
+	Time distribution : uniform
+	Input files       : 0 for a total of 0.00 MB
+	Output files      : 0 for a total of 0.00 MB
+
+Execution boundaries:
+	Lowest number of cores  : 1
+	longest execution time  : 7200 seconds
+	Highest number of cores : 8.0
+	shortest execution time : 900 seconds
+
+
+==================
+Execution Strategy
+==================
+
+
+Configurations:
+	Type of task-to-resource binding  : late
+
+Heuristics:
+	Degree of concurrency for task execution : 100%
+	Percentage of bundle resources targeted  : 100%
+
+Inferences:
+	Number of target resources      : 4
+	Target resource(s) for pilot(s) : xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org
+	Number of pilots                : 4
+	Total workflow number of cores  : {u'xd-login.opensciencegrid.org': 1}
+	Type of scheduler for RP        : SCHED_BACKFILLING
+	Total workflow compute time     : {u'xd-login.opensciencegrid.org': 270000} seconds
+	Total workflow staging time     : 0 seconds
+	Total RP overhead time          : 632 seconds
+
+
+==================
+Pilot Descriptions
+==================
+
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+
+
+=========================
+Compute Unit Descriptions
+=========================
+
+
+Total tasks submitted  : 8
+Total CU translated    : 8
+Total CU with 1 cores : 0
+
+Print the first units for reference:
+Stage_1_Stage_1_0:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_1:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_2:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_3:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_4:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_5:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_6:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_7:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+
+
+2016-10-04 19:09:21 Pilot pilot.0000                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 19:09:21 Pilot pilot.0001                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 19:09:21 Pilot pilot.0002                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 19:09:21 Pilot pilot.0003                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 19:09:21 Pilot pilot.0000                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 19:09:21 Pilot pilot.0001                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 19:09:21 Pilot pilot.0002                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 19:09:21 Pilot pilot.0003                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+=================
+Radical Pilot IDs
+=================
+
+
+Session ID              : rp.session.radical.mturilli.017078.0011
+Pilot manager ID        : pmgr.0000
+Unit manager ID         : umgr.0000
+Pilot ID/resource : pilot.0000 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0001 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0002 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0003 osg.xsede-virt-clust
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING_PENDING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING_PENDING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING_PENDING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING_PENDING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING_PENDING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING_PENDING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING_PENDING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING_PENDING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING
+2016-10-04 19:09:23 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING
+2016-10-04 19:09:55 Pilot pilot.0000                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 19:09:55 Pilot pilot.0001                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 19:09:55 Pilot pilot.0002                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 19:09:55 Pilot pilot.0003                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 19:13:04 Pilot pilot.0000                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 19:13:05 Pilot pilot.0001                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:13:12 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:13:16 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:13:16 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:13:16 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:13:16 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:13:18 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:13:30 Pilot pilot.0002                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 19:13:30 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 19:13:30 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 19:13:30 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT
+2016-10-04 19:13:30 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT
+2016-10-04 19:13:30 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:13:30 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:13:36 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:13:36 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:13:38 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:13:38 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:13:38 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:13:38 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:13:38 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:13:38 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:13:41 Pilot pilot.0003                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 19:13:41 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 19:13:41 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 19:13:41 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT
+2016-10-04 19:13:41 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT
+2016-10-04 19:13:41 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:13:41 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:13:47 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:13:47 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:13:48 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:13:48 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:13:48 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:13:48 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:13:48 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:13:48 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:19:34 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:19:35 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:19:35 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:19:35 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:19:35 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:19:35 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:19:35 CU    Stage_1_Stage_1_0    (unit.000000) is DONE                      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:20:01 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:20:03 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:20:03 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:20:03 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:20:03 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:20:04 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:20:04 CU    Stage_1_Stage_1_2    (unit.000002) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:21:31 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:21:33 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:21:33 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:21:33 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:21:33 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:21:33 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:21:33 CU    Stage_1_Stage_1_6    (unit.000006) is DONE                      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:22:06 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:22:09 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:22:09 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:22:09 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:22:09 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:22:09 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:22:09 CU    Stage_1_Stage_1_4    (unit.000004) is DONE                      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:25:22 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:25:24 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:25:24 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:25:24 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:25:24 CU    Stage_1_Stage_1_1    (unit.000001) is DONE                      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 19:26:01 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:26:03 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:26:03 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:26:03 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:26:03 CU    Stage_1_Stage_1_3    (unit.000003) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 19:29:04 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:29:05 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:29:05 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:29:06 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:29:06 CU    Stage_1_Stage_1_7    (unit.000007) is DONE                      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 19:29:56 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:29:58 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:29:58 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:29:58 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 19:29:58 CU    Stage_1_Stage_1_5    (unit.000005) is DONE                      on osg.xsede-virt-clust (pilot.0003)
+=======================================================================
+Run - scale 8; binding late; distribution uniform; iteration 1; rerun 0
+=======================================================================
+
+
+========
+Skeleton
+========
+
+
+Totals:
+	Number of stages             : 1
+	Number of tasks              : 8
+	Input data                   : 0.00 MB
+	Output data                  : 0.00 MB
+	Longest task execution time  : 900 seconds
+	Shortest task execution time : 900 seconds
+	Largest compute task         : 1 core(s)
+	Smallest compute task        : 1 core(s)
+
+Stage_1:
+	Number of tasks   : 8
+	Time distribution : uniform
+	Input files       : 0 for a total of 0.00 MB
+	Output files      : 0 for a total of 0.00 MB
+
+Execution boundaries:
+	Lowest number of cores  : 1
+	longest execution time  : 7200 seconds
+	Highest number of cores : 8.0
+	shortest execution time : 900 seconds
+
+
+==================
+Execution Strategy
+==================
+
+
+Configurations:
+	Type of task-to-resource binding  : late
+
+Heuristics:
+	Degree of concurrency for task execution : 100%
+	Percentage of bundle resources targeted  : 100%
+
+Inferences:
+	Number of target resources      : 4
+	Target resource(s) for pilot(s) : xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org
+	Number of pilots                : 4
+	Total workflow number of cores  : {u'xd-login.opensciencegrid.org': 1}
+	Type of scheduler for RP        : SCHED_BACKFILLING
+	Total workflow compute time     : {u'xd-login.opensciencegrid.org': 270000} seconds
+	Total workflow staging time     : 0 seconds
+	Total RP overhead time          : 632 seconds
+
+
+==================
+Pilot Descriptions
+==================
+
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+
+
+=========================
+Compute Unit Descriptions
+=========================
+
+
+Total tasks submitted  : 8
+Total CU translated    : 8
+Total CU with 1 cores : 0
+
+Print the first units for reference:
+Stage_1_Stage_1_0:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_1:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_2:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_3:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_4:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_5:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_6:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_7:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+
+
+2016-10-04 21:10:12 Pilot pilot.0000                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 21:10:12 Pilot pilot.0001                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 21:10:12 Pilot pilot.0002                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 21:10:12 Pilot pilot.0003                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 21:10:12 Pilot pilot.0000                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 21:10:12 Pilot pilot.0001                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 21:10:12 Pilot pilot.0002                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 21:10:12 Pilot pilot.0003                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+=================
+Radical Pilot IDs
+=================
+
+
+Session ID              : rp.session.radical.mturilli.017078.0012
+Pilot manager ID        : pmgr.0000
+Unit manager ID         : umgr.0000
+Pilot ID/resource : pilot.0000 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0001 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0002 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0003 osg.xsede-virt-clust
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING_PENDING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING_PENDING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING_PENDING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING_PENDING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING_PENDING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING_PENDING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING_PENDING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING_PENDING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING
+2016-10-04 21:10:15 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING
+2016-10-04 21:10:46 Pilot pilot.0000                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 21:10:46 Pilot pilot.0001                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 21:10:46 Pilot pilot.0002                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 21:10:46 Pilot pilot.0003                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 21:15:06 Pilot pilot.0002                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 21:15:09 Pilot pilot.0001                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:14 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:17 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 21:15:17 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 21:15:18 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:18 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:19 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:22 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:24 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:24 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:24 CU    Stage_1_Stage_1_0    (unit.000000) is FAILED                    on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:24 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 21:15:24 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT
+2016-10-04 21:15:24 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:28 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:30 CU    Stage_1_Stage_1_1    (unit.000001) is FAILED                    on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:30 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:30 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:30 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:30 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:30 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 21:15:30 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT
+2016-10-04 21:15:30 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:31 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:32 CU    Stage_1_Stage_1_7    (unit.000007) is FAILED                    on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:32 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 21:15:32 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT
+2016-10-04 21:15:32 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:33 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:33 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:33 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:33 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:33 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:37 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:39 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:39 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:41 CU    Stage_1_Stage_1_6    (unit.000006) is FAILED                    on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:41 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:41 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:41 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 21:15:41 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT
+2016-10-04 21:15:41 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:43 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:44 CU    Stage_1_Stage_1_5    (unit.000005) is FAILED                    on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:45 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:45 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:45 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:45 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:45 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:48 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:15:50 CU    Stage_1_Stage_1_4    (unit.000004) is FAILED                    on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 21:16:23 Pilot pilot.0000                         is FAILED                    on osg.xsede-virt-clust
+=======================================================================
+Run - scale 8; binding late; distribution uniform; iteration 1; rerun 0
+=======================================================================
+
+
+========
+Skeleton
+========
+
+
+Totals:
+	Number of stages             : 1
+	Number of tasks              : 8
+	Input data                   : 0.00 MB
+	Output data                  : 0.00 MB
+	Longest task execution time  : 900 seconds
+	Shortest task execution time : 900 seconds
+	Largest compute task         : 1 core(s)
+	Smallest compute task        : 1 core(s)
+
+Stage_1:
+	Number of tasks   : 8
+	Time distribution : uniform
+	Input files       : 0 for a total of 0.00 MB
+	Output files      : 0 for a total of 0.00 MB
+
+Execution boundaries:
+	Lowest number of cores  : 1
+	longest execution time  : 7200 seconds
+	Highest number of cores : 8.0
+	shortest execution time : 900 seconds
+
+
+==================
+Execution Strategy
+==================
+
+
+Configurations:
+	Type of task-to-resource binding  : late
+
+Heuristics:
+	Degree of concurrency for task execution : 100%
+	Percentage of bundle resources targeted  : 100%
+
+Inferences:
+	Number of target resources      : 4
+	Target resource(s) for pilot(s) : xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org, xd-login.opensciencegrid.org
+	Number of pilots                : 4
+	Total workflow number of cores  : {u'xd-login.opensciencegrid.org': 1}
+	Type of scheduler for RP        : SCHED_BACKFILLING
+	Total workflow compute time     : {u'xd-login.opensciencegrid.org': 270000} seconds
+	Total workflow staging time     : 0 seconds
+	Total RP overhead time          : 632 seconds
+
+
+==================
+Pilot Descriptions
+==================
+
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+osg.xsede-virt-clust:
+	Allocation; None -> RP default : TG-CCR140028
+	Queue; None -> RP default      : None
+	Number of cores                : 1
+	Walltime in minutes            : 4510
+	Stop once the workflow is done : True
+
+
+
+=========================
+Compute Unit Descriptions
+=========================
+
+
+Total tasks submitted  : 8
+Total CU translated    : 8
+Total CU with 1 cores : 0
+
+Print the first units for reference:
+Stage_1_Stage_1_0:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_1:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_2:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_3:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_4:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_5:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_6:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+Stage_1_Stage_1_7:
+	Executable           : python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py
+	Arguments executable : ['serial', 'flops', '1', '1715750072310', '65536', '65536', '0', '0', '0']
+	Number of cores      : 1
+	Pre-execution        : ['echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; ']
+	Input staging        : None
+	Output staging       : None
+	Cleanup              : True
+
+
+
+2016-10-04 22:01:45 Pilot pilot.0000                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 22:01:45 Pilot pilot.0001                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 22:01:45 Pilot pilot.0002                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 22:01:45 Pilot pilot.0003                         is PMGR_LAUNCHING_PENDING    on osg.xsede-virt-clust
+2016-10-04 22:01:45 Pilot pilot.0000                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 22:01:45 Pilot pilot.0001                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 22:01:45 Pilot pilot.0002                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+2016-10-04 22:01:45 Pilot pilot.0003                         is PMGR_LAUNCHING            on osg.xsede-virt-clust
+=================
+Radical Pilot IDs
+=================
+
+
+Session ID              : rp.session.radical.mturilli.017078.0014
+Pilot manager ID        : pmgr.0000
+Unit manager ID         : umgr.0000
+Pilot ID/resource : pilot.0000 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0001 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0002 osg.xsede-virt-clust
+Pilot ID/resource : pilot.0003 osg.xsede-virt-clust
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING_PENDING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING_PENDING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING_PENDING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING_PENDING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING_PENDING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING_PENDING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING_PENDING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING_PENDING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_SCHEDULING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_SCHEDULING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_SCHEDULING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_SCHEDULING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_SCHEDULING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_SCHEDULING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_SCHEDULING
+2016-10-04 22:01:47 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_SCHEDULING
+2016-10-04 22:02:15 Pilot pilot.0000                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 22:02:15 Pilot pilot.0001                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 22:02:15 Pilot pilot.0002                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 22:02:15 Pilot pilot.0003                         is PMGR_ACTIVE_PENDING       on osg.xsede-virt-clust
+2016-10-04 22:05:12 Pilot pilot.0003                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 22:05:18 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 22:05:18 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 22:05:18 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_INPUT
+2016-10-04 22:05:18 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_INPUT
+2016-10-04 22:05:18 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:05:18 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:05:23 Pilot pilot.0000                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 22:05:23 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 22:05:23 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 22:05:23 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_INPUT
+2016-10-04 22:05:23 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_INPUT
+2016-10-04 22:05:23 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:05:23 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:05:25 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:05:25 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:05:25 Pilot pilot.0002                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 22:05:25 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 22:05:25 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 22:05:25 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_INPUT
+2016-10-04 22:05:25 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_INPUT
+2016-10-04 22:05:25 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:05:25 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:05:27 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:05:27 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:05:27 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:05:27 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:05:27 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:05:27 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:05:31 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:05:31 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:05:31 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:05:31 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:05:32 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:05:43 Pilot pilot.0001                         is PMGR_ACTIVE               on osg.xsede-virt-clust
+2016-10-04 22:05:43 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 22:05:43 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT_PENDING
+2016-10-04 22:05:43 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_INPUT
+2016-10-04 22:05:43 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_INPUT
+2016-10-04 22:05:43 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:05:43 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:05:50 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:05:50 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_INPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:05:51 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:05:51 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:05:51 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING_PENDING  on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:05:51 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_SCHEDULING          on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:05:51 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:05:51 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:10:14 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:10:15 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:10:15 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:10:15 CU    Stage_1_Stage_1_2    (unit.000002) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:10:15 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:10:16 CU    Stage_1_Stage_1_2    (unit.000002) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:10:16 CU    Stage_1_Stage_1_2    (unit.000002) is DONE                      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:11:18 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:11:19 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:11:19 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:11:19 CU    Stage_1_Stage_1_6    (unit.000006) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:11:19 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:11:19 CU    Stage_1_Stage_1_6    (unit.000006) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:11:19 CU    Stage_1_Stage_1_6    (unit.000006) is DONE                      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:12:13 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:12:15 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:12:15 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:12:15 CU    Stage_1_Stage_1_4    (unit.000004) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:12:15 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:12:15 CU    Stage_1_Stage_1_4    (unit.000004) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:12:15 CU    Stage_1_Stage_1_4    (unit.000004) is DONE                      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:12:29 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:12:31 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING_PENDING   on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:12:31 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_EXECUTING           on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:12:31 CU    Stage_1_Stage_1_0    (unit.000000) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:12:31 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:12:31 CU    Stage_1_Stage_1_0    (unit.000000) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:12:31 CU    Stage_1_Stage_1_0    (unit.000000) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:14:43 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:14:44 CU    Stage_1_Stage_1_3    (unit.000003) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:14:44 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:14:44 CU    Stage_1_Stage_1_3    (unit.000003) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:14:44 CU    Stage_1_Stage_1_3    (unit.000003) is DONE                      on osg.xsede-virt-clust (pilot.0003)
+2016-10-04 22:17:06 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:17:08 CU    Stage_1_Stage_1_7    (unit.000007) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:17:08 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:17:08 CU    Stage_1_Stage_1_7    (unit.000007) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:17:08 CU    Stage_1_Stage_1_7    (unit.000007) is DONE                      on osg.xsede-virt-clust (pilot.0002)
+2016-10-04 22:17:50 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:17:52 CU    Stage_1_Stage_1_1    (unit.000001) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:17:52 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:17:52 CU    Stage_1_Stage_1_1    (unit.000001) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:17:52 CU    Stage_1_Stage_1_1    (unit.000001) is DONE                      on osg.xsede-virt-clust (pilot.0000)
+2016-10-04 22:19:07 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:19:08 CU    Stage_1_Stage_1_5    (unit.000005) is AGENT_STAGING_OUTPUT      on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:19:08 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_OUTPUT_PENDING on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:19:08 CU    Stage_1_Stage_1_5    (unit.000005) is UMGR_STAGING_OUTPUT       on osg.xsede-virt-clust (pilot.0001)
+2016-10-04 22:19:08 CU    Stage_1_Stage_1_5    (unit.000005) is DONE                      on osg.xsede-virt-clust (pilot.0001)

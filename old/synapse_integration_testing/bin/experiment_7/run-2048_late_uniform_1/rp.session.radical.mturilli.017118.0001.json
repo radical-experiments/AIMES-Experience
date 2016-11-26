@@ -1,0 +1,88 @@
+{
+    "pilot": [], 
+    "pmgr": [
+        {
+            "_id": "pmgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:37625", 
+                        "addr_out": "tcp://144.76.72.175:39950", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:38285", 
+                        "addr_out": "tcp://144.76.72.175:40432", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "pmgr_launching_queue": {
+                        "addr_in": "tcp://144.76.72.175:38158", 
+                        "addr_out": "tcp://144.76.72.175:40324", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:40927", 
+                        "addr_out": "tcp://144.76.72.175:39028", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "components": {
+                    "PMGRLaunchingComponent": 1
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://matteo:matteo@ds035385.mlab.com:35385/aimes-aws", 
+                "heart": "rp.session.radical.mturilli.017118.0001", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "owner": "pmgr.0000", 
+                "session_id": "rp.session.radical.mturilli.017118.0001"
+            }, 
+            "type": "pmgr", 
+            "uid": "pmgr.0000"
+        }
+    ], 
+    "session": {
+        "_id": "rp.session.radical.mturilli.017118.0001", 
+        "cfg": {
+            "bridges": {
+                "control_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "log_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "state_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }
+            }, 
+            "components": {
+                "UpdateWorker": 1
+            }, 
+            "debug": "DEBUG", 
+            "heartbeat_interval": 10, 
+            "heartbeat_timeout": 300, 
+            "logdir": "/home/mturilli/experiments/AIMES-Experience/synapse_integration_testing/bin/rp.session.radical.mturilli.017118.0001", 
+            "owner": "rp.session.radical.mturilli.017118.0001"
+        }, 
+        "connected": 1479049892.144944, 
+        "created": 1479049891.570604, 
+        "type": "session", 
+        "uid": "rp.session.radical.mturilli.017118.0001"
+    }, 
+    "umgr": [], 
+    "unit": []
+}

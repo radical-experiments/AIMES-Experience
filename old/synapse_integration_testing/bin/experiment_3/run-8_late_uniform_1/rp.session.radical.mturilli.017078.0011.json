@@ -1,0 +1,1414 @@
+{
+    "pilot": [
+        {
+            "_id": "pilot.0001", 
+            "cfg": {
+                "agent_launch_method": "FORK", 
+                "agent_layout": {
+                    "agent_1": {
+                        "components": {
+                            "AgentExecutingComponent": 1, 
+                            "AgentSchedulingComponent": 1, 
+                            "AgentStagingInputComponent": 1, 
+                            "AgentStagingOutputComponent": 1
+                        }, 
+                        "target": "local"
+                    }
+                }, 
+                "bridges": {
+                    "agent_executing_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_reschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_scheduling_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_input_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_output_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_unschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "control_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "cname": "PMGRLaunchingComponent", 
+                "components": {
+                    "UpdateWorker": 1
+                }, 
+                "cores": 1, 
+                "cores_per_node": 0, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "debug": 10, 
+                "global_sandbox": "/home/mturilli/radical.pilot.sandbox", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "logdir": ".", 
+                "lrms": "FORK", 
+                "max_io_loglength": 1024, 
+                "mpi_launch_method": "", 
+                "network_interface": "lo", 
+                "owner": "agent_0", 
+                "pilot_id": "pilot.0001", 
+                "pilot_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0001/", 
+                "runtime": 4510, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.radical.mturilli.017078.0011", 
+                "session_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_schema": "staging", 
+                "task_launch_method": "FORK"
+            }, 
+            "cmd": [], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": null, 
+                "candidate_hosts": null, 
+                "cleanup": true, 
+                "cores": 1, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-CCR140028", 
+                "queue": null, 
+                "resource": "osg.xsede-virt-clust", 
+                "runtime": 4510, 
+                "sandbox": null
+            }, 
+            "finished": 1475602203.417172, 
+            "log": [], 
+            "logfile": "2016-10-04 10:12:57,967: agent_0             : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:12:57,970: agent_0             : MainProcess                     : MainThread     : INFO    :                      pid: 696\n2016-10-04 10:12:57,970: agent_0             : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 10:12:57,970: agent_0             : MainProcess                     : MainThread     : INFO    : radical.pilot        version: v0.40.1-214-gd8d52fb@experiment-aimes\n2016-10-04 10:12:57,971: agent_0             : MainProcess                     : MainThread     : INFO    : using database mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb\n2016-10-04 10:12:58,168: agent_0             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /tmp/glide_jRZ9jx/e", 
+            "pmgr": "pmgr.0000", 
+            "resource": "osg.xsede-virt-clust", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0001/", 
+            "session": "rp.session.radical.mturilli.017078.0011", 
+            "state": "CANCELED", 
+            "states": [
+                "NEW", 
+                "PMGR_LAUNCHING_PENDING", 
+                "PMGR_LAUNCHING", 
+                "PMGR_ACTIVE_PENDING", 
+                "PMGR_ACTIVE", 
+                "PMGR_ACTIVE", 
+                "CANCELED", 
+                "CANCELED"
+            ], 
+            "stderr": "2016-10-04 10:12:57,775: radical.saga        : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:12:57,776: radical.saga        : MainProcess                     : MainThread     : INFO    :                      pid: 696\n2016-10-04 10:12:57,776: radical.saga        : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 10:12:57,776: radical.saga        : MainProcess                     : MainThread     : INFO    : radical.saga         version: v0.41-71-g1398b25@experiment-aimes\n2016-10-04 10:12:57,848: radical.pilot.utils : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:12:57,848: radical.pilot.utils : MainProcess                     : MainThread     : INFO    :                      pid: 69", 
+            "stdout": "---------------------------------------------------------------------\n\nPYTHONPATH: ['/tmp/glide_jRZ9jx/execute/dir_30326/rp_install/bin', '/tmp/glide_jRZ9jx/execute/dir_30326/ve_xd-login/lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg', '/tmp/glide_jRZ9jx/execute/dir_30326/ve_xd-login/lib/python2.7/site-packages/apache_libcloud-1.2.1-py2.7.egg', '/tmp/glide_jRZ9jx/execute/dir_30326/ve_xd-login/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1-py2.7.egg', '/tmp/glide_jRZ9jx/execute/dir_30326/rp_install/lib/python2.7/site-packages', '/tmp/glide_jRZ9jx/execute/dir_30326', '/tmp/glide_jRZ9jx/execute/dir_30326/ve_xd-login/lib/python27.zip', '/tmp/glide_jRZ9jx/execute/dir_30326/ve_xd-login/lib/python2.7', '/tmp/glide_jRZ9jx/execute/dir_30326/ve_xd-login/lib/python2.7/plat-linux2', '/tmp/glide_jRZ9jx/execute/dir_30326/ve_xd-login/lib/python2.7/lib-tk', '/tmp/glide_jRZ9jx/execute/dir_30326/ve_xd-login/lib/python2.7/lib-old', '/tmp/glide_jRZ9jx/execute/dir_30326/ve_xd-login/lib/python2.7/lib-dyn", 
+            "type": "pilot", 
+            "uid": "pilot.0001", 
+            "unit_ids": [
+                "unit.000000", 
+                "unit.000001"
+            ]
+        }, 
+        {
+            "_id": "pilot.0002", 
+            "cfg": {
+                "agent_launch_method": "FORK", 
+                "agent_layout": {
+                    "agent_1": {
+                        "components": {
+                            "AgentExecutingComponent": 1, 
+                            "AgentSchedulingComponent": 1, 
+                            "AgentStagingInputComponent": 1, 
+                            "AgentStagingOutputComponent": 1
+                        }, 
+                        "target": "local"
+                    }
+                }, 
+                "bridges": {
+                    "agent_executing_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_reschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_scheduling_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_input_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_output_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_unschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "control_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "cname": "PMGRLaunchingComponent", 
+                "components": {
+                    "UpdateWorker": 1
+                }, 
+                "cores": 1, 
+                "cores_per_node": 0, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "debug": 10, 
+                "global_sandbox": "/home/mturilli/radical.pilot.sandbox", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "logdir": ".", 
+                "lrms": "FORK", 
+                "max_io_loglength": 1024, 
+                "mpi_launch_method": "", 
+                "network_interface": "lo", 
+                "owner": "agent_0", 
+                "pilot_id": "pilot.0002", 
+                "pilot_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0002/", 
+                "runtime": 4510, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.radical.mturilli.017078.0011", 
+                "session_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_schema": "staging", 
+                "task_launch_method": "FORK"
+            }, 
+            "cmd": [], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": null, 
+                "candidate_hosts": null, 
+                "cleanup": true, 
+                "cores": 1, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-CCR140028", 
+                "queue": null, 
+                "resource": "osg.xsede-virt-clust", 
+                "runtime": 4510, 
+                "sandbox": null
+            }, 
+            "finished": 1475602202.850923, 
+            "log": [], 
+            "logfile": "2016-10-04 13:13:21,932: agent_0             : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:13:21,942: agent_0             : MainProcess                     : MainThread     : INFO    :                      pid: 471141\n2016-10-04 13:13:21,943: agent_0             : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 13:13:21,943: agent_0             : MainProcess                     : MainThread     : INFO    : radical.pilot        version: v0.40.1-214-gd8d52fb@experiment-aimes\n2016-10-04 13:13:21,943: agent_0             : MainProcess                     : MainThread     : INFO    : using database mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb\n2016-10-04 13:13:22,083: agent_0             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /var/lib/condor/", 
+            "pmgr": "pmgr.0000", 
+            "resource": "osg.xsede-virt-clust", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0002/", 
+            "session": "rp.session.radical.mturilli.017078.0011", 
+            "state": "CANCELED", 
+            "states": [
+                "NEW", 
+                "PMGR_LAUNCHING_PENDING", 
+                "PMGR_LAUNCHING", 
+                "PMGR_ACTIVE_PENDING", 
+                "PMGR_ACTIVE", 
+                "PMGR_ACTIVE", 
+                "CANCELED", 
+                "CANCELED"
+            ], 
+            "stderr": "2016-10-04 13:13:21,490: radical.saga        : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:13:21,490: radical.saga        : MainProcess                     : MainThread     : INFO    :                      pid: 471141\n2016-10-04 13:13:21,490: radical.saga        : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 13:13:21,490: radical.saga        : MainProcess                     : MainThread     : INFO    : radical.saga         version: v0.41-71-g1398b25@experiment-aimes\n2016-10-04 13:13:21,584: radical.pilot.utils : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:13:21,585: radical.pilot.utils : MainProcess                     : MainThread     : INFO    :                      pid:", 
+            "stdout": "---------------------------------------------------------------------\n\nPYTHONPATH: ['/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/rp_install/bin', '/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/ve_xd-login/lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg', '/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/ve_xd-login/lib/python2.7/site-packages/apache_libcloud-1.2.1-py2.7.egg', '/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/ve_xd-login/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1-py2.7.egg', '/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/rp_install/lib/python2.7/site-packages', '/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962', '/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/ve_xd-login/lib/python27.zip', '/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/ve_xd-login/lib/python2.7', '/var/lib/condor/execute/dir_1496462", 
+            "type": "pilot", 
+            "uid": "pilot.0002", 
+            "unit_ids": [
+                "unit.000006", 
+                "unit.000007"
+            ]
+        }, 
+        {
+            "_id": "pilot.0003", 
+            "cfg": {
+                "agent_launch_method": "FORK", 
+                "agent_layout": {
+                    "agent_1": {
+                        "components": {
+                            "AgentExecutingComponent": 1, 
+                            "AgentSchedulingComponent": 1, 
+                            "AgentStagingInputComponent": 1, 
+                            "AgentStagingOutputComponent": 1
+                        }, 
+                        "target": "local"
+                    }
+                }, 
+                "bridges": {
+                    "agent_executing_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_reschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_scheduling_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_input_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_output_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_unschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "control_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "cname": "PMGRLaunchingComponent", 
+                "components": {
+                    "UpdateWorker": 1
+                }, 
+                "cores": 1, 
+                "cores_per_node": 0, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "debug": 10, 
+                "global_sandbox": "/home/mturilli/radical.pilot.sandbox", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "logdir": ".", 
+                "lrms": "FORK", 
+                "max_io_loglength": 1024, 
+                "mpi_launch_method": "", 
+                "network_interface": "lo", 
+                "owner": "agent_0", 
+                "pilot_id": "pilot.0003", 
+                "pilot_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0003/", 
+                "runtime": 4510, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.radical.mturilli.017078.0011", 
+                "session_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_schema": "staging", 
+                "task_launch_method": "FORK"
+            }, 
+            "cmd": [], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": null, 
+                "candidate_hosts": null, 
+                "cleanup": true, 
+                "cores": 1, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-CCR140028", 
+                "queue": null, 
+                "resource": "osg.xsede-virt-clust", 
+                "runtime": 4510, 
+                "sandbox": null
+            }, 
+            "finished": 1475602270.430943, 
+            "log": [], 
+            "logfile": "2016-10-04 13:14:40,080: agent_0             : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:14:40,082: agent_0             : MainProcess                     : MainThread     : INFO    :                      pid: 41067\n2016-10-04 13:14:40,082: agent_0             : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 13:14:40,083: agent_0             : MainProcess                     : MainThread     : INFO    : radical.pilot        version: v0.40.1-214-gd8d52fb@experiment-aimes\n2016-10-04 13:14:40,083: agent_0             : MainProcess                     : MainThread     : INFO    : using database mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb\n2016-10-04 13:14:40,236: agent_0             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /var/lib/condor/e", 
+            "pmgr": "pmgr.0000", 
+            "resource": "osg.xsede-virt-clust", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0003/", 
+            "session": "rp.session.radical.mturilli.017078.0011", 
+            "state": "CANCELED", 
+            "states": [
+                "NEW", 
+                "PMGR_LAUNCHING_PENDING", 
+                "PMGR_LAUNCHING", 
+                "PMGR_ACTIVE_PENDING", 
+                "PMGR_ACTIVE", 
+                "PMGR_ACTIVE", 
+                "CANCELED", 
+                "CANCELED"
+            ], 
+            "stderr": "2016-10-04 13:14:39,496: radical.saga        : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:14:39,742: radical.saga        : MainProcess                     : MainThread     : INFO    :                      pid: 41067\n2016-10-04 13:14:39,742: radical.saga        : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 13:14:39,743: radical.saga        : MainProcess                     : MainThread     : INFO    : radical.saga         version: v0.41-71-g1398b25@experiment-aimes\n2016-10-04 13:14:39,916: radical.pilot.utils : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:14:39,916: radical.pilot.utils : MainProcess                     : MainThread     : INFO    :                      pid: ", 
+            "stdout": "---------------------------------------------------------------------\n\nPYTHONPATH: ['/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/rp_install/bin', '/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/ve_xd-login/lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg', '/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/ve_xd-login/lib/python2.7/site-packages/apache_libcloud-1.2.1-py2.7.egg', '/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/ve_xd-login/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1-py2.7.egg', '/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/rp_install/lib/python2.7/site-packages', '/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274', '/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/ve_xd-login/lib/python27.zip', '/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/ve_xd-login/lib/python2.7', '/var/lib/condor/execute/dir_901166/glide_4dPaxn/exe", 
+            "type": "pilot", 
+            "uid": "pilot.0003", 
+            "unit_ids": [
+                "unit.000004", 
+                "unit.000005"
+            ]
+        }, 
+        {
+            "_id": "pilot.0000", 
+            "cfg": {
+                "agent_launch_method": "FORK", 
+                "agent_layout": {
+                    "agent_1": {
+                        "components": {
+                            "AgentExecutingComponent": 1, 
+                            "AgentSchedulingComponent": 1, 
+                            "AgentStagingInputComponent": 1, 
+                            "AgentStagingOutputComponent": 1
+                        }, 
+                        "target": "local"
+                    }
+                }, 
+                "bridges": {
+                    "agent_executing_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_reschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_scheduling_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_input_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_output_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_unschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "control_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "cname": "PMGRLaunchingComponent", 
+                "components": {
+                    "UpdateWorker": 1
+                }, 
+                "cores": 1, 
+                "cores_per_node": 0, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "debug": 10, 
+                "global_sandbox": "/home/mturilli/radical.pilot.sandbox", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "logdir": ".", 
+                "lrms": "FORK", 
+                "max_io_loglength": 1024, 
+                "mpi_launch_method": "", 
+                "network_interface": "lo", 
+                "owner": "agent_0", 
+                "pilot_id": "pilot.0000", 
+                "pilot_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0000/", 
+                "runtime": 4510, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.radical.mturilli.017078.0011", 
+                "session_sandbox": "/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_schema": "staging", 
+                "task_launch_method": "FORK"
+            }, 
+            "cmd": [], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": null, 
+                "candidate_hosts": null, 
+                "cleanup": true, 
+                "cores": 1, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-CCR140028", 
+                "queue": null, 
+                "resource": "osg.xsede-virt-clust", 
+                "runtime": 4510, 
+                "sandbox": null
+            }, 
+            "finished": 1475602212.213287, 
+            "log": [], 
+            "logfile": "2016-10-04 10:12:56,856: agent_0             : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:12:56,857: agent_0             : MainProcess                     : MainThread     : INFO    :                      pid: 21949\n2016-10-04 10:12:56,857: agent_0             : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 10:12:56,857: agent_0             : MainProcess                     : MainThread     : INFO    : radical.pilot        version: v0.40.1-214-gd8d52fb@experiment-aimes\n2016-10-04 10:12:56,858: agent_0             : MainProcess                     : MainThread     : INFO    : using database mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb\n2016-10-04 10:12:57,238: agent_0             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /tmp/glide_8mdfyW", 
+            "pmgr": "pmgr.0000", 
+            "resource": "osg.xsede-virt-clust", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0000/", 
+            "session": "rp.session.radical.mturilli.017078.0011", 
+            "state": "CANCELED", 
+            "states": [
+                "NEW", 
+                "PMGR_LAUNCHING_PENDING", 
+                "PMGR_LAUNCHING", 
+                "PMGR_ACTIVE_PENDING", 
+                "PMGR_ACTIVE", 
+                "PMGR_ACTIVE", 
+                "CANCELED"
+            ], 
+            "stderr": "2016-10-04 10:12:56,672: radical.saga        : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:12:56,672: radical.saga        : MainProcess                     : MainThread     : INFO    :                      pid: 21949\n2016-10-04 10:12:56,672: radical.saga        : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 10:12:56,673: radical.saga        : MainProcess                     : MainThread     : INFO    : radical.saga         version: v0.41-71-g1398b25@experiment-aimes\n2016-10-04 10:12:56,728: radical.pilot.utils : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:12:56,728: radical.pilot.utils : MainProcess                     : MainThread     : INFO    :                      pid: ", 
+            "stdout": "---------------------------------------------------------------------\n\nPYTHONPATH: ['/tmp/glide_8mdfyW/execute/dir_19225/rp_install/bin', '/tmp/glide_8mdfyW/execute/dir_19225/ve_xd-login/lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg', '/tmp/glide_8mdfyW/execute/dir_19225/ve_xd-login/lib/python2.7/site-packages/apache_libcloud-1.2.1-py2.7.egg', '/tmp/glide_8mdfyW/execute/dir_19225/ve_xd-login/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1-py2.7.egg', '/tmp/glide_8mdfyW/execute/dir_19225/rp_install/lib/python2.7/site-packages', '/tmp/glide_8mdfyW/execute/dir_19225', '/tmp/glide_8mdfyW/execute/dir_19225/ve_xd-login/lib/python27.zip', '/tmp/glide_8mdfyW/execute/dir_19225/ve_xd-login/lib/python2.7', '/tmp/glide_8mdfyW/execute/dir_19225/ve_xd-login/lib/python2.7/plat-linux2', '/tmp/glide_8mdfyW/execute/dir_19225/ve_xd-login/lib/python2.7/lib-tk', '/tmp/glide_8mdfyW/execute/dir_19225/ve_xd-login/lib/python2.7/lib-old', '/tmp/glide_8mdfyW/execute/dir_19225/ve_xd-login/lib/python2.7/lib-dyn", 
+            "type": "pilot", 
+            "uid": "pilot.0000", 
+            "unit_ids": [
+                "unit.000002", 
+                "unit.000003"
+            ]
+        }
+    ], 
+    "pmgr": [
+        {
+            "_id": "pmgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:38055", 
+                        "addr_out": "tcp://144.76.72.175:35050", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:34839", 
+                        "addr_out": "tcp://144.76.72.175:35087", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "pmgr_launching_queue": {
+                        "addr_in": "tcp://144.76.72.175:40333", 
+                        "addr_out": "tcp://144.76.72.175:43696", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:39553", 
+                        "addr_out": "tcp://144.76.72.175:42893", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "components": {
+                    "PMGRLaunchingComponent": 1
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "heart": "rp.session.radical.mturilli.017078.0011", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "owner": "pmgr.0000", 
+                "session_id": "rp.session.radical.mturilli.017078.0011"
+            }, 
+            "type": "pmgr", 
+            "uid": "pmgr.0000"
+        }
+    ], 
+    "session": {
+        "_id": "rp.session.radical.mturilli.017078.0011", 
+        "cfg": {
+            "bridges": {
+                "control_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "log_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "state_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }
+            }, 
+            "components": {
+                "UpdateWorker": 1
+            }, 
+            "debug": "DEBUG", 
+            "heartbeat_interval": 10, 
+            "heartbeat_timeout": 300, 
+            "logdir": "/home/mturilli/experiments/AIMES-Experience/synapse_integration_testing/bin/rp.session.radical.mturilli.017078.0011", 
+            "owner": "rp.session.radical.mturilli.017078.0011"
+        }, 
+        "connected": 1475600957.84668, 
+        "created": 1475600957.284361, 
+        "type": "session", 
+        "uid": "rp.session.radical.mturilli.017078.0011"
+    }, 
+    "umgr": [
+        {
+            "_id": "umgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:38055", 
+                        "addr_out": "tcp://144.76.72.175:35050", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:34839", 
+                        "addr_out": "tcp://144.76.72.175:35087", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:39553", 
+                        "addr_out": "tcp://144.76.72.175:42893", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_reschedule_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:40757", 
+                        "addr_out": "tcp://144.76.72.175:35850", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_scheduling_queue": {
+                        "addr_in": "tcp://144.76.72.175:42404", 
+                        "addr_out": "tcp://144.76.72.175:36205", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_staging_input_queue": {
+                        "addr_in": "tcp://144.76.72.175:37909", 
+                        "addr_out": "tcp://144.76.72.175:41104", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_staging_output_queue": {
+                        "addr_in": "tcp://144.76.72.175:33127", 
+                        "addr_out": "tcp://144.76.72.175:40417", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_unschedule_pubsub": {
+                        "addr_in": "tcp://144.76.72.175:41711", 
+                        "addr_out": "tcp://144.76.72.175:42901", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 5.0, 
+                "components": {
+                    "UMGRSchedulingComponent": 1, 
+                    "UMGRStagingInputComponent": 1, 
+                    "UMGRStagingOutputComponent": 1
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://mingtaiha:mingtaiha@ds053838.mongolab.com:53838/hicomb", 
+                "heart": "rp.session.radical.mturilli.017078.0011", 
+                "heartbeat_interval": 10, 
+                "heartbeat_timeout": 300, 
+                "owner": "umgr.0000", 
+                "scheduler": "backfilling", 
+                "session_id": "rp.session.radical.mturilli.017078.0011"
+            }, 
+            "type": "umgr", 
+            "uid": "umgr.0000"
+        }
+    ], 
+    "unit": [
+        {
+            "_id": "unit.000000", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_0", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "Stage_1_Stage_1_0", 
+            "opaque_slots": {
+                "lm_info": {
+                    "version_info": {
+                        "FORK": {
+                            "version": "0.42", 
+                            "version_detail": "There is no spoon"
+                        }
+                    }
+                }, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "localhost:0"
+                ]
+            }, 
+            "pilot": "pilot.0001", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0001//unit.000000/", 
+            "state": "UMGR_STAGING_OUTPUT_PENDING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING"
+            ], 
+            "stderr": "2016-10-04 10:13:44,491: radical.synapse     : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:13:44,492: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      pid: 2074\n2016-10-04 10:13:44,492: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 10:13:44,524: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:13:44,524: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      pid: 2074\n2016-10-04 10:13:44,524: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n", 
+            "stderr_file": "/tmp/glide_jRZ9jx/execute/dir_30326/unit.000000/STDERR", 
+            "stdout": "[... CONTENT SHORTENED ...]\nc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c psutil/_psutil_posix.c -o build/temp.linux-x86_64-2.7/psutil/_psutil_posix.o\n    gcc -pthread -shared build/temp.linux-x86_64-2.7/psutil/_psutil_posix.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/psutil/_psutil_posix.so\nSuccessfully installed netifaces-0.10.5 psutil-4.3.1 pymongo-2.8 radical.synapse-0.44\nserial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "stdout_file": "/tmp/glide_jRZ9jx/execute/dir_30326/unit.000000/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000000", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000002", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_2", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "Stage_1_Stage_1_2", 
+            "opaque_slots": {
+                "lm_info": {
+                    "version_info": {
+                        "FORK": {
+                            "version": "0.42", 
+                            "version_detail": "There is no spoon"
+                        }
+                    }
+                }, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "localhost:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0000//unit.000002/", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "2016-10-04 10:13:44,122: radical.synapse     : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:13:44,122: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      pid: 23366\n2016-10-04 10:13:44,122: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 10:13:44,157: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:13:44,157: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      pid: 23366\n2016-10-04 10:13:44,157: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n", 
+            "stderr_file": "/tmp/glide_8mdfyW/execute/dir_19225/unit.000002/STDERR", 
+            "stdout": "[... CONTENT SHORTENED ...]\nc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c psutil/_psutil_posix.c -o build/temp.linux-x86_64-2.7/psutil/_psutil_posix.o\n    gcc -pthread -shared build/temp.linux-x86_64-2.7/psutil/_psutil_posix.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/psutil/_psutil_posix.so\nSuccessfully installed netifaces-0.10.5 psutil-4.3.1 pymongo-2.8 radical.synapse-0.44\nserial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "stdout_file": "/tmp/glide_8mdfyW/execute/dir_19225/unit.000002/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000002", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000006", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_6", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "Stage_1_Stage_1_6", 
+            "opaque_slots": {
+                "lm_info": {
+                    "version_info": {
+                        "FORK": {
+                            "version": "0.42", 
+                            "version_detail": "There is no spoon"
+                        }
+                    }
+                }, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "localhost:0"
+                ]
+            }, 
+            "pilot": "pilot.0002", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0002//unit.000006/", 
+            "state": "UMGR_STAGING_OUTPUT_PENDING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING"
+            ], 
+            "stderr": "2016-10-04 13:14:10,043: radical.synapse     : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:14:10,044: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      pid: 473229\n2016-10-04 13:14:10,044: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 13:14:10,090: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:14:10,090: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      pid: 473229\n2016-10-04 13:14:10,090: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n", 
+            "stderr_file": "/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/unit.000006/STDERR", 
+            "stdout": "[... CONTENT SHORTENED ...]\nc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c psutil/_psutil_posix.c -o build/temp.linux-x86_64-2.7/psutil/_psutil_posix.o\n    gcc -pthread -shared build/temp.linux-x86_64-2.7/psutil/_psutil_posix.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/psutil/_psutil_posix.so\nSuccessfully installed netifaces-0.10.5 psutil-4.3.1 pymongo-2.8 radical.synapse-0.44\nserial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "stdout_file": "/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/unit.000006/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000006", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000004", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_4", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "Stage_1_Stage_1_4", 
+            "opaque_slots": {
+                "lm_info": {
+                    "version_info": {
+                        "FORK": {
+                            "version": "0.42", 
+                            "version_detail": "There is no spoon"
+                        }
+                    }
+                }, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "localhost:0"
+                ]
+            }, 
+            "pilot": "pilot.0003", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0003//unit.000004/", 
+            "state": "UMGR_STAGING_OUTPUT_PENDING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING"
+            ], 
+            "stderr": "2016-10-04 13:15:28,329: radical.synapse     : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:15:28,330: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      pid: 43066\n2016-10-04 13:15:28,330: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 13:15:28,374: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:15:28,374: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      pid: 43066\n2016-10-04 13:15:28,375: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n", 
+            "stderr_file": "/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/unit.000004/STDERR", 
+            "stdout": "[... CONTENT SHORTENED ...]\nc -pthread -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/include/python2.7 -c psutil/_psutil_posix.c -o build/temp.linux-x86_64-2.7/psutil/_psutil_posix.o\n    gcc -pthread -shared build/temp.linux-x86_64-2.7/psutil/_psutil_posix.o -L/cvmfs/oasis.opensciencegrid.org/osg/modules/python-2.7.7/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/psutil/_psutil_posix.so\nSuccessfully installed netifaces-0.10.5 psutil-4.3.1 pymongo-2.8 radical.synapse-0.44\nserial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "stdout_file": "/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/unit.000004/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000004", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000001", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_1", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "Stage_1_Stage_1_1", 
+            "opaque_slots": {
+                "lm_info": {
+                    "version_info": {
+                        "FORK": {
+                            "version": "0.42", 
+                            "version_detail": "There is no spoon"
+                        }
+                    }
+                }, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "localhost:0"
+                ]
+            }, 
+            "pilot": "pilot.0001", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0001//unit.000001/", 
+            "state": "UMGR_STAGING_OUTPUT_PENDING", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING"
+            ], 
+            "stderr": "2016-10-04 10:19:33,896: radical.synapse     : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:19:33,897: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      pid: 6205\n2016-10-04 10:19:33,897: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 10:19:33,931: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:19:33,931: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      pid: 6205\n2016-10-04 10:19:33,931: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n", 
+            "stderr_file": "/tmp/glide_jRZ9jx/execute/dir_30326/unit.000001/STDERR", 
+            "stdout": "/tmp/glide_jRZ9jx/execute/dir_30326\nserial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "stdout_file": "/tmp/glide_jRZ9jx/execute/dir_30326/unit.000001/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000001", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000003", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_3", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "Stage_1_Stage_1_3", 
+            "opaque_slots": {
+                "lm_info": {
+                    "version_info": {
+                        "FORK": {
+                            "version": "0.42", 
+                            "version_detail": "There is no spoon"
+                        }
+                    }
+                }, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "localhost:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0000//unit.000003/", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "2016-10-04 10:20:01,116: radical.synapse     : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:20:01,117: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      pid: 27769\n2016-10-04 10:20:01,117: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 10:20:01,156: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 10:20:01,156: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      pid: 27769\n2016-10-04 10:20:01,157: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n", 
+            "stderr_file": "/tmp/glide_8mdfyW/execute/dir_19225/unit.000003/STDERR", 
+            "stdout": "/tmp/glide_8mdfyW/execute/dir_19225\nserial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "stdout_file": "/tmp/glide_8mdfyW/execute/dir_19225/unit.000003/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000003", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000007", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_7", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "Stage_1_Stage_1_7", 
+            "opaque_slots": {
+                "lm_info": {
+                    "version_info": {
+                        "FORK": {
+                            "version": "0.42", 
+                            "version_detail": "There is no spoon"
+                        }
+                    }
+                }, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "localhost:0"
+                ]
+            }, 
+            "pilot": "pilot.0002", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0002//unit.000007/", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "2016-10-04 13:21:30,357: radical.synapse     : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:21:30,357: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      pid: 482997\n2016-10-04 13:21:30,357: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 13:21:30,403: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:21:30,403: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      pid: 482997\n2016-10-04 13:21:30,403: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n", 
+            "stderr_file": "/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/unit.000007/STDERR", 
+            "stdout": "/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962\nserial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "stdout_file": "/var/lib/condor/execute/dir_1496462/glide_q1OrSB/execute/dir_465962/unit.000007/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000007", 
+            "umgr": "umgr.0000"
+        }, 
+        {
+            "_id": "unit.000005", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "serial", 
+                    "flops", 
+                    "1", 
+                    "1715750072310", 
+                    "65536", 
+                    "65536", 
+                    "0", 
+                    "0", 
+                    "0"
+                ], 
+                "cleanup": true, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "python $HOME/Skeleton-feature-task_flops/bin/aimes-skeleton-synapse.py", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "Stage_1_Stage_1_5", 
+                "output_staging": [], 
+                "post_exec": null, 
+                "pre_exec": [
+                    "echo $HOME ; if test ! -d $HOME/ve.synapse; then virtualenv $HOME/ve.synapse ; source $HOME/ve.synapse/bin/activate ; wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/ ;pip install $HOME/radical.utils-0.41.1/. ; wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/Skeleton-feature-task_flops/. ; wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/ ; pip install $HOME/radical.synapse-0.44/. ; else source $HOME/ve.synapse/bin/activate ; fi ; "
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "Stage_1_Stage_1_5", 
+            "opaque_slots": {
+                "lm_info": {
+                    "version_info": {
+                        "FORK": {
+                            "version": "0.42", 
+                            "version_detail": "There is no spoon"
+                        }
+                    }
+                }, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "localhost:0"
+                ]
+            }, 
+            "pilot": "pilot.0003", 
+            "sandbox": "sftp://xd-login.opensciencegrid.org/home/mturilli/radical.pilot.sandbox/rp.session.radical.mturilli.017078.0011/pilot.0003//unit.000005/", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "2016-10-04 13:23:12,481: radical.synapse     : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:23:12,482: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      pid: 54675\n2016-10-04 13:23:12,482: radical.synapse     : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2016-10-04 13:23:12,530: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 (default, Mar 23 2015, 15:50:58) [GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]\n2016-10-04 13:23:12,530: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      pid: 54675\n2016-10-04 13:23:12,531: radical.synapse.self._uid: MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n", 
+            "stderr_file": "/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/unit.000005/STDERR", 
+            "stdout": "/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274\nserial: 10\ntask type     : serial\ntask mode     : flops\nnum_processes : 1\ntask_length   : 1715750072310\nread_buf      : 65536\nwrite_buf     : 65536\nnum_input     : 0\nnum_output    : 0\ninterleave_opt: 0\nprocess 1/1 reading input files\nwarning: emulate needs either command, sample or src\nprocess 1/1 is sleeping\nemulating 1 samples\nemulate  {'efficiency': 1, 'flops': 1029450043386, 'time': 0}\nprocess 1/1 writing output files\nwarning: emulate needs either command, sample or src\n", 
+            "stdout_file": "/var/lib/condor/execute/dir_901166/glide_4dPaxn/execute/dir_30274/unit.000005/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000005", 
+            "umgr": "umgr.0000"
+        }
+    ]
+}
