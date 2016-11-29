@@ -1,0 +1,6 @@
+export RADICAL_LOG_TGT="/home/mturilli/experiments/AIMES-Experience/OSG/bin/radical.log"
+export RADICAL_VERBOSE="DEBUG"
+export RADICAL_PILOT_PROFILE="True"
+export RADICAL_PILOT_DBURL="mongodb://matteo:matteo@ds035385.mlab.com:35385/aimes-aws"
+export RADICAL_PROFILE="True"
+
