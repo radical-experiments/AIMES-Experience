@@ -1,10 +1,10 @@
 {
     "mongodb"      : "mongodb://matteo:matteo@ds035385.mlab.com:35385/aimes-aws",
     "workload_type": "skeleton",
-    "scales"       : [16],
+    "scales"       : [1024,2048],
     "bindings"     : ["late"],
     "time_distribs": ["uniform"],
-    "iterations"   : 1,
+    "iterations"   : 4,
     "cores"        : [1],
     "reruns"       : 0,
     "project_ids": {
@@ -33,7 +33,7 @@
                 "xd-login.opensciencegrid.org": {
                     "sched": "condor",
                     "fconf": "conf/osg.json",
-                    "num_pilots"  :   16,
+                    "num_pilots"  :   1024,
                     "cores"       :   1,
                     "walltime"    : 270000  
                 }
