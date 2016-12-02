@@ -209,7 +209,7 @@ At the same time we see that the variationj increases significantly, which we
 interprete as the emulation being more sensitive to noise in the system load.
 
 
-## (6)
+## (6) Emulation Portability
 
 The AIMES related experiments execute the Synapse Emulation on a variety of
 machines.  This requires us to confirm that the emulation behaves consistent
