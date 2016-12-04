@@ -42,36 +42,42 @@ Failed without CU rescheduling
 Failed with CU rescheduling
 ---------------------------
 
-| #  | Session                                 | # Tasks |
-|----|-----------------------------------------|---------|
-| 1  | rp.session.radical.mturilli.017087.0008 | 64      |
-| 2  | rp.session.radical.mturilli.017087.0010 | 64      |
-| 3  | rp.session.radical.mturilli.017088.0002 | 512     |
-| 4  | rp.session.radical.mturilli.017089.0001 | 16      |
-| 5  | rp.session.radical.mturilli.017089.0004 | 512     |
-| 6  | rp.session.radical.mturilli.017089.0005 | 512     |
-| 7  | rp.session.radical.mturilli.017090.0005 | 8       |
-| 8  | rp.session.radical.mturilli.017092.0003 | 256     |
-| 9  | rp.session.radical.mturilli.017093.0001 | 512     |
-| 10 | rp.session.radical.mturilli.017094.0001 | 1024    |
-| 11 | rp.session.radical.mturilli.017095.0000 | 1024    |
-| 12 | rp.session.radical.mturilli.017095.0002 | 128     | OSG
-| 13 | rp.session.radical.mturilli.017095.0004 | 2048    | OSG
-| 14 | rp.session.radical.mturilli.017095.0005 | 2048    | OSG
-| 15 | rp.session.radical.mturilli.017096.0000 | 512     | OSG
-| 16 | rp.session.radical.mturilli.017097.0000 | 512     | RP
-| 17 | rp.session.radical.mturilli.017097.0003 | 2048    | RP/OSG
-| 18 | rp.session.radical.mturilli.017098.0000 | 2048    | RP
-| 19 | rp.session.radical.mturilli.017109.0001 | 2048    | RP
-| 20 | rp.session.radical.mturilli.017110.0000 | 2048    |
-| 21 | rp.session.radical.mturilli.017110.0001 | 2048    | OSG
-| 22 | rp.session.radical.mturilli.017111.0000 | 2048    | OSG
-| 23 | rp.session.radical.mturilli.017113.0000 | 2048    |
-| 24 | rp.session.radical.mturilli.017113.0001 | 2048    |
-| 25 | rp.session.radical.mturilli.017114.0000 | 2048    |
-| 26 | rp.session.radical.mturilli.017114.0001 | 2048    |
-| 27 | rp.session.radical.mturilli.017114.0002 | 2048    |
-| 28 | rp.session.radical.mturilli.017118.0002 | 2048    |
-| 29 | rp.session.radical.mturilli.017123.0002 | 512     | OSG
-| 30 | rp.session.radical.mturilli.017123.0003 | 512     | RP
-| 31 | rp.session.radical.mturilli.017133.0006 | 64      | OSG Broker
+| #  | Session                                 | # Tasks | Error       |
+|----|-----------------------------------------|---------|-------------|
+| 1  | rp.session.radical.mturilli.017087.0008 | 64      |             |
+| 2  | rp.session.radical.mturilli.017087.0010 | 64      |             |
+| 3  | rp.session.radical.mturilli.017088.0002 | 512     |             |
+| 4  | rp.session.radical.mturilli.017089.0001 | 16      |             |
+| 5  | rp.session.radical.mturilli.017089.0004 | 512     |             |
+| 6  | rp.session.radical.mturilli.017089.0005 | 512     |             |
+| 7  | rp.session.radical.mturilli.017090.0005 | 8       |             |
+| 8  | rp.session.radical.mturilli.017092.0003 | 256     |             |
+| 9  | rp.session.radical.mturilli.017093.0001 | 512     |             |
+| 10 | rp.session.radical.mturilli.017094.0001 | 1024    |             |
+| 11 | rp.session.radical.mturilli.017095.0000 | 1024    |             |
+| 12 | rp.session.radical.mturilli.017095.0002 | 128     | OSG         |
+| 13 | rp.session.radical.mturilli.017095.0004 | 2048    | OSG         |
+| 14 | rp.session.radical.mturilli.017095.0005 | 2048    | OSG         |
+| 15 | rp.session.radical.mturilli.017096.0000 | 512     | OSG         |
+| 16 | rp.session.radical.mturilli.017097.0000 | 512     | RP          |
+| 17 | rp.session.radical.mturilli.017097.0003 | 2048    | RP/OSG      |
+| 18 | rp.session.radical.mturilli.017098.0000 | 2048    | RP          |
+| 19 | rp.session.radical.mturilli.017109.0001 | 2048    | RP          |
+| 20 | rp.session.radical.mturilli.017110.0000 | 2048    |             |
+| 21 | rp.session.radical.mturilli.017110.0001 | 2048    | OSG         |
+| 22 | rp.session.radical.mturilli.017111.0000 | 2048    | OSG         |
+| 23 | rp.session.radical.mturilli.017113.0000 | 2048    |             |
+| 24 | rp.session.radical.mturilli.017113.0001 | 2048    |             |
+| 25 | rp.session.radical.mturilli.017114.0000 | 2048    |             |
+| 26 | rp.session.radical.mturilli.017114.0001 | 2048    |             |
+| 27 | rp.session.radical.mturilli.017114.0002 | 2048    |             |
+| 28 | rp.session.radical.mturilli.017118.0002 | 2048    |             |
+| 29 | rp.session.radical.mturilli.017123.0002 | 512     | OSG         |
+| 30 | rp.session.radical.mturilli.017123.0003 | 512     | RP          |
+| 31 | rp.session.radical.mturilli.017133.0006 | 64      | OSG Broker  |
+| 32 | rp.session.radical.mturilli.017135.0011 | 512     | Termination |
+| 33 | rp.session.radical.mturilli.017137.0002 | 2048    | Termination |
+| 34 | rp.session.radical.mturilli.017137.0003 | 1024    | Termination |
+| 35 | rp.session.radical.mturilli.017138.0002 | 1024    | Hung        |
+| 36 | rp.session.radical.mturilli.017138.0003 | 1024    | RP manager  |
+| 37 | rp.session.radical.mturilli.017138.0005 | 2048    | RP manager  |

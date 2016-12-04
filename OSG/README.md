@@ -6,6 +6,20 @@ Our workload emulates the average task used in a real-life workload to simulate 
 
 Analogously, we measure also the queueing time of each pilot (Tq), studying its variance both within and across OSG resources. This is particularly relevant when considering that: (i) Tq is time-dominant in workloads executed on XSEDE and with TTC between 30 minutes and 2 hours; (ii) pilots on the resources made available to the users of the OSG VO, are required to have a single core.
 
+## Experiments
+
+| Experiment | #CU                              | #Pilots | Resource                  |
+|------------|----------------------------------|---------|---------------------------|
+| 01         | 8,16,32,64,128,256,512,1024,2048 | 8       | XSEDE OSG Virtual Cluster |
+| 02         |   16,32,64,128,256,512,1024,2048 | 16      | XSEDE OSG Virtual Cluster |
+| 03         |      32,64,128,256,512,1024,2048 | 32      | XSEDE OSG Virtual Cluster |
+| 04         |         64,128,256,512,1024,2048 | 64      | XSEDE OSG Virtual Cluster |
+| 05         |            128,256,512,1024,2048 | 128     | XSEDE OSG Virtual Cluster |
+| 06         |                256,512,1024,2048 | 256     | XSEDE OSG Virtual Cluster |
+| 07         |                    512,1024,2048 | 512     | XSEDE OSG Virtual Cluster |
+| 08         |                        1024,2048 | 1024    | XSEDE OSG Virtual Cluster |
+| 09         |                             2048 | 2048    | XSEDE OSG Virtual Cluster |
+
 ## Workloads
 
 | Experiment | Repetitions | #CU                              | #Pilots | Resource                  |
