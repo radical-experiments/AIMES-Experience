@@ -81,3 +81,7 @@ Failed with CU rescheduling
 | 35 | rp.session.radical.mturilli.017138.0002 | 1024    | Hung        |
 | 36 | rp.session.radical.mturilli.017138.0003 | 1024    | RP manager  |
 | 37 | rp.session.radical.mturilli.017138.0005 | 2048    | RP manager  |
+| 38 | rp.session.radical.mturilli.017138.0007 | 1024    | RP manager  |
+| 39 | rp.session.radical.mturilli.017139.0000 | 1024    | RP manager  |
+| 40 | rp.session.radical.mturilli.017139.0001 | 1024    | OSG/RPM     |
+| 41 | rp.session.radical.mturilli.017139.0002 | 1024    | OSG/RPM     |
