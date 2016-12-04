@@ -333,7 +333,7 @@ def load_session(sid, exp, sra_session, pdm, udm, pilots, units):
 
 # -----------------------------------------------------------------------------
 if __name__ == '__main__':
-    datadir = '../data/'
+    datadir = '../test/'
     experiment_tag = 'exp'
 
     # Global constants
@@ -404,18 +404,18 @@ if __name__ == '__main__':
                 sra_session = ra.Session(sid, 'radical.pilot', src=sdir)
 
                 # Pilots of sra: dervie properties and durations.
-                print '\n\nLoading pilots:'
+                print '\n\n%s -- %s -- Loading pilots:' % (exp, sid)
                 sra_pilots = sra_session.filter(etype='pilot', inplace=False)
                 pilots = load_pilots(sid, exp, sra_pilots, pdm)
 
                 # Units of sra: dervie properties and durations.
-                print '\n\nLoading units:'
+                print '\n\n%s -- %s -- Loading units:' % (exp, sid)
                 sra_units = sra_session.filter(etype='unit', inplace=False)
                 units = load_units(sid, exp, sra_units, udm, pilots,
                                    sra_session)
 
                 # Session of sra: derive properties and total durations.
-                print '\n\nLoading session:\n'
+                print '\n\n%s -- %s -- Loading session:\n' % (exp, sid)
                 load_session(sid, exp, sra_session, pdm, udm, pilots, units)
 
             else:
