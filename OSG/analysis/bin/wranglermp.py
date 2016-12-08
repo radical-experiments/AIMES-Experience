@@ -333,7 +333,7 @@ def load_session(sid, exp, sra_session, pdm, udm, pilots, units):
 
 # -----------------------------------------------------------------------------
 if __name__ == '__main__':
-    datadir = '../test/'
+    datadir = '../data/'
     experiment_tag = 'exp'
 
     # Global constants
