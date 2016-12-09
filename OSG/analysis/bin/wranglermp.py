@@ -31,6 +31,7 @@ def initialize_entity(ename=None):
                 'pilot'  : {'pid'          : [],     # Pilot ID
                             'sid'          : [],     # Session ID
                             'hid'          : [],     # Host ID
+                            'nunit'        : [],     # #units executed
                             'experiment'   : []},    # Experiment ID
                 'unit'   : {'uid'          : [],     # Unit ID
                             'sid'          : [],     # Session ID
@@ -161,7 +162,7 @@ def parse_osg_hostid(hostid):
     return domain
 
 
-def load_pilots(sid, exp, sra_pilots, pdm):
+def load_pilots(sid, exp, sra_pilots, pdm, pu_rels):
     sys.stdout.write('\n%s --- %s' % (exp, sid))
     ps = initialize_entity(ename='pilot')
 
@@ -187,12 +188,15 @@ def load_pilots(sid, exp, sra_pilots, pdm):
         ps['sid'].append(sid)
         ps['experiment'].append(exp)
 
-        # Derive host ID for each pilot.
+        # Host ID.
         pentity = sra_pilots.get(uid=pid)[0]
         if pentity.cfg['hostid']:
             ps['hid'].append(parse_osg_hostid(pentity.cfg['hostid']))
         else:
             ps['hid'].append(None)
+
+        # Number of units executed.
+        ps['nunit'].append(len(pu_rels[pid]))
 
         # Pilot durations.
         for duration in pdm.keys():
@@ -219,11 +223,10 @@ def load_pilots(sid, exp, sra_pilots, pdm):
     return stored_pilots
 
 
-def load_units(sid, exp, sra_units, udm, pilots, sra):
+def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels):
 
     sys.stdout.write('\n%s --- %s' % (exp, sid))
     us = initialize_entity(ename='unit')
-    pu_rels = sra.describe('relations', ['pilot', 'unit'])
 
     # Did we already store units of this session?
     stored_units = load_df(ename='unit')
@@ -288,7 +291,8 @@ def load_units(sid, exp, sra_units, udm, pilots, sra):
     return stored_units
 
 
-def load_session(sid, exp, sra_session, pdm, udm, pilots, units):
+def load_session(sid, exp, sra_session, sra_pilots, sra_units,
+                 pdm, udm, pilots, units):
 
     # IF this session has been already stored get out, nothing to do here.
     stored_sessions = load_df(ename='session')
@@ -300,28 +304,28 @@ def load_session(sid, exp, sra_session, pdm, udm, pilots, units):
     s = initialize_entity(ename='session')
 
     # Session properties: pilots and units.
-    sp = sra_session.filter(etype='pilot', inplace=False)
-    su = sra_session.filter(etype='unit', inplace=False)
+    # sp = sra_session.filter(etype='pilot', inplace=False)
+    # su = sra_session.filter(etype='unit', inplace=False)
     s['sid'].append(sid)
     s['session'].append(None)
     s['experiment'].append(exp)
     s['TTC'].append(sra_session.ttc)
     s['nhost'].append(len(pilots.loc[pilots['sid'] == sid]['hid'].unique()))
-    s['nunit'].append(len(su.get()))
-    s['npilot'].append(len(sp.get()))
-    s['npilot_active'].append(len(sp.timestamps(state='PMGR_ACTIVE')))
-    s['nunit_done'].append(len(su.timestamps(state='DONE')))
-    s['nunit_failed'].append(len(su.timestamps(state='FAILED')))
+    s['nunit'].append(len(sra_units.get()))
+    s['npilot'].append(len(sra_pilots.get()))
+    s['npilot_active'].append(len(sra_pilots.timestamps(state='PMGR_ACTIVE')))
+    s['nunit_done'].append(len(sra_units.timestamps(state='DONE')))
+    s['nunit_failed'].append(len(sra_units.timestamps(state='FAILED')))
 
     # Pilots total durations.  NOTE: s initialization guarantees
     # the existence of duration keys.
     for duration in pdm.keys():
-        s[duration].append(sp.duration(pdm[duration]))
+        s[duration].append(sra_pilots.duration(pdm[duration]))
 
     # Units total durations. NOTE: s initialization guarantees the
     # existence of duration keys.
     for duration in udm.keys():
-        s[duration].append(su.duration(udm[duration]))
+        s[duration].append(sra_units.duration(udm[duration]))
 
     # Store session.
     session = pd.DataFrame(s, index=[sid])
@@ -403,20 +407,24 @@ if __name__ == '__main__':
                 # to be constructed at every run.
                 sra_session = ra.Session(sid, 'radical.pilot', src=sdir)
 
+                # Pilot-unit relationship dictionary
+                pu_rels = sra_session.describe('relations', ['pilot', 'unit'])
+
                 # Pilots of sra: dervie properties and durations.
                 print '\n\n%s -- %s -- Loading pilots:' % (exp, sid)
                 sra_pilots = sra_session.filter(etype='pilot', inplace=False)
-                pilots = load_pilots(sid, exp, sra_pilots, pdm)
+                pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels)
 
                 # Units of sra: dervie properties and durations.
                 print '\n\n%s -- %s -- Loading units:' % (exp, sid)
                 sra_units = sra_session.filter(etype='unit', inplace=False)
                 units = load_units(sid, exp, sra_units, udm, pilots,
-                                   sra_session)
+                                   sra_session, pu_rels)
 
                 # Session of sra: derive properties and total durations.
                 print '\n\n%s -- %s -- Loading session:\n' % (exp, sid)
-                load_session(sid, exp, sra_session, pdm, udm, pilots, units)
+                load_session(sid, exp, sra_session, sra_pilots, sra_units,
+                             pdm, udm, pilots, units)
 
             else:
                 error = 'ERROR: session folder and json file name differ'
