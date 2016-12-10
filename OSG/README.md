@@ -26,7 +26,7 @@ Analogously, we measure also the queueing time of each pilot (Tq), studying its 
 |------------|-------------|----------------------------------|---------|---------------------------|
 | Exp1       | 4           | 8,16,32,64                       | 4       | XSEDE OSG Virtual Cluster |
 | Exp2       | 4           | 8,16,32,64                       | 4       | XSEDE OSG Virtual Cluster |
-| Exp3       | 4           | 8,16,32,64                       | 8       | XSEDE OSG Virtual Cluster |
+| Exp3       | 4           | 8,16,32,64                       | 4       | XSEDE OSG Virtual Cluster |
 | Exp4       | 4           | 8,16,32,64,128                   | 8       | XSEDE OSG Virtual Cluster |
 | Exp5       | 4           | 8,16,32,64,128,256,512           | 32      | XSEDE OSG Virtual Cluster |
 | Exp6       | 4           |            128,256,512,1024,2048 | 128     | XSEDE OSG Virtual Cluster |
