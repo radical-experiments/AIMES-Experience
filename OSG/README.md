@@ -8,17 +8,18 @@ Analogously, we measure also the queueing time of each pilot (Tq), studying its 
 
 ## Experiments
 
-| Experiment | #CU                              | #Pilots | Resource                  |
-|------------|----------------------------------|---------|---------------------------|
-| 01         | 8,16,32,64,128,256,512,1024,2048 | 8       | XSEDE OSG Virtual Cluster |
-| 02         |   16,32,64,128,256,512,1024,2048 | 16      | XSEDE OSG Virtual Cluster |
-| 03         |      32,64,128,256,512,1024,2048 | 32      | XSEDE OSG Virtual Cluster |
-| 04         |         64,128,256,512,1024,2048 | 64      | XSEDE OSG Virtual Cluster |
-| 05         |            128,256,512,1024,2048 | 128     | XSEDE OSG Virtual Cluster |
-| 06         |                256,512,1024,2048 | 256     | XSEDE OSG Virtual Cluster |
-| 07         |                    512,1024,2048 | 512     | XSEDE OSG Virtual Cluster |
-| 08         |                        1024,2048 | 1024    | XSEDE OSG Virtual Cluster |
-| 09         |                             2048 | 2048    | XSEDE OSG Virtual Cluster |
+| Experiment | #CU                              | #Pilots | #Repetitions | Resource                  |
+|:----------:|---------------------------------:|---------|--------------|---------------------------|
+| 1          | 8,16,32,64,128,256,512,1024,2048 | 8       | 4/8          | XSEDE OSG Virtual Cluster |
+| 2          |   16,32,64,128,256,512,1024,2048 | 16      | 4/8          | XSEDE OSG Virtual Cluster |
+| 3          |      32,64,128,256,512,1024,2048 | 32      | 4/8          | XSEDE OSG Virtual Cluster |
+| 4          |         64,128,256,512,1024,2048 | 64      | 4/8          | XSEDE OSG Virtual Cluster |
+| 5          |            128,256,512,1024,2048 | 128     | 4/8          | XSEDE OSG Virtual Cluster |
+| 6          |                256,512,1024,2048 | 256     | 4/8          | XSEDE OSG Virtual Cluster |
+| 7          |                    512,1024,2048 | 512     | 4/8          | XSEDE OSG Virtual Cluster |
+| 8          |                        1024,2048 | 1024    | 4/8          | XSEDE OSG Virtual Cluster |
+| 9          |                             2048 | 2048    | 4/8          | XSEDE OSG Virtual Cluster |
+
 
 ## Workloads
 
