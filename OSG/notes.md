@@ -87,3 +87,6 @@ Failed with CU rescheduling
 | 41 | rp.session.radical.mturilli.017139.0002 | 1024    | OSG/RPM     |
 | 42 | rp.session.radical.mturilli.017139.0004 | 2048    | RP          |
 | 43 | rp.session.radical.mturilli.017140.0000 | 2048    | RP          |
+| 44 | rp.session.radical.mturilli.017146.0000 | 1024    | RP          |
+| 45 | rp.session.radical.mturilli.017147.0001 | 2048    | RP          |
+| 46 | rp.session.radical.mturilli.017148.0000 | 2048    |             |
