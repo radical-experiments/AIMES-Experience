@@ -10,8 +10,8 @@ Analogously, we measure also the queueing time of each pilot (Tq), studying its 
 
 | Experiment | #CU                              | #Pilots | #Repetitions | Resource                  |
 |:----------:|---------------------------------:|---------|--------------|---------------------------|
-| 1          | 8,16,32,64,128,256,512,1024,2048 | 8       | 4/8          | XSEDE OSG Virtual Cluster |
-| 2          |   16,32,64,128,256,512,1024,2048 | 16      | 4/8          | XSEDE OSG Virtual Cluster |
+| 1          | 8,16,32,64,128,256,512,----,---- | 8       | 4/8          | XSEDE OSG Virtual Cluster |
+| 2          |   16,32,64,128,256,512,1024,---- | 16      | 4/8          | XSEDE OSG Virtual Cluster |
 | 3          |      32,64,128,256,512,1024,2048 | 32      | 4/8          | XSEDE OSG Virtual Cluster |
 | 4          |         64,128,256,512,1024,2048 | 64      | 4/8          | XSEDE OSG Virtual Cluster |
 | 5          |            128,256,512,1024,2048 | 128     | 4/8          | XSEDE OSG Virtual Cluster |
@@ -23,18 +23,22 @@ Analogously, we measure also the queueing time of each pilot (Tq), studying its 
 
 ## Workloads
 
-| Experiment | Repetitions | #CU                              | #Pilots | Resource                  |
-|------------|-------------|----------------------------------|---------|---------------------------|
-| Exp1       | 4           | 8,16,32,64                       | 4       | XSEDE OSG Virtual Cluster |
-| Exp2       | 4           | 8,16,32,64                       | 4       | XSEDE OSG Virtual Cluster |
-| Exp3       | 4           | 8,16,32,64                       | 4       | XSEDE OSG Virtual Cluster |
-| Exp4       | 4           | 8,16,32,64,128                   | 8       | XSEDE OSG Virtual Cluster |
-| Exp5       | 4           | 8,16,32,64,128,256,512           | 32      | XSEDE OSG Virtual Cluster |
-| Exp6       | 4           |            128,256,512,1024,2048 | 128     | XSEDE OSG Virtual Cluster |
-| Exp7       | 4           |                    512,1024,2048 | 512     | XSEDE OSG Virtual Cluster |
-| Exp8       | 4           |                256,512,1024,2048 | 256     | XSEDE OSG Virtual Cluster |
-| Exp9       | 4           |         64,128,256,512,1024,2048 | 64      | XSEDE OSG Virtual Cluster |
-| Exp10      | 4           |   16,32,64,128,256,512           | 16      | XSEDE OSG Virtual Cluster |
+| Experiment | Repetitions | #CU                              | #Pilots | Resource                  | Notes                     |
+|------------|-------------|----------------------------------|---------|---------------------------|---------------------------|
+| Exp1       | 4           | 8,16,32,64                       | 4       | XSEDE OSG Virtual Cluster |                           |
+| Exp2       | 4           | 8,16,32,64                       | 4       | XSEDE OSG Virtual Cluster |                           |
+| Exp3       | 4           | 8,16,32,64                       | 4       | XSEDE OSG Virtual Cluster |                           |
+| Exp4       | 4           | 8,16,32,64,128                   | 8       | XSEDE OSG Virtual Cluster |                           |
+| Exp5       | 4           | 8,16,32,64,128,256,512           | 32      | XSEDE OSG Virtual Cluster |                           |
+| Exp6       | 4           |            128,256,512,1024,2048 | 128     | XSEDE OSG Virtual Cluster |                           |
+| Exp7       | 4           |                    512,1024,2048 | 512     | XSEDE OSG Virtual Cluster |                           |
+| Exp8       | 4           |                256,512,1024,2048 | 256     | XSEDE OSG Virtual Cluster |                           |
+| Exp9       | 4           |         64,128,256,512,1024,2048 | 64      | XSEDE OSG Virtual Cluster |                           |
+| Exp10      | 4           |   16,32,64,128,256,512           | 16      | XSEDE OSG Virtual Cluster |                           |
+| Exp11      | 4           |                        1024,2048 | 1024    | XSEDE OSG Virtual Cluster |                           |
+| Exp12      | 4           |                             2048 | 2048    | XSEDE OSG Virtual Cluster |                           |
+| Exp13      | 4           |                        1024,2048 | 32      | XSEDE OSG Virtual Cluster | 3 2048. SP #598, #600     |
+| Exp14      | 4           | 8,16,32,64,128,256,512           | 8       | XSEDE OSG Virtual Cluster |                           |
 
 ## Directories
 
