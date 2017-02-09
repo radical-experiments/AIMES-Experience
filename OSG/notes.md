@@ -93,3 +93,11 @@ Failed with CU rescheduling
 | 47 | rp.session.radical.mturilli.017149.0000 | 2048    | RP          |
 | 48 | rp.session.radical.mturilli.017152.0000 | 2048    | RP          |
 | 49 | rp.session.radical.mturilli.017156.0001 | 8       | RP          |
+| 50 | rp.session.radical.mturilli.017165.0000 | 64      | RP          |
+| 51 | rp.session.radical.mturilli.017172.0001 | 512     | RP          |
+| 52 | rp.session.radical.mturilli.017173.0004 | 512     | RP          |
+| 53 | rp.session.radical.mturilli.017174.0002 | 256     | EMGR        |
+| 54 | rp.session.radical.mturilli.017175.0005 | 512     | EMGR        |
+| 55 | rp.session.radical.mturilli.017176.0000 | 512     | EMGR        |
+| 56 | rp.session.radical.mturilli.017205.0004 | 1024    | RP          |
+| 57 | rp.session.radical.mturilli.017206.0001 | 128     | RP          |
