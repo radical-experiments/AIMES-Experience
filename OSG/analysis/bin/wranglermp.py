@@ -27,10 +27,13 @@ def initialize_entity(ename=None):
                             'nunit_done'   : [],     # #active units
                             'nunit_failed' : [],     # #failed units
                             'npilot'       : [],     # #pilots
-                            'npilot_active': []},    # #active pilots
+                            'npilot_active': [],     # #active pilots
+                            'ncore'        : [],     # #cores
+                            'ncore_active' : []},    # #active cores
                 'pilot'  : {'pid'          : [],     # Pilot ID
                             'sid'          : [],     # Session ID
                             'hid'          : [],     # Host ID
+                            'ncore'        : [],     # #cores
                             'nunit'        : [],     # #units executed
                             'experiment'   : []},    # Experiment ID
                 'unit'   : {'uid'          : [],     # Unit ID
@@ -195,6 +198,9 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels):
         else:
             ps['hid'].append(None)
 
+        # Number of cores of the pilot.
+        ps['ncore'].append(pentity.description['cores'])
+
         # Number of units executed.
         ps['nunit'].append(len(pu_rels[pid]))
 
@@ -316,6 +322,13 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
     s['npilot_active'].append(len(sra_pilots.timestamps(state='PMGR_ACTIVE')))
     s['nunit_done'].append(len(sra_units.timestamps(state='DONE')))
     s['nunit_failed'].append(len(sra_units.timestamps(state='FAILED')))
+
+    # Number of cores requested and used by the session's pilots. Make a copy of
+    # the pilots DF with only the columns we need to limit memory overhead.
+    pcores = pilots[pilots.sid == sid][['P_LRMS_RUNNING', 'ncore']]
+    s['ncore'].append(pcores.ncore.sum())
+    s['ncore_active'].append(pcores[pcores.P_LRMS_RUNNING > 0].ncore.sum())
+    pcores = None
 
     # Pilots total durations.  NOTE: s initialization guarantees
     # the existence of duration keys.
