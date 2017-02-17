@@ -14,6 +14,7 @@ bot=$3
 cd $TMP
 echo $PWD
 
+# Note: $ROOT is on the _local_ machine
 echo "radicalpilot-fetch-profiles -c $ROOT $sid"
 radicalpilot-fetch-profiles -c $ROOT $sid
 
