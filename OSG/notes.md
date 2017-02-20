@@ -99,5 +99,26 @@ Failed with CU rescheduling
 | 53 | rp.session.radical.mturilli.017174.0002 | 256     | EMGR        |
 | 54 | rp.session.radical.mturilli.017175.0005 | 512     | EMGR        |
 | 55 | rp.session.radical.mturilli.017176.0000 | 512     | EMGR        |
+
+Exp 17
 | 56 | rp.session.radical.mturilli.017205.0004 | 1024    | RP          |
 | 57 | rp.session.radical.mturilli.017206.0001 | 128     | RP          |
+| 58 | rp.session.radical.mturilli.017209.0002 | 1024    | RP          |
+| 59 | rp.session.radical.mturilli.017211.0000 | 2048    | RP          |
+| 60 | rp.session.radical.mturilli.017211.0005 | 1024    | RP          |
+| 61 | rp.session.radical.mturilli.017211.0007 | 128     | RP          |
+| 62 | rp.session.radical.mturilli.017212.0007 | 64      | RP          |
+| 63 | rp.session.radical.mturilli.017213.0000 | 512     | RP          |
+| 64 | rp.session.radical.mturilli.017213.0002 | 512     | RP          |
+| 65 | rp.session.radical.mturilli.017213.0003 | 2048    | RP          |
+| 66 | rp.session.radical.mturilli.017213.0004 | 512     | RP          |
+| 67 | rp.session.radical.mturilli.017213.0005 | 2048    | RP          |
+| 68 | rp.session.radical.mturilli.017214.0001 | 2048    | RP          |
+| 69 | rp.session.radical.mturilli.017214.0002 | 512     | RP          |
+| 70 | rp.session.radical.mturilli.017215.0000 | 512     | RP          |
+| 71 | rp.session.radical.mturilli.017215.0001 | 2048    | RP          |
+
+Exp 18
+| 72 | rp.session.radical.mturilli.017216.0002 | 256     | RP          |
+| 73 | rp.session.radical.mturilli.017216.0004 | 256     | RP          |
+| 74 | rp.session.radical.mturilli.017217.0000 |         | RP          |
