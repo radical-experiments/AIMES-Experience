@@ -1,0 +1,938 @@
+#time,name,uid,state,event,msg
+1488612761.8278,update.0.child:,,,sync abs,abc-24b.nut.bu.edu:127.0.0.1:1488612761.78:1488612761.79:ntp
+1488612761.8288,update.0.child:MainThread,update.0.child,,initialize,
+1488612761.8484,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488612765.8907,update.0.child:update.0.child.subscriber._state_cb,pilot.0066,,get,update pilot state to PMGR_ACTIVE
+1488612765.8910,update.0.child:update.0.child.subscriber._state_cb,pilot.0066,,bulk,bulked (PMGR_ACTIVE)
+1488612765.9065,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488612765.9066,update.0.child:update.0.child.subscriber._state_cb,pilot.0066,,update,pilot update pushed (PMGR_ACTIVE)
+1488612777.1331,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,get,update unit state to AGENT_STAGING_INPUT
+1488612777.1333,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,bulk,bulked (AGENT_STAGING_INPUT)
+1488612777.1335,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,get,update unit state to AGENT_STAGING_INPUT
+1488612777.1336,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,bulk,bulked (AGENT_STAGING_INPUT)
+1488612777.1489,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (2),
+1488612777.1489,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488612777.1489,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488612777.1490,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488612777.1491,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488612777.1493,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488612777.1493,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488612777.1496,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,get,update unit state to AGENT_SCHEDULING
+1488612777.1496,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,bulk,bulked (AGENT_SCHEDULING)
+1488612777.1498,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,get,update unit state to AGENT_SCHEDULING
+1488612777.1498,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,bulk,bulked (AGENT_SCHEDULING)
+1488612777.1500,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,get,update unit state to AGENT_EXECUTING_PENDING
+1488612777.1501,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488612777.1503,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,get,update unit state to AGENT_EXECUTING
+1488612777.1504,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,bulk,bulked (AGENT_EXECUTING)
+1488612779.1453,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (6),
+1488612779.1454,update.0.child:update.0.child.idler._idle_cb,unit.000126,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488612779.1454,update.0.child:update.0.child.idler._idle_cb,unit.000428,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488612779.1454,update.0.child:update.0.child.idler._idle_cb,unit.000126,,update,unit update pushed (AGENT_SCHEDULING)
+1488612779.1454,update.0.child:update.0.child.idler._idle_cb,unit.000428,,update,unit update pushed (AGENT_SCHEDULING)
+1488612779.1454,update.0.child:update.0.child.idler._idle_cb,unit.000126,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488612779.1454,update.0.child:update.0.child.idler._idle_cb,unit.000126,,update,unit update pushed (AGENT_EXECUTING)
+1488612821.9244,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488612881.9492,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488612941.9753,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488612988.5766,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488612988.5767,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488612988.5919,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488612988.5919,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488612988.5920,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,get,update unit state to AGENT_EXECUTING_PENDING
+1488612988.5920,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488612988.5921,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,get,update unit state to AGENT_STAGING_OUTPUT
+1488612988.5922,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488612988.5923,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,get,update unit state to AGENT_EXECUTING
+1488612988.5923,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,bulk,bulked (AGENT_EXECUTING)
+1488612988.5924,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488612988.5924,update.0.child:update.0.child.subscriber._state_cb,unit.000126,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488612990.5010,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488612990.5010,update.0.child:update.0.child.idler._idle_cb,unit.000428,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488612990.5010,update.0.child:update.0.child.idler._idle_cb,unit.000126,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488612990.5011,update.0.child:update.0.child.idler._idle_cb,unit.000428,,update,unit update pushed (AGENT_EXECUTING)
+1488612990.5011,update.0.child:update.0.child.idler._idle_cb,unit.000126,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488612996.9578,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,get,update unit state to AGENT_STAGING_INPUT
+1488612996.9579,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,bulk,bulked (AGENT_STAGING_INPUT)
+1488612996.9726,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488612996.9726,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488612996.9727,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488612996.9728,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488612996.9729,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,get,update unit state to AGENT_SCHEDULING
+1488612996.9730,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,bulk,bulked (AGENT_SCHEDULING)
+1488612998.5268,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488612998.5268,update.0.child:update.0.child.idler._idle_cb,unit.000056,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488612998.5268,update.0.child:update.0.child.idler._idle_cb,unit.000056,,update,unit update pushed (AGENT_SCHEDULING)
+1488613001.9837,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613062.0037,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613122.0503,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613150.7609,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488613150.7610,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488613150.7763,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488613150.7763,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488613150.7764,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,get,update unit state to AGENT_EXECUTING_PENDING
+1488613150.7765,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488613150.7768,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,get,update unit state to AGENT_STAGING_OUTPUT
+1488613150.7768,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488613150.7770,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,get,update unit state to AGENT_EXECUTING
+1488613150.7771,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,bulk,bulked (AGENT_EXECUTING)
+1488613150.7773,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488613150.7774,update.0.child:update.0.child.subscriber._state_cb,unit.000428,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488613151.8037,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488613151.8038,update.0.child:update.0.child.idler._idle_cb,unit.000056,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488613151.8038,update.0.child:update.0.child.idler._idle_cb,unit.000428,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488613151.8038,update.0.child:update.0.child.idler._idle_cb,unit.000056,,update,unit update pushed (AGENT_EXECUTING)
+1488613151.8038,update.0.child:update.0.child.idler._idle_cb,unit.000428,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488613156.6622,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,get,update unit state to AGENT_STAGING_INPUT
+1488613156.6623,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,bulk,bulked (AGENT_STAGING_INPUT)
+1488613156.6772,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488613156.6772,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488613156.6773,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488613156.6773,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488613156.6775,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,get,update unit state to AGENT_SCHEDULING
+1488613156.6775,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,bulk,bulked (AGENT_SCHEDULING)
+1488613157.8298,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488613157.8298,update.0.child:update.0.child.idler._idle_cb,unit.000112,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488613157.8298,update.0.child:update.0.child.idler._idle_cb,unit.000112,,update,unit update pushed (AGENT_SCHEDULING)
+1488613182.0690,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613242.1166,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613302.1674,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613322.9912,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488613322.9914,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488613323.0066,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488613323.0066,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488613323.0068,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,get,update unit state to AGENT_EXECUTING_PENDING
+1488613323.0069,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488613323.0071,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,get,update unit state to AGENT_STAGING_OUTPUT
+1488613323.0072,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488613323.0074,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488613323.0075,update.0.child:update.0.child.subscriber._state_cb,unit.000056,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488613323.0077,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,get,update unit state to AGENT_EXECUTING
+1488613323.0078,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,bulk,bulked (AGENT_EXECUTING)
+1488613324.1328,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488613324.1328,update.0.child:update.0.child.idler._idle_cb,unit.000112,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488613324.1329,update.0.child:update.0.child.idler._idle_cb,unit.000056,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488613324.1329,update.0.child:update.0.child.idler._idle_cb,unit.000056,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488613324.1329,update.0.child:update.0.child.idler._idle_cb,unit.000112,,update,unit update pushed (AGENT_EXECUTING)
+1488613327.6675,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,get,update unit state to AGENT_STAGING_INPUT
+1488613327.6676,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,bulk,bulked (AGENT_STAGING_INPUT)
+1488613327.6827,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488613327.6827,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488613327.6828,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488613327.6829,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488613327.6831,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,get,update unit state to AGENT_SCHEDULING
+1488613327.6832,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,bulk,bulked (AGENT_SCHEDULING)
+1488613329.1774,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488613329.1775,update.0.child:update.0.child.idler._idle_cb,unit.000277,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488613329.1775,update.0.child:update.0.child.idler._idle_cb,unit.000277,,update,unit update pushed (AGENT_SCHEDULING)
+1488613362.2104,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613422.2686,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613482.3115,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613493.1747,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488613493.1748,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488613493.1901,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488613493.1901,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488613493.1902,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,get,update unit state to AGENT_EXECUTING_PENDING
+1488613493.1903,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488613493.1906,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,get,update unit state to AGENT_STAGING_OUTPUT
+1488613493.1906,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488613493.1909,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488613493.1909,update.0.child:update.0.child.subscriber._state_cb,unit.000112,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488613493.1912,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,get,update unit state to AGENT_EXECUTING
+1488613493.1912,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,bulk,bulked (AGENT_EXECUTING)
+1488613494.4764,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488613494.4764,update.0.child:update.0.child.idler._idle_cb,unit.000277,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488613494.4764,update.0.child:update.0.child.idler._idle_cb,unit.000112,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488613494.4764,update.0.child:update.0.child.idler._idle_cb,unit.000112,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488613494.4764,update.0.child:update.0.child.idler._idle_cb,unit.000277,,update,unit update pushed (AGENT_EXECUTING)
+1488613497.6050,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,get,update unit state to AGENT_STAGING_INPUT
+1488613497.6052,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,bulk,bulked (AGENT_STAGING_INPUT)
+1488613497.6201,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488613497.6201,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488613497.6203,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488613497.6204,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488613497.6206,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,get,update unit state to AGENT_SCHEDULING
+1488613497.6207,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,bulk,bulked (AGENT_SCHEDULING)
+1488613499.5006,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488613499.5007,update.0.child:update.0.child.idler._idle_cb,unit.000488,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488613499.5007,update.0.child:update.0.child.idler._idle_cb,unit.000488,,update,unit update pushed (AGENT_SCHEDULING)
+1488613542.3567,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613602.4096,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613662.3583,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488613662.3584,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488613662.3748,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488613662.3748,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488613662.3749,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,get,update unit state to AGENT_EXECUTING_PENDING
+1488613662.3750,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488613662.3752,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,get,update unit state to AGENT_STAGING_OUTPUT
+1488613662.3753,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488613662.3756,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488613662.3757,update.0.child:update.0.child.subscriber._state_cb,unit.000277,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488613662.3759,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,get,update unit state to AGENT_EXECUTING
+1488613662.3759,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,bulk,bulked (AGENT_EXECUTING)
+1488613662.4368,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613663.7945,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488613663.7945,update.0.child:update.0.child.idler._idle_cb,unit.000488,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488613663.7945,update.0.child:update.0.child.idler._idle_cb,unit.000277,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488613663.7946,update.0.child:update.0.child.idler._idle_cb,unit.000277,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488613663.7946,update.0.child:update.0.child.idler._idle_cb,unit.000488,,update,unit update pushed (AGENT_EXECUTING)
+1488613672.6148,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,get,update unit state to AGENT_STAGING_INPUT
+1488613672.6149,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,bulk,bulked (AGENT_STAGING_INPUT)
+1488613672.6308,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488613672.6308,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488613672.6310,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488613672.6311,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488613672.6313,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,get,update unit state to AGENT_SCHEDULING
+1488613672.6314,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,bulk,bulked (AGENT_SCHEDULING)
+1488613673.8263,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488613673.8263,update.0.child:update.0.child.idler._idle_cb,unit.000472,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488613673.8263,update.0.child:update.0.child.idler._idle_cb,unit.000472,,update,unit update pushed (AGENT_SCHEDULING)
+1488613722.5081,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613782.5507,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613830.5389,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488613830.5391,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488613830.5545,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488613830.5545,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488613830.5546,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,get,update unit state to AGENT_EXECUTING_PENDING
+1488613830.5547,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488613830.5550,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,get,update unit state to AGENT_STAGING_OUTPUT
+1488613830.5550,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488613830.5553,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488613830.5553,update.0.child:update.0.child.subscriber._state_cb,unit.000488,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488613830.5556,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,get,update unit state to AGENT_EXECUTING
+1488613830.5557,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,bulk,bulked (AGENT_EXECUTING)
+1488613832.0952,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488613832.0952,update.0.child:update.0.child.idler._idle_cb,unit.000472,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488613832.0952,update.0.child:update.0.child.idler._idle_cb,unit.000488,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488613832.0952,update.0.child:update.0.child.idler._idle_cb,unit.000488,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488613832.0952,update.0.child:update.0.child.idler._idle_cb,unit.000472,,update,unit update pushed (AGENT_EXECUTING)
+1488613838.5395,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,get,update unit state to AGENT_STAGING_INPUT
+1488613838.5397,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,bulk,bulked (AGENT_STAGING_INPUT)
+1488613838.5547,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488613838.5547,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488613838.5549,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488613838.5550,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488613838.5552,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,get,update unit state to AGENT_SCHEDULING
+1488613838.5553,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,bulk,bulked (AGENT_SCHEDULING)
+1488613840.1243,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488613840.1243,update.0.child:update.0.child.idler._idle_cb,unit.000254,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488613840.1243,update.0.child:update.0.child.idler._idle_cb,unit.000254,,update,unit update pushed (AGENT_SCHEDULING)
+1488613842.5849,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613902.6621,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488613962.6935,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614001.7274,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488614001.7275,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488614001.7426,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614001.7427,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488614001.7427,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,get,update unit state to AGENT_STAGING_OUTPUT
+1488614001.7428,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488614001.7429,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,get,update unit state to AGENT_EXECUTING_PENDING
+1488614001.7429,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488614001.7430,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488614001.7431,update.0.child:update.0.child.subscriber._state_cb,unit.000472,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488614001.7432,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,get,update unit state to AGENT_EXECUTING
+1488614001.7432,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,bulk,bulked (AGENT_EXECUTING)
+1488614003.4097,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488614003.4097,update.0.child:update.0.child.idler._idle_cb,unit.000472,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488614003.4097,update.0.child:update.0.child.idler._idle_cb,unit.000254,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488614003.4097,update.0.child:update.0.child.idler._idle_cb,unit.000472,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488614003.4097,update.0.child:update.0.child.idler._idle_cb,unit.000254,,update,unit update pushed (AGENT_EXECUTING)
+1488614007.5320,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,get,update unit state to AGENT_STAGING_INPUT
+1488614007.5321,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,bulk,bulked (AGENT_STAGING_INPUT)
+1488614007.5471,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614007.5471,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488614007.5472,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488614007.5473,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488614007.5475,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,get,update unit state to AGENT_SCHEDULING
+1488614007.5476,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,bulk,bulked (AGENT_SCHEDULING)
+1488614009.4353,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488614009.4354,update.0.child:update.0.child.idler._idle_cb,unit.000025,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488614009.4354,update.0.child:update.0.child.idler._idle_cb,unit.000025,,update,unit update pushed (AGENT_SCHEDULING)
+1488614022.7377,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614082.7436,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614142.7776,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614178.9204,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488614178.9206,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488614178.9363,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614178.9363,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488614178.9365,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,get,update unit state to AGENT_EXECUTING_PENDING
+1488614178.9366,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488614178.9368,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,get,update unit state to AGENT_STAGING_OUTPUT
+1488614178.9369,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488614178.9371,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488614178.9372,update.0.child:update.0.child.subscriber._state_cb,unit.000254,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488614178.9374,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,get,update unit state to AGENT_EXECUTING
+1488614178.9375,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,bulk,bulked (AGENT_EXECUTING)
+1488614180.7345,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488614180.7345,update.0.child:update.0.child.idler._idle_cb,unit.000025,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488614180.7345,update.0.child:update.0.child.idler._idle_cb,unit.000254,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488614180.7345,update.0.child:update.0.child.idler._idle_cb,unit.000254,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488614180.7345,update.0.child:update.0.child.idler._idle_cb,unit.000025,,update,unit update pushed (AGENT_EXECUTING)
+1488614188.6625,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,get,update unit state to AGENT_STAGING_INPUT
+1488614188.6626,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,bulk,bulked (AGENT_STAGING_INPUT)
+1488614188.6776,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614188.6776,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488614188.6777,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488614188.6778,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488614188.6780,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,get,update unit state to AGENT_SCHEDULING
+1488614188.6781,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,bulk,bulked (AGENT_SCHEDULING)
+1488614189.7637,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488614189.7637,update.0.child:update.0.child.idler._idle_cb,unit.000181,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488614189.7637,update.0.child:update.0.child.idler._idle_cb,unit.000181,,update,unit update pushed (AGENT_SCHEDULING)
+1488614202.8423,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614262.8801,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614322.9434,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614350.1073,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488614350.1074,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488614350.1229,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614350.1229,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488614350.1231,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,get,update unit state to AGENT_STAGING_OUTPUT
+1488614350.1232,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488614350.1234,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,get,update unit state to AGENT_EXECUTING_PENDING
+1488614350.1235,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488614350.1237,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488614350.1238,update.0.child:update.0.child.subscriber._state_cb,unit.000025,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488614350.1241,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,get,update unit state to AGENT_EXECUTING
+1488614350.1241,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,bulk,bulked (AGENT_EXECUTING)
+1488614352.0520,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488614352.0520,update.0.child:update.0.child.idler._idle_cb,unit.000025,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488614352.0520,update.0.child:update.0.child.idler._idle_cb,unit.000181,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488614352.0520,update.0.child:update.0.child.idler._idle_cb,unit.000025,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488614352.0520,update.0.child:update.0.child.idler._idle_cb,unit.000181,,update,unit update pushed (AGENT_EXECUTING)
+1488614356.6375,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,get,update unit state to AGENT_STAGING_INPUT
+1488614356.6377,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,bulk,bulked (AGENT_STAGING_INPUT)
+1488614356.6530,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614356.6530,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488614356.6532,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488614356.6533,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488614356.6536,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,get,update unit state to AGENT_SCHEDULING
+1488614356.6537,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,bulk,bulked (AGENT_SCHEDULING)
+1488614358.0742,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488614358.0743,update.0.child:update.0.child.idler._idle_cb,unit.000240,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488614358.0743,update.0.child:update.0.child.idler._idle_cb,unit.000240,,update,unit update pushed (AGENT_SCHEDULING)
+1488614382.9933,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614443.0286,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614503.0749,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614521.2875,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488614521.2876,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488614521.3026,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614521.3027,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488614521.3028,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,get,update unit state to AGENT_STAGING_OUTPUT
+1488614521.3028,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488614521.3030,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,get,update unit state to AGENT_EXECUTING_PENDING
+1488614521.3030,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488614521.3032,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488614521.3032,update.0.child:update.0.child.subscriber._state_cb,unit.000181,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488614521.3034,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,get,update unit state to AGENT_EXECUTING
+1488614521.3034,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,bulk,bulked (AGENT_EXECUTING)
+1488614523.3009,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488614523.3009,update.0.child:update.0.child.idler._idle_cb,unit.000181,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488614523.3009,update.0.child:update.0.child.idler._idle_cb,unit.000240,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488614523.3009,update.0.child:update.0.child.idler._idle_cb,unit.000181,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488614523.3009,update.0.child:update.0.child.idler._idle_cb,unit.000240,,update,unit update pushed (AGENT_EXECUTING)
+1488614524.7139,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,get,update unit state to AGENT_STAGING_INPUT
+1488614524.7140,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,bulk,bulked (AGENT_STAGING_INPUT)
+1488614524.7288,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614524.7288,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488614524.7289,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488614524.7290,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488614524.7292,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,get,update unit state to AGENT_SCHEDULING
+1488614524.7293,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,bulk,bulked (AGENT_SCHEDULING)
+1488614526.3212,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488614526.3212,update.0.child:update.0.child.idler._idle_cb,unit.000403,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488614526.3212,update.0.child:update.0.child.idler._idle_cb,unit.000403,,update,unit update pushed (AGENT_SCHEDULING)
+1488614563.1043,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614623.1634,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614683.2019,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614692.4694,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488614692.4696,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488614692.4847,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614692.4847,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488614692.4848,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,get,update unit state to AGENT_EXECUTING_PENDING
+1488614692.4849,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488614692.4851,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,get,update unit state to AGENT_STAGING_OUTPUT
+1488614692.4852,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488614692.4855,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488614692.4855,update.0.child:update.0.child.subscriber._state_cb,unit.000240,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488614692.4858,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,get,update unit state to AGENT_EXECUTING
+1488614692.4858,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,bulk,bulked (AGENT_EXECUTING)
+1488614693.6063,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488614693.6063,update.0.child:update.0.child.idler._idle_cb,unit.000403,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488614693.6063,update.0.child:update.0.child.idler._idle_cb,unit.000240,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488614693.6063,update.0.child:update.0.child.idler._idle_cb,unit.000240,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488614693.6063,update.0.child:update.0.child.idler._idle_cb,unit.000403,,update,unit update pushed (AGENT_EXECUTING)
+1488614699.6261,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,get,update unit state to AGENT_STAGING_INPUT
+1488614699.6262,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,bulk,bulked (AGENT_STAGING_INPUT)
+1488614699.6414,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614699.6414,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488614699.6415,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488614699.6416,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488614699.6418,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,get,update unit state to AGENT_SCHEDULING
+1488614699.6419,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,bulk,bulked (AGENT_SCHEDULING)
+1488614701.6347,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488614701.6347,update.0.child:update.0.child.idler._idle_cb,unit.000463,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488614701.6348,update.0.child:update.0.child.idler._idle_cb,unit.000463,,update,unit update pushed (AGENT_SCHEDULING)
+1488614743.2606,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614803.3069,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614862.6527,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488614862.6528,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488614862.6689,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614862.6689,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488614862.6690,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,get,update unit state to AGENT_EXECUTING_PENDING
+1488614862.6691,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488614862.6693,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,get,update unit state to AGENT_STAGING_OUTPUT
+1488614862.6694,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488614862.6696,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488614862.6697,update.0.child:update.0.child.subscriber._state_cb,unit.000403,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488614862.6699,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,get,update unit state to AGENT_EXECUTING
+1488614862.6700,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,bulk,bulked (AGENT_EXECUTING)
+1488614863.3406,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614863.9207,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488614863.9207,update.0.child:update.0.child.idler._idle_cb,unit.000463,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488614863.9207,update.0.child:update.0.child.idler._idle_cb,unit.000403,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488614863.9207,update.0.child:update.0.child.idler._idle_cb,unit.000403,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488614863.9207,update.0.child:update.0.child.idler._idle_cb,unit.000463,,update,unit update pushed (AGENT_EXECUTING)
+1488614869.6902,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,get,update unit state to AGENT_STAGING_INPUT
+1488614869.6903,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,bulk,bulked (AGENT_STAGING_INPUT)
+1488614869.7055,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488614869.7055,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488614869.7057,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488614869.7057,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488614869.7060,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,get,update unit state to AGENT_SCHEDULING
+1488614869.7060,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,bulk,bulked (AGENT_SCHEDULING)
+1488614870.9470,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488614870.9470,update.0.child:update.0.child.idler._idle_cb,unit.000418,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488614870.9470,update.0.child:update.0.child.idler._idle_cb,unit.000418,,update,unit update pushed (AGENT_SCHEDULING)
+1488614923.3603,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488614983.4226,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615035.8356,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488615035.8357,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488615035.8512,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615035.8512,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488615035.8513,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,get,update unit state to AGENT_STAGING_OUTPUT
+1488615035.8514,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488615035.8517,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,get,update unit state to AGENT_EXECUTING_PENDING
+1488615035.8517,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488615035.8520,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488615035.8520,update.0.child:update.0.child.subscriber._state_cb,unit.000463,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488615035.8523,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,get,update unit state to AGENT_EXECUTING
+1488615035.8523,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,bulk,bulked (AGENT_EXECUTING)
+1488615037.2365,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488615037.2365,update.0.child:update.0.child.idler._idle_cb,unit.000463,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488615037.2365,update.0.child:update.0.child.idler._idle_cb,unit.000418,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488615037.2366,update.0.child:update.0.child.idler._idle_cb,unit.000463,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488615037.2366,update.0.child:update.0.child.idler._idle_cb,unit.000418,,update,unit update pushed (AGENT_EXECUTING)
+1488615040.5293,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,get,update unit state to AGENT_STAGING_INPUT
+1488615040.5295,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,bulk,bulked (AGENT_STAGING_INPUT)
+1488615040.5443,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615040.5443,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488615040.5445,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488615040.5445,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488615040.5448,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,get,update unit state to AGENT_SCHEDULING
+1488615040.5448,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,bulk,bulked (AGENT_SCHEDULING)
+1488615042.2606,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488615042.2606,update.0.child:update.0.child.idler._idle_cb,unit.000310,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488615042.2606,update.0.child:update.0.child.idler._idle_cb,unit.000310,,update,unit update pushed (AGENT_SCHEDULING)
+1488615043.4484,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615103.4901,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615163.5362,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615199.0089,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488615199.0090,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488615199.0245,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615199.0245,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488615199.0246,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,get,update unit state to AGENT_STAGING_OUTPUT
+1488615199.0247,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488615199.0249,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,get,update unit state to AGENT_EXECUTING_PENDING
+1488615199.0250,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488615199.0252,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488615199.0253,update.0.child:update.0.child.subscriber._state_cb,unit.000418,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488615199.0255,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,get,update unit state to AGENT_EXECUTING
+1488615199.0255,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,bulk,bulked (AGENT_EXECUTING)
+1488615200.5400,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488615200.5400,update.0.child:update.0.child.idler._idle_cb,unit.000418,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488615200.5400,update.0.child:update.0.child.idler._idle_cb,unit.000310,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488615200.5401,update.0.child:update.0.child.idler._idle_cb,unit.000418,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488615200.5401,update.0.child:update.0.child.idler._idle_cb,unit.000310,,update,unit update pushed (AGENT_EXECUTING)
+1488615205.3548,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,get,update unit state to AGENT_STAGING_INPUT
+1488615205.3549,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,bulk,bulked (AGENT_STAGING_INPUT)
+1488615205.3699,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615205.3699,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488615205.3700,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488615205.3701,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488615205.3703,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,get,update unit state to AGENT_SCHEDULING
+1488615205.3704,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,bulk,bulked (AGENT_SCHEDULING)
+1488615206.5652,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488615206.5652,update.0.child:update.0.child.idler._idle_cb,unit.000157,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488615206.5652,update.0.child:update.0.child.idler._idle_cb,unit.000157,,update,unit update pushed (AGENT_SCHEDULING)
+1488615223.5963,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615283.6508,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615343.6856,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615369.1916,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488615369.1918,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488615369.2070,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615369.2070,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488615369.2071,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,get,update unit state to AGENT_EXECUTING_PENDING
+1488615369.2072,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488615369.2075,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,get,update unit state to AGENT_STAGING_OUTPUT
+1488615369.2075,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488615369.2078,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,get,update unit state to AGENT_EXECUTING
+1488615369.2078,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,bulk,bulked (AGENT_EXECUTING)
+1488615369.2081,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488615369.2081,update.0.child:update.0.child.subscriber._state_cb,unit.000310,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488615370.8458,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488615370.8458,update.0.child:update.0.child.idler._idle_cb,unit.000157,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488615370.8459,update.0.child:update.0.child.idler._idle_cb,unit.000310,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488615370.8459,update.0.child:update.0.child.idler._idle_cb,unit.000157,,update,unit update pushed (AGENT_EXECUTING)
+1488615370.8459,update.0.child:update.0.child.idler._idle_cb,unit.000310,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488615376.3449,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,get,update unit state to AGENT_STAGING_INPUT
+1488615376.3449,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,bulk,bulked (AGENT_STAGING_INPUT)
+1488615376.3596,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615376.3596,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488615376.3597,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488615376.3597,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488615376.3599,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,get,update unit state to AGENT_SCHEDULING
+1488615376.3600,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,bulk,bulked (AGENT_SCHEDULING)
+1488615377.8710,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488615377.8711,update.0.child:update.0.child.idler._idle_cb,unit.000231,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488615377.8711,update.0.child:update.0.child.idler._idle_cb,unit.000231,,update,unit update pushed (AGENT_SCHEDULING)
+1488615403.6978,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615463.7068,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615523.7412,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615537.3685,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488615537.3686,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488615537.3838,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615537.3838,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488615537.3839,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,get,update unit state to AGENT_EXECUTING_PENDING
+1488615537.3840,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488615537.3843,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,get,update unit state to AGENT_STAGING_OUTPUT
+1488615537.3843,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488615537.3846,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,get,update unit state to AGENT_EXECUTING
+1488615537.3846,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,bulk,bulked (AGENT_EXECUTING)
+1488615537.3849,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488615537.3849,update.0.child:update.0.child.subscriber._state_cb,unit.000157,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488615539.1354,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488615539.1354,update.0.child:update.0.child.idler._idle_cb,unit.000231,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488615539.1354,update.0.child:update.0.child.idler._idle_cb,unit.000157,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488615539.1354,update.0.child:update.0.child.idler._idle_cb,unit.000231,,update,unit update pushed (AGENT_EXECUTING)
+1488615539.1354,update.0.child:update.0.child.idler._idle_cb,unit.000157,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488615541.2702,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,get,update unit state to AGENT_STAGING_INPUT
+1488615541.2703,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,bulk,bulked (AGENT_STAGING_INPUT)
+1488615541.2854,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615541.2854,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488615541.2856,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488615541.2856,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488615541.2859,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,get,update unit state to AGENT_SCHEDULING
+1488615541.2860,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,bulk,bulked (AGENT_SCHEDULING)
+1488615543.1581,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488615543.1581,update.0.child:update.0.child.idler._idle_cb,unit.000008,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488615543.1581,update.0.child:update.0.child.idler._idle_cb,unit.000008,,update,unit update pushed (AGENT_SCHEDULING)
+1488615583.7887,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615643.8471,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615703.9024,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615714.5651,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488615714.5652,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488615714.5802,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615714.5802,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488615714.5803,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,get,update unit state to AGENT_EXECUTING_PENDING
+1488615714.5804,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488615714.5806,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,get,update unit state to AGENT_STAGING_OUTPUT
+1488615714.5806,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488615714.5808,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488615714.5809,update.0.child:update.0.child.subscriber._state_cb,unit.000231,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488615714.5810,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,get,update unit state to AGENT_EXECUTING
+1488615714.5811,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,bulk,bulked (AGENT_EXECUTING)
+1488615716.4378,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488615716.4379,update.0.child:update.0.child.idler._idle_cb,unit.000008,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488615716.4379,update.0.child:update.0.child.idler._idle_cb,unit.000231,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488615716.4379,update.0.child:update.0.child.idler._idle_cb,unit.000231,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488615716.4379,update.0.child:update.0.child.idler._idle_cb,unit.000008,,update,unit update pushed (AGENT_EXECUTING)
+1488615724.4493,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,get,update unit state to AGENT_STAGING_INPUT
+1488615724.4494,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,bulk,bulked (AGENT_STAGING_INPUT)
+1488615724.4642,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615724.4642,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488615724.4644,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488615724.4644,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488615724.4647,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,get,update unit state to AGENT_SCHEDULING
+1488615724.4647,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,bulk,bulked (AGENT_SCHEDULING)
+1488615725.4812,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488615725.4812,update.0.child:update.0.child.idler._idle_cb,unit.000142,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488615725.4812,update.0.child:update.0.child.idler._idle_cb,unit.000142,,update,unit update pushed (AGENT_SCHEDULING)
+1488615763.9402,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615823.9940,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615884.0571,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488615889.7632,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488615889.7633,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488615889.7786,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615889.7786,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488615889.7788,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,get,update unit state to AGENT_EXECUTING_PENDING
+1488615889.7788,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488615889.7791,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,get,update unit state to AGENT_STAGING_OUTPUT
+1488615889.7791,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488615889.7794,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488615889.7795,update.0.child:update.0.child.subscriber._state_cb,unit.000008,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488615889.7797,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,get,update unit state to AGENT_EXECUTING
+1488615889.7797,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,bulk,bulked (AGENT_EXECUTING)
+1488615891.7456,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488615891.7456,update.0.child:update.0.child.idler._idle_cb,unit.000142,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488615891.7456,update.0.child:update.0.child.idler._idle_cb,unit.000008,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488615891.7456,update.0.child:update.0.child.idler._idle_cb,unit.000008,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488615891.7457,update.0.child:update.0.child.idler._idle_cb,unit.000142,,update,unit update pushed (AGENT_EXECUTING)
+1488615896.4720,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,get,update unit state to AGENT_STAGING_INPUT
+1488615896.4721,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,bulk,bulked (AGENT_STAGING_INPUT)
+1488615896.4874,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488615896.4874,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488615896.4875,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488615896.4876,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488615896.4878,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,get,update unit state to AGENT_SCHEDULING
+1488615896.4879,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,bulk,bulked (AGENT_SCHEDULING)
+1488615897.7715,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488615897.7715,update.0.child:update.0.child.idler._idle_cb,unit.000457,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488615897.7715,update.0.child:update.0.child.idler._idle_cb,unit.000457,,update,unit update pushed (AGENT_SCHEDULING)
+1488615944.1186,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616004.1847,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616064.2108,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616081.9731,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488616081.9732,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488616081.9886,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616081.9886,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488616081.9887,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,get,update unit state to AGENT_EXECUTING_PENDING
+1488616081.9888,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488616081.9890,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,get,update unit state to AGENT_STAGING_OUTPUT
+1488616081.9891,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488616081.9893,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488616081.9894,update.0.child:update.0.child.subscriber._state_cb,unit.000142,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488616081.9896,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,get,update unit state to AGENT_EXECUTING
+1488616081.9897,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,bulk,bulked (AGENT_EXECUTING)
+1488616083.0905,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488616083.0905,update.0.child:update.0.child.idler._idle_cb,unit.000457,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488616083.0905,update.0.child:update.0.child.idler._idle_cb,unit.000142,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488616083.0905,update.0.child:update.0.child.idler._idle_cb,unit.000142,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488616083.0905,update.0.child:update.0.child.idler._idle_cb,unit.000457,,update,unit update pushed (AGENT_EXECUTING)
+1488616091.8497,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,get,update unit state to AGENT_STAGING_INPUT
+1488616091.8498,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,bulk,bulked (AGENT_STAGING_INPUT)
+1488616091.8648,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616091.8648,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488616091.8649,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488616091.8650,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488616091.8652,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,get,update unit state to AGENT_SCHEDULING
+1488616091.8653,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,bulk,bulked (AGENT_SCHEDULING)
+1488616093.1240,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488616093.1240,update.0.child:update.0.child.idler._idle_cb,unit.000439,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488616093.1240,update.0.child:update.0.child.idler._idle_cb,unit.000439,,update,unit update pushed (AGENT_SCHEDULING)
+1488616124.2613,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616184.3000,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616244.3237,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616267.1737,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488616267.1738,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488616267.1894,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616267.1894,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488616267.1895,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,get,update unit state to AGENT_STAGING_OUTPUT
+1488616267.1896,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488616267.1899,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,get,update unit state to AGENT_EXECUTING_PENDING
+1488616267.1899,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488616267.1902,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488616267.1902,update.0.child:update.0.child.subscriber._state_cb,unit.000457,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488616267.1905,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,get,update unit state to AGENT_EXECUTING
+1488616267.1905,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,bulk,bulked (AGENT_EXECUTING)
+1488616268.4103,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488616268.4103,update.0.child:update.0.child.idler._idle_cb,unit.000457,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488616268.4103,update.0.child:update.0.child.idler._idle_cb,unit.000439,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488616268.4104,update.0.child:update.0.child.idler._idle_cb,unit.000457,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488616268.4104,update.0.child:update.0.child.idler._idle_cb,unit.000439,,update,unit update pushed (AGENT_EXECUTING)
+1488616271.9565,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,get,update unit state to AGENT_STAGING_INPUT
+1488616271.9566,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,bulk,bulked (AGENT_STAGING_INPUT)
+1488616271.9716,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616271.9716,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488616271.9718,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488616271.9719,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488616271.9721,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,get,update unit state to AGENT_SCHEDULING
+1488616271.9722,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,bulk,bulked (AGENT_SCHEDULING)
+1488616273.4338,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488616273.4339,update.0.child:update.0.child.idler._idle_cb,unit.000327,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488616273.4339,update.0.child:update.0.child.idler._idle_cb,unit.000327,,update,unit update pushed (AGENT_SCHEDULING)
+1488616304.3242,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616364.3338,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616424.3522,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616448.3717,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488616448.3718,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488616448.3868,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616448.3868,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488616448.3869,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,get,update unit state to AGENT_EXECUTING_PENDING
+1488616448.3870,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488616448.3871,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,get,update unit state to AGENT_STAGING_OUTPUT
+1488616448.3872,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488616448.3873,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488616448.3874,update.0.child:update.0.child.subscriber._state_cb,unit.000439,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488616448.3876,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,get,update unit state to AGENT_EXECUTING
+1488616448.3876,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,bulk,bulked (AGENT_EXECUTING)
+1488616449.7454,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488616449.7454,update.0.child:update.0.child.idler._idle_cb,unit.000327,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488616449.7454,update.0.child:update.0.child.idler._idle_cb,unit.000439,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488616449.7454,update.0.child:update.0.child.idler._idle_cb,unit.000439,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488616449.7454,update.0.child:update.0.child.idler._idle_cb,unit.000327,,update,unit update pushed (AGENT_EXECUTING)
+1488616457.1799,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,get,update unit state to AGENT_STAGING_INPUT
+1488616457.1800,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,bulk,bulked (AGENT_STAGING_INPUT)
+1488616457.1949,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616457.1949,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488616457.1950,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488616457.1950,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488616457.1951,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,get,update unit state to AGENT_SCHEDULING
+1488616457.1952,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,bulk,bulked (AGENT_SCHEDULING)
+1488616458.7720,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488616458.7720,update.0.child:update.0.child.idler._idle_cb,unit.000107,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488616458.7720,update.0.child:update.0.child.idler._idle_cb,unit.000107,,update,unit update pushed (AGENT_SCHEDULING)
+1488616484.3803,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616544.4127,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616604.4349,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616626.5720,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488616626.5721,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488616626.5877,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616626.5878,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488616626.5879,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,get,update unit state to AGENT_EXECUTING_PENDING
+1488616626.5880,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488616626.5882,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,get,update unit state to AGENT_STAGING_OUTPUT
+1488616626.5883,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488616626.5885,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488616626.5886,update.0.child:update.0.child.subscriber._state_cb,unit.000327,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488616626.5888,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,get,update unit state to AGENT_EXECUTING
+1488616626.5889,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,bulk,bulked (AGENT_EXECUTING)
+1488616628.0649,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488616628.0649,update.0.child:update.0.child.idler._idle_cb,unit.000107,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488616628.0649,update.0.child:update.0.child.idler._idle_cb,unit.000327,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488616628.0649,update.0.child:update.0.child.idler._idle_cb,unit.000327,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488616628.0649,update.0.child:update.0.child.idler._idle_cb,unit.000107,,update,unit update pushed (AGENT_EXECUTING)
+1488616632.2197,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,get,update unit state to AGENT_STAGING_INPUT
+1488616632.2198,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,bulk,bulked (AGENT_STAGING_INPUT)
+1488616632.2350,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616632.2350,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488616632.2352,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488616632.2353,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488616632.2355,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,get,update unit state to AGENT_SCHEDULING
+1488616632.2356,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,bulk,bulked (AGENT_SCHEDULING)
+1488616634.0905,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488616634.0905,update.0.child:update.0.child.idler._idle_cb,unit.000295,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488616634.0905,update.0.child:update.0.child.idler._idle_cb,unit.000295,,update,unit update pushed (AGENT_SCHEDULING)
+1488616664.4499,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616724.5069,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616784.5508,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616803.7670,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488616803.7671,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488616803.7826,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616803.7826,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488616803.7827,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,get,update unit state to AGENT_EXECUTING_PENDING
+1488616803.7828,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488616803.7830,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,get,update unit state to AGENT_STAGING_OUTPUT
+1488616803.7831,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488616803.7834,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488616803.7834,update.0.child:update.0.child.subscriber._state_cb,unit.000107,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488616803.7837,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,get,update unit state to AGENT_EXECUTING
+1488616803.7837,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,bulk,bulked (AGENT_EXECUTING)
+1488616805.3739,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488616805.3739,update.0.child:update.0.child.idler._idle_cb,unit.000295,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488616805.3739,update.0.child:update.0.child.idler._idle_cb,unit.000107,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488616805.3739,update.0.child:update.0.child.idler._idle_cb,unit.000107,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488616805.3739,update.0.child:update.0.child.idler._idle_cb,unit.000295,,update,unit update pushed (AGENT_EXECUTING)
+1488616808.2020,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,get,update unit state to AGENT_STAGING_INPUT
+1488616808.2022,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,bulk,bulked (AGENT_STAGING_INPUT)
+1488616808.2172,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616808.2172,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488616808.2174,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488616808.2174,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488616808.2178,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,get,update unit state to AGENT_SCHEDULING
+1488616808.2179,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,bulk,bulked (AGENT_SCHEDULING)
+1488616809.3963,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488616809.3963,update.0.child:update.0.child.idler._idle_cb,unit.000213,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488616809.3963,update.0.child:update.0.child.idler._idle_cb,unit.000213,,update,unit update pushed (AGENT_SCHEDULING)
+1488616844.6057,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616904.6701,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616964.6721,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488616977.9472,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488616977.9474,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488616977.9627,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616977.9627,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488616977.9628,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,get,update unit state to AGENT_EXECUTING_PENDING
+1488616977.9629,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488616977.9632,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,get,update unit state to AGENT_STAGING_OUTPUT
+1488616977.9632,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488616977.9635,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488616977.9636,update.0.child:update.0.child.subscriber._state_cb,unit.000295,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488616977.9638,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,get,update unit state to AGENT_EXECUTING
+1488616977.9638,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,bulk,bulked (AGENT_EXECUTING)
+1488616979.6593,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488616979.6593,update.0.child:update.0.child.idler._idle_cb,unit.000213,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488616979.6593,update.0.child:update.0.child.idler._idle_cb,unit.000295,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488616979.6593,update.0.child:update.0.child.idler._idle_cb,unit.000295,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488616979.6593,update.0.child:update.0.child.idler._idle_cb,unit.000213,,update,unit update pushed (AGENT_EXECUTING)
+1488616983.2592,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,get,update unit state to AGENT_STAGING_INPUT
+1488616983.2594,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,bulk,bulked (AGENT_STAGING_INPUT)
+1488616983.2831,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488616983.2831,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488616983.2832,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488616983.2833,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488616983.2835,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,get,update unit state to AGENT_SCHEDULING
+1488616983.2836,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,bulk,bulked (AGENT_SCHEDULING)
+1488616984.6835,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488616984.6835,update.0.child:update.0.child.idler._idle_cb,unit.000183,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488616984.6835,update.0.child:update.0.child.idler._idle_cb,unit.000183,,update,unit update pushed (AGENT_SCHEDULING)
+1488617024.7112,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617084.7209,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617141.1286,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488617141.1287,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488617141.1439,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488617141.1440,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488617141.1441,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,get,update unit state to AGENT_STAGING_OUTPUT
+1488617141.1442,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488617141.1444,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,get,update unit state to AGENT_EXECUTING_PENDING
+1488617141.1445,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488617141.1448,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488617141.1448,update.0.child:update.0.child.subscriber._state_cb,unit.000213,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488617141.1451,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,get,update unit state to AGENT_EXECUTING
+1488617141.1451,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,bulk,bulked (AGENT_EXECUTING)
+1488617142.9679,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488617142.9679,update.0.child:update.0.child.idler._idle_cb,unit.000213,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488617142.9679,update.0.child:update.0.child.idler._idle_cb,unit.000183,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488617142.9679,update.0.child:update.0.child.idler._idle_cb,unit.000213,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488617142.9679,update.0.child:update.0.child.idler._idle_cb,unit.000183,,update,unit update pushed (AGENT_EXECUTING)
+1488617144.7682,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617153.2579,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,get,update unit state to AGENT_STAGING_INPUT
+1488617153.2580,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,bulk,bulked (AGENT_STAGING_INPUT)
+1488617153.2731,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488617153.2731,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488617153.2733,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488617153.2733,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488617153.2736,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,get,update unit state to AGENT_SCHEDULING
+1488617153.2736,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,bulk,bulked (AGENT_SCHEDULING)
+1488617155.0029,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488617155.0029,update.0.child:update.0.child.idler._idle_cb,unit.000063,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488617155.0029,update.0.child:update.0.child.idler._idle_cb,unit.000063,,update,unit update pushed (AGENT_SCHEDULING)
+1488617204.7745,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617264.7852,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617303.3068,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488617303.3069,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488617303.3225,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488617303.3225,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488617303.3227,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,get,update unit state to AGENT_STAGING_OUTPUT
+1488617303.3229,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488617303.3233,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,get,update unit state to AGENT_EXECUTING_PENDING
+1488617303.3234,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488617303.3238,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488617303.3240,update.0.child:update.0.child.subscriber._state_cb,unit.000183,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488617303.3243,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,get,update unit state to AGENT_EXECUTING
+1488617303.3245,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,bulk,bulked (AGENT_EXECUTING)
+1488617305.2693,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488617305.2693,update.0.child:update.0.child.idler._idle_cb,unit.000183,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488617305.2693,update.0.child:update.0.child.idler._idle_cb,unit.000063,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488617305.2693,update.0.child:update.0.child.idler._idle_cb,unit.000183,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488617305.2693,update.0.child:update.0.child.idler._idle_cb,unit.000063,,update,unit update pushed (AGENT_EXECUTING)
+1488617308.9300,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,get,update unit state to AGENT_STAGING_INPUT
+1488617308.9302,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,bulk,bulked (AGENT_STAGING_INPUT)
+1488617308.9453,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488617308.9453,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488617308.9455,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488617308.9455,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488617308.9458,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,get,update unit state to AGENT_SCHEDULING
+1488617308.9458,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,bulk,bulked (AGENT_SCHEDULING)
+1488617310.2929,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488617310.2929,update.0.child:update.0.child.idler._idle_cb,unit.000003,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488617310.2929,update.0.child:update.0.child.idler._idle_cb,unit.000003,,update,unit update pushed (AGENT_SCHEDULING)
+1488617324.8232,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617384.8541,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617444.8984,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617499.5281,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488617499.5282,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488617499.5436,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488617499.5436,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488617499.5438,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,get,update unit state to AGENT_STAGING_OUTPUT
+1488617499.5439,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488617499.5441,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,get,update unit state to AGENT_EXECUTING_PENDING
+1488617499.5442,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488617499.5444,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488617499.5445,update.0.child:update.0.child.subscriber._state_cb,unit.000063,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488617499.5447,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,get,update unit state to AGENT_EXECUTING
+1488617499.5448,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,bulk,bulked (AGENT_EXECUTING)
+1488617500.6364,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488617500.6364,update.0.child:update.0.child.idler._idle_cb,unit.000063,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488617500.6364,update.0.child:update.0.child.idler._idle_cb,unit.000003,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488617500.6365,update.0.child:update.0.child.idler._idle_cb,unit.000063,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488617500.6365,update.0.child:update.0.child.idler._idle_cb,unit.000003,,update,unit update pushed (AGENT_EXECUTING)
+1488617504.9448,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617509.3775,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,get,update unit state to AGENT_STAGING_INPUT
+1488617509.3777,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,bulk,bulked (AGENT_STAGING_INPUT)
+1488617509.3928,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488617509.3928,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,update,unit update pushed (AGENT_STAGING_INPUT)
+1488617509.3930,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,get,update unit state to AGENT_SCHEDULING_PENDING
+1488617509.3930,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,bulk,bulked (AGENT_SCHEDULING_PENDING)
+1488617509.3933,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,get,update unit state to AGENT_SCHEDULING
+1488617509.3934,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,bulk,bulked (AGENT_SCHEDULING)
+1488617510.6676,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488617510.6676,update.0.child:update.0.child.idler._idle_cb,unit.000190,,update,unit update pushed (AGENT_SCHEDULING_PENDING)
+1488617510.6677,update.0.child:update.0.child.idler._idle_cb,unit.000190,,update,unit update pushed (AGENT_SCHEDULING)
+1488617564.9908,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617625.0375,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617662.7060,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488617662.7061,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488617662.7211,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488617662.7211,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488617662.7212,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,get,update unit state to AGENT_STAGING_OUTPUT
+1488617662.7213,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488617662.7214,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,get,update unit state to AGENT_EXECUTING_PENDING
+1488617662.7215,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,bulk,bulked (AGENT_EXECUTING_PENDING)
+1488617662.7217,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488617662.7217,update.0.child:update.0.child.subscriber._state_cb,unit.000003,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488617662.7219,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,get,update unit state to AGENT_EXECUTING
+1488617662.7219,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,bulk,bulked (AGENT_EXECUTING)
+1488617663.9357,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (4),
+1488617663.9357,update.0.child:update.0.child.idler._idle_cb,unit.000003,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488617663.9357,update.0.child:update.0.child.idler._idle_cb,unit.000190,,update,unit update pushed (AGENT_EXECUTING_PENDING)
+1488617663.9357,update.0.child:update.0.child.idler._idle_cb,unit.000003,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488617663.9357,update.0.child:update.0.child.idler._idle_cb,unit.000190,,update,unit update pushed (AGENT_EXECUTING)
+1488617685.0595,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617745.0596,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617805.1021,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617831.9246,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,get,update unit state to AGENT_STAGING_OUTPUT_PENDING
+1488617831.9247,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,bulk,bulked (AGENT_STAGING_OUTPUT_PENDING)
+1488617831.9400,update.0.child:update.0.child.subscriber._state_cb,agent_0,,update bulk pushed (1),
+1488617831.9400,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,update,unit update pushed (AGENT_STAGING_OUTPUT_PENDING)
+1488617831.9401,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,get,update unit state to AGENT_STAGING_OUTPUT
+1488617831.9402,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,bulk,bulked (AGENT_STAGING_OUTPUT)
+1488617831.9405,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,get,update unit state to UMGR_STAGING_OUTPUT_PENDING
+1488617831.9406,update.0.child:update.0.child.subscriber._state_cb,unit.000190,,bulk,bulked (UMGR_STAGING_OUTPUT_PENDING)
+1488617833.2752,update.0.child:update.0.child.idler._idle_cb,agent_0,,update bulk pushed (2),
+1488617833.2752,update.0.child:update.0.child.idler._idle_cb,unit.000190,,update,unit update pushed (AGENT_STAGING_OUTPUT)
+1488617833.2752,update.0.child:update.0.child.idler._idle_cb,unit.000190,,update,unit update pushed (UMGR_STAGING_OUTPUT_PENDING)
+1488617865.1426,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617925.1850,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488617985.2262,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618045.2522,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618105.2946,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618165.3492,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618225.3873,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618285.4196,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618345.4999,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618405.5517,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618465.5896,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618525.6201,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618585.6735,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618645.7225,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618705.7701,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618765.8218,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618825.8659,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618885.9019,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488618945.9420,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619005.9844,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619066.0278,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619126.0599,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619186.1005,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619246.1701,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619306.2079,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619366.2552,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619426.3156,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619486.3486,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619546.3854,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619606.4242,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619666.4603,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619726.4799,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619786.5182,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619846.5422,update.0.child:update.0.child.idler._profile_flush_cb,,,flush,
+1488619872.1554,update.0.child:MainThread,update.0.child,,stopped,
+1488619872.1554,update.0.child:MainThread,,,QED,
