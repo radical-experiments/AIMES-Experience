@@ -5,7 +5,7 @@ set -e
 ROOT='/home/mturilli/experiments/AIMES-Experience/OSG/bin'
 TMP='/tmp/profiles'
 STORE='/home/mturilli/experiments/AIMES-Experience/OSG/raw_data'
-EXP='experiment_18'
+EXP='experiment_19'
 
 sid=$1
 run=$2
