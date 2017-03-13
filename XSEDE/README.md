@@ -28,7 +28,10 @@
   pip install --user virtualenv
   virtualenv $HOME/ve.synapse
   source $HOME/ve.synapse/bin/activate
+  wget -qO- https://github.com/radical-cybertools/radical.utils/archive/v0.41.1.tar.gz | tar -xzv -C $HOME/
   pip install $HOME/radical.utils-0.41.1/. 
+  wget -qO- https://github.com/applicationskeleton/Skeleton/archive/feature/task_flops.tar.gz | tar -xzv -C $HOME/
   pip install $HOME/Skeleton-feature-task_flops/. 
+  wget -qO- https://github.com/radical-cybertools/radical.synapse/archive/v0.44.tar.gz | tar -xzv -C $HOME/
   pip install $HOME/radical.synapse-0.44/.
   ```
