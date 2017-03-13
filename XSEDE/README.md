@@ -1,12 +1,15 @@
 # Experiment workflow
 
 * Create a virtual environment and install the experiment software stack:
-  ```
+
+```
   cd bin
   . createve.sh
   ```
+
 * Setup SuperMIC to execute synapse emulations:
-  ```
+
+```
   gsissh -p 2222 supermic.cct-lsu.xsede.org
   mkdir ~/python      
   cd ~/python
