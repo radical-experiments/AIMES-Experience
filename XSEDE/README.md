@@ -1,57 +1,35 @@
+# Experiment workflow
+
+* Create a virtual environment and install the experiment software stack:
+
 ```
-cd ~/github
+  cd bin
+  . createve.sh
+  ```
 
-deactivate
-rm -r ~/ve/AIMES-EXPERIENCE-XSEDE
-virtualenv ~/ve/AIMES-EXPERIENCE-XSEDE
-. ~/ve/AIMES-EXPERIENCE-XSEDE/bin/activate
+* Setup SuperMIC to execute synapse emulations:
 
-# Avoid error about setuptools
-pip install --upgrade pip
-pip install --upgrade setuptools
-
-# Install RU, branch experiment/aimes
-cd radical.utils/
-git checkout devel
-git pull
-pip install .
-cd ..
-
-# Install SAGA, branch experiment/aimes
-cd saga-python/
-git checkout devel
-git pull
-pip install .
-cd ..
-
-# Install RP, branch experiment/aimes
-cd radical.pilot/
-git checkout devel
-git pull
-pip install .
-cd ..
-
-# Installing Skeleton, branch feature/task_prof
-cd radical.skeleton/
-git checkout feature/task_prof
-git pull
-pip install .
-cd ..
-
-# install aimes.bundle:
-cd aimes.bundle/
-pip install .
-cd ..
-
-# Installing aimes.emgr, branch feature/osg_run
-cd aimes.emgr/
-git checkout feature/osg_run
-git pull
-pip install .
-cd ..
-
-# Go back to the initial directory
-cd /home/mturilli/experiments/AIMES-Experience/XSEDE/bin
-
-radical-stack
 ```
+  gsissh -p 2222 supermic.cct-lsu.xsede.org
+  mkdir ~/python      
+  cd ~/python
+  wget https://www.python.org/ftp/python/2.7.11/Python-2.7.13.tgz
+  wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz
+  tar zxfv Python-2.7.13.tgz 
+  find ~/python -type d | xargs chmod 0755
+  cd Python-2.7.13
+  ./configure --prefix=$HOME/python
+  make && make install
+  echo export PATH=$HOME/python/Python-2.7.13/:$PATH >> ~/.bashrc
+  echo export PYTHONPATH=$HOME/python/Python-2.7.13 >> ~/.bashrc
+  . ~/.bashrc
+  wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py -O - | python - --user
+  echo export PATH=$HOME/.local/bin:$PATH >> ~/.bashrc
+  . ~/.bashrc
+  pip install --user virtualenv
+  virtualenv $HOME/ve.synapse
+  source $HOME/ve.synapse/bin/activate
+  pip install $HOME/radical.utils-0.41.1/. 
+  pip install $HOME/Skeleton-feature-task_flops/. 
+  pip install $HOME/radical.synapse-0.44/.
+  ```
