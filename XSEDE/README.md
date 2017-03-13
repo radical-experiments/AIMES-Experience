@@ -13,7 +13,6 @@
   gsissh -p 2222 supermic.cct-lsu.xsede.org
   mkdir ~/python      
   cd ~/python
-  wget https://www.python.org/ftp/python/2.7.11/Python-2.7.13.tgz
   wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz
   tar zxfv Python-2.7.13.tgz 
   find ~/python -type d | xargs chmod 0755
