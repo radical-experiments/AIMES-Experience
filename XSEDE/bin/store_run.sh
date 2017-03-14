@@ -2,10 +2,10 @@
 
 set -e
 
-ROOT='/home/mturilli/experiments/AIMES-Experience/OSG/bin'
+ROOT='/home/mturilli/experiments/AIMES-Experience/XSEDE/bin'
 TMP='/tmp/profiles'
-STORE='/home/mturilli/experiments/AIMES-Experience/OSG/raw_data'
-EXP='experiment_19'
+STORE='/home/mturilli/experiments/AIMES-Experience/XSEDE/raw_data'
+EXP='experiment_1'
 
 sid=$1
 run=$2

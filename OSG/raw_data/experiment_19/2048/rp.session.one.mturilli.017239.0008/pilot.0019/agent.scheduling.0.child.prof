@@ -1,0 +1,838 @@
+#time,name,uid,state,event,msg
+1489468313.2086,agent.scheduling.0.child:,,,sync abs,compute-3-8.local:127.0.0.1:1489468313.14:1489468313.14:ntp
+1489468313.2088,agent.scheduling.0.child:MainThread,agent.scheduling.0.child,,initialize,
+1489468313.2235,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468317.1264,agent.scheduling.0.child:MainThread,unit.001191,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489468317.1264,agent.scheduling.0.child:MainThread,unit.001191,AGENT_SCHEDULING_PENDING,work start,
+1489468317.1265,agent.scheduling.0.child:MainThread,unit.002029,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489468317.1265,agent.scheduling.0.child:MainThread,unit.002029,AGENT_SCHEDULING_PENDING,work start,
+1489468317.1265,agent.scheduling.0.child:MainThread,unit.001191,AGENT_SCHEDULING,advance,
+1489468317.1265,agent.scheduling.0.child:MainThread,unit.002029,AGENT_SCHEDULING,advance,
+1489468317.1269,agent.scheduling.0.child:MainThread,unit.001191,AGENT_SCHEDULING,publish,
+1489468317.1269,agent.scheduling.0.child:MainThread,unit.002029,AGENT_SCHEDULING,publish,
+1489468317.1270,agent.scheduling.0.child:MainThread,unit.001191,,schedule,allocated
+1489468317.1271,agent.scheduling.0.child:MainThread,unit.001191,,schedule,allocation succeeded
+1489468317.1271,agent.scheduling.0.child:MainThread,unit.001191,AGENT_EXECUTING_PENDING,advance,
+1489468317.1275,agent.scheduling.0.child:MainThread,unit.001191,AGENT_EXECUTING_PENDING,publish,
+1489468317.1277,agent.scheduling.0.child:MainThread,unit.001191,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489468317.1278,agent.scheduling.0.child:MainThread,unit.002029,,schedule,allocation failed
+1489468317.1279,agent.scheduling.0.child:MainThread,unit.002029,AGENT_SCHEDULING_PENDING,work done ,
+1489468317.1279,agent.scheduling.0.child:MainThread,unit.002029,AGENT_SCHEDULING_PENDING,work done ,
+1489468373.2367,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468433.3228,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468493.3963,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468553.4768,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468613.5539,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468673.5881,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468686.4674,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001191,,unschedule,
+1489468686.4677,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001191,,unschedule,released
+1489468686.4684,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489468686.4687,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.002029,,schedule,allocated
+1489468686.4688,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.002029,AGENT_EXECUTING_PENDING,advance,
+1489468686.4691,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.002029,AGENT_EXECUTING_PENDING,publish,
+1489468686.4694,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.002029,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489468686.4695,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.002029,,unqueue,re-allocation done
+1489468686.4696,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489468690.2331,agent.scheduling.0.child:MainThread,unit.001573,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489468690.2331,agent.scheduling.0.child:MainThread,unit.001573,AGENT_SCHEDULING_PENDING,work start,
+1489468690.2331,agent.scheduling.0.child:MainThread,unit.001573,AGENT_SCHEDULING,advance,
+1489468690.2334,agent.scheduling.0.child:MainThread,unit.001573,AGENT_SCHEDULING,publish,
+1489468690.2334,agent.scheduling.0.child:MainThread,unit.001573,,schedule,allocation failed
+1489468690.2334,agent.scheduling.0.child:MainThread,unit.001573,AGENT_SCHEDULING_PENDING,work done ,
+1489468733.6772,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468793.7546,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468853.8415,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468913.9246,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489468973.9813,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469034.0409,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469066.8862,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.002029,,unschedule,
+1489469066.8865,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.002029,,unschedule,released
+1489469066.8870,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489469066.8872,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001573,,schedule,allocated
+1489469066.8873,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001573,AGENT_EXECUTING_PENDING,advance,
+1489469066.8876,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001573,AGENT_EXECUTING_PENDING,publish,
+1489469066.8879,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001573,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489469066.8880,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001573,,unqueue,re-allocation done
+1489469066.8881,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489469070.6164,agent.scheduling.0.child:MainThread,unit.000154,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489469070.6164,agent.scheduling.0.child:MainThread,unit.000154,AGENT_SCHEDULING_PENDING,work start,
+1489469070.6165,agent.scheduling.0.child:MainThread,unit.000154,AGENT_SCHEDULING,advance,
+1489469070.6167,agent.scheduling.0.child:MainThread,unit.000154,AGENT_SCHEDULING,publish,
+1489469070.6168,agent.scheduling.0.child:MainThread,unit.000154,,schedule,allocation failed
+1489469070.6168,agent.scheduling.0.child:MainThread,unit.000154,AGENT_SCHEDULING_PENDING,work done ,
+1489469094.1030,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469154.1649,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469214.2633,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469274.3603,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469334.3785,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469394.4467,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469420.2770,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001573,,unschedule,
+1489469420.2772,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001573,,unschedule,released
+1489469420.2778,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489469420.2780,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000154,,schedule,allocated
+1489469420.2781,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000154,AGENT_EXECUTING_PENDING,advance,
+1489469420.2784,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000154,AGENT_EXECUTING_PENDING,publish,
+1489469420.2786,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000154,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489469420.2787,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000154,,unqueue,re-allocation done
+1489469420.2788,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489469426.6157,agent.scheduling.0.child:MainThread,unit.000962,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489469426.6157,agent.scheduling.0.child:MainThread,unit.000962,AGENT_SCHEDULING_PENDING,work start,
+1489469426.6158,agent.scheduling.0.child:MainThread,unit.000962,AGENT_SCHEDULING,advance,
+1489469426.6160,agent.scheduling.0.child:MainThread,unit.000962,AGENT_SCHEDULING,publish,
+1489469426.6161,agent.scheduling.0.child:MainThread,unit.000962,,schedule,allocation failed
+1489469426.6161,agent.scheduling.0.child:MainThread,unit.000962,AGENT_SCHEDULING_PENDING,work done ,
+1489469454.5458,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469514.6298,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469574.6875,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469634.7130,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469694.7327,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469754.7338,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469762.6494,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000154,,unschedule,
+1489469762.6496,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000154,,unschedule,released
+1489469762.6502,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489469762.6505,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000962,,schedule,allocated
+1489469762.6506,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000962,AGENT_EXECUTING_PENDING,advance,
+1489469762.6508,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000962,AGENT_EXECUTING_PENDING,publish,
+1489469762.6511,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000962,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489469762.6512,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000962,,unqueue,re-allocation done
+1489469762.6513,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489469767.9046,agent.scheduling.0.child:MainThread,unit.001543,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489469767.9046,agent.scheduling.0.child:MainThread,unit.001543,AGENT_SCHEDULING_PENDING,work start,
+1489469767.9046,agent.scheduling.0.child:MainThread,unit.001543,AGENT_SCHEDULING,advance,
+1489469767.9048,agent.scheduling.0.child:MainThread,unit.001543,AGENT_SCHEDULING,publish,
+1489469767.9049,agent.scheduling.0.child:MainThread,unit.001543,,schedule,allocation failed
+1489469767.9049,agent.scheduling.0.child:MainThread,unit.001543,AGENT_SCHEDULING_PENDING,work done ,
+1489469814.7366,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469874.7944,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469934.8864,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489469994.9243,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470054.9439,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470105.0310,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000962,,unschedule,
+1489470105.0313,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000962,,unschedule,released
+1489470105.0319,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489470105.0321,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001543,,schedule,allocated
+1489470105.0322,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001543,AGENT_EXECUTING_PENDING,advance,
+1489470105.0325,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001543,AGENT_EXECUTING_PENDING,publish,
+1489470105.0329,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001543,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489470105.0330,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001543,,unqueue,re-allocation done
+1489470105.0331,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489470112.6099,agent.scheduling.0.child:MainThread,unit.000708,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489470112.6099,agent.scheduling.0.child:MainThread,unit.000708,AGENT_SCHEDULING_PENDING,work start,
+1489470112.6099,agent.scheduling.0.child:MainThread,unit.000708,AGENT_SCHEDULING,advance,
+1489470112.6102,agent.scheduling.0.child:MainThread,unit.000708,AGENT_SCHEDULING,publish,
+1489470112.6102,agent.scheduling.0.child:MainThread,unit.000708,,schedule,allocation failed
+1489470112.6102,agent.scheduling.0.child:MainThread,unit.000708,AGENT_SCHEDULING_PENDING,work done ,
+1489470115.0261,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470175.1153,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470235.1964,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470295.1978,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470355.2809,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470415.3588,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470445.4236,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001543,,unschedule,
+1489470445.4238,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001543,,unschedule,released
+1489470445.4245,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489470445.4247,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000708,,schedule,allocated
+1489470445.4248,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000708,AGENT_EXECUTING_PENDING,advance,
+1489470445.4250,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000708,AGENT_EXECUTING_PENDING,publish,
+1489470445.4253,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000708,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489470445.4254,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000708,,unqueue,re-allocation done
+1489470445.4255,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489470451.5362,agent.scheduling.0.child:MainThread,unit.000215,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489470451.5363,agent.scheduling.0.child:MainThread,unit.000215,AGENT_SCHEDULING_PENDING,work start,
+1489470451.5363,agent.scheduling.0.child:MainThread,unit.000215,AGENT_SCHEDULING,advance,
+1489470451.5365,agent.scheduling.0.child:MainThread,unit.000215,AGENT_SCHEDULING,publish,
+1489470451.5366,agent.scheduling.0.child:MainThread,unit.000215,,schedule,allocation failed
+1489470451.5366,agent.scheduling.0.child:MainThread,unit.000215,AGENT_SCHEDULING_PENDING,work done ,
+1489470475.4568,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470535.5519,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470595.5601,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470655.5973,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470715.6967,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470775.7743,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470781.8061,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000708,,unschedule,
+1489470781.8064,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000708,,unschedule,released
+1489470781.8071,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489470781.8073,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000215,,schedule,allocated
+1489470781.8075,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000215,AGENT_EXECUTING_PENDING,advance,
+1489470781.8078,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000215,AGENT_EXECUTING_PENDING,publish,
+1489470781.8080,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000215,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489470781.8082,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000215,,unqueue,re-allocation done
+1489470781.8083,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489470789.5708,agent.scheduling.0.child:MainThread,unit.000827,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489470789.5709,agent.scheduling.0.child:MainThread,unit.000827,AGENT_SCHEDULING_PENDING,work start,
+1489470789.5709,agent.scheduling.0.child:MainThread,unit.000827,AGENT_SCHEDULING,advance,
+1489470789.5711,agent.scheduling.0.child:MainThread,unit.000827,AGENT_SCHEDULING,publish,
+1489470789.5712,agent.scheduling.0.child:MainThread,unit.000827,,schedule,allocation failed
+1489470789.5712,agent.scheduling.0.child:MainThread,unit.000827,AGENT_SCHEDULING_PENDING,work done ,
+1489470835.8440,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470895.9168,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489470956.0040,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471016.0469,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471076.0807,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471119.2001,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000215,,unschedule,
+1489471119.2003,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000215,,unschedule,released
+1489471119.2010,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489471119.2012,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000827,,schedule,allocated
+1489471119.2013,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000827,AGENT_EXECUTING_PENDING,advance,
+1489471119.2017,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000827,AGENT_EXECUTING_PENDING,publish,
+1489471119.2020,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000827,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489471119.2021,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000827,,unqueue,re-allocation done
+1489471119.2022,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489471125.5582,agent.scheduling.0.child:MainThread,unit.000736,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489471125.5582,agent.scheduling.0.child:MainThread,unit.000736,AGENT_SCHEDULING_PENDING,work start,
+1489471125.5582,agent.scheduling.0.child:MainThread,unit.000736,AGENT_SCHEDULING,advance,
+1489471125.5585,agent.scheduling.0.child:MainThread,unit.000736,AGENT_SCHEDULING,publish,
+1489471125.5585,agent.scheduling.0.child:MainThread,unit.000736,,schedule,allocation failed
+1489471125.5585,agent.scheduling.0.child:MainThread,unit.000736,AGENT_SCHEDULING_PENDING,work done ,
+1489471136.1485,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471196.1684,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471256.1850,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471316.2113,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471376.2933,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471436.3089,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471458.5912,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000827,,unschedule,
+1489471458.5915,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000827,,unschedule,released
+1489471458.5923,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489471458.5925,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000736,,schedule,allocated
+1489471458.5926,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000736,AGENT_EXECUTING_PENDING,advance,
+1489471458.5930,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000736,AGENT_EXECUTING_PENDING,publish,
+1489471458.5932,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000736,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489471458.5934,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000736,,unqueue,re-allocation done
+1489471458.5935,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489471465.7069,agent.scheduling.0.child:MainThread,unit.001943,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489471465.7070,agent.scheduling.0.child:MainThread,unit.001943,AGENT_SCHEDULING_PENDING,work start,
+1489471465.7070,agent.scheduling.0.child:MainThread,unit.001943,AGENT_SCHEDULING,advance,
+1489471465.7072,agent.scheduling.0.child:MainThread,unit.001943,AGENT_SCHEDULING,publish,
+1489471465.7073,agent.scheduling.0.child:MainThread,unit.001943,,schedule,allocation failed
+1489471465.7073,agent.scheduling.0.child:MainThread,unit.001943,AGENT_SCHEDULING_PENDING,work done ,
+1489471496.3225,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471556.3680,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471616.4445,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471676.4638,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471736.4790,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471796.5645,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471797.9869,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000736,,unschedule,
+1489471797.9872,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000736,,unschedule,released
+1489471797.9878,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489471797.9880,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001943,,schedule,allocated
+1489471797.9881,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001943,AGENT_EXECUTING_PENDING,advance,
+1489471797.9884,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001943,AGENT_EXECUTING_PENDING,publish,
+1489471797.9887,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001943,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489471797.9888,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001943,,unqueue,re-allocation done
+1489471797.9889,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489471806.5157,agent.scheduling.0.child:MainThread,unit.001256,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489471806.5158,agent.scheduling.0.child:MainThread,unit.001256,AGENT_SCHEDULING_PENDING,work start,
+1489471806.5158,agent.scheduling.0.child:MainThread,unit.001256,AGENT_SCHEDULING,advance,
+1489471806.5160,agent.scheduling.0.child:MainThread,unit.001256,AGENT_SCHEDULING,publish,
+1489471806.5162,agent.scheduling.0.child:MainThread,unit.001256,,schedule,allocation failed
+1489471806.5162,agent.scheduling.0.child:MainThread,unit.001256,AGENT_SCHEDULING_PENDING,work done ,
+1489471856.5697,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471916.6528,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489471976.6971,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472036.7604,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472096.7690,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472139.3815,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001943,,unschedule,
+1489472139.3817,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001943,,unschedule,released
+1489472139.3826,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489472139.3828,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001256,,schedule,allocated
+1489472139.3829,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001256,AGENT_EXECUTING_PENDING,advance,
+1489472139.3832,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001256,AGENT_EXECUTING_PENDING,publish,
+1489472139.3835,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001256,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489472139.3836,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001256,,unqueue,re-allocation done
+1489472139.3837,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489472148.4148,agent.scheduling.0.child:MainThread,unit.000721,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489472148.4148,agent.scheduling.0.child:MainThread,unit.000721,AGENT_SCHEDULING_PENDING,work start,
+1489472148.4148,agent.scheduling.0.child:MainThread,unit.000721,AGENT_SCHEDULING,advance,
+1489472148.4151,agent.scheduling.0.child:MainThread,unit.000721,AGENT_SCHEDULING,publish,
+1489472148.4152,agent.scheduling.0.child:MainThread,unit.000721,,schedule,allocation failed
+1489472148.4152,agent.scheduling.0.child:MainThread,unit.000721,AGENT_SCHEDULING_PENDING,work done ,
+1489472156.7849,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472216.8375,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472276.8377,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472336.8854,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472396.9464,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472457.0295,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472479.7763,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001256,,unschedule,
+1489472479.7765,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001256,,unschedule,released
+1489472479.7772,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489472479.7773,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000721,,schedule,allocated
+1489472479.7775,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000721,AGENT_EXECUTING_PENDING,advance,
+1489472479.7778,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000721,AGENT_EXECUTING_PENDING,publish,
+1489472479.7781,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000721,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489472479.7782,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000721,,unqueue,re-allocation done
+1489472479.7783,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489472483.0811,agent.scheduling.0.child:MainThread,unit.000085,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489472483.0812,agent.scheduling.0.child:MainThread,unit.000085,AGENT_SCHEDULING_PENDING,work start,
+1489472483.0812,agent.scheduling.0.child:MainThread,unit.000085,AGENT_SCHEDULING,advance,
+1489472483.0814,agent.scheduling.0.child:MainThread,unit.000085,AGENT_SCHEDULING,publish,
+1489472483.0815,agent.scheduling.0.child:MainThread,unit.000085,,schedule,allocation failed
+1489472483.0815,agent.scheduling.0.child:MainThread,unit.000085,AGENT_SCHEDULING_PENDING,work done ,
+1489472517.0342,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472577.1038,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472637.1288,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472697.1467,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472757.2420,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472817.1608,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000721,,unschedule,
+1489472817.1611,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000721,,unschedule,released
+1489472817.1617,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489472817.1619,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000085,,schedule,allocated
+1489472817.1620,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000085,AGENT_EXECUTING_PENDING,advance,
+1489472817.1623,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000085,AGENT_EXECUTING_PENDING,publish,
+1489472817.1627,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000085,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489472817.1628,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000085,,unqueue,re-allocation done
+1489472817.1629,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489472817.2862,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472825.4810,agent.scheduling.0.child:MainThread,unit.001660,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489472825.4810,agent.scheduling.0.child:MainThread,unit.001660,AGENT_SCHEDULING_PENDING,work start,
+1489472825.4811,agent.scheduling.0.child:MainThread,unit.001660,AGENT_SCHEDULING,advance,
+1489472825.4813,agent.scheduling.0.child:MainThread,unit.001660,AGENT_SCHEDULING,publish,
+1489472825.4814,agent.scheduling.0.child:MainThread,unit.001660,,schedule,allocation failed
+1489472825.4814,agent.scheduling.0.child:MainThread,unit.001660,AGENT_SCHEDULING_PENDING,work done ,
+1489472877.2865,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472937.3684,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489472997.4608,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473057.5248,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473117.5668,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473152.4940,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000085,,unschedule,
+1489473152.4942,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000085,,unschedule,released
+1489473152.4947,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489473152.4949,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001660,,schedule,allocated
+1489473152.4950,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001660,AGENT_EXECUTING_PENDING,advance,
+1489473152.4954,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001660,AGENT_EXECUTING_PENDING,publish,
+1489473152.4956,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001660,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489473152.4957,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001660,,unqueue,re-allocation done
+1489473152.4959,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489473160.4428,agent.scheduling.0.child:MainThread,unit.000422,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489473160.4428,agent.scheduling.0.child:MainThread,unit.000422,AGENT_SCHEDULING_PENDING,work start,
+1489473160.4428,agent.scheduling.0.child:MainThread,unit.000422,AGENT_SCHEDULING,advance,
+1489473160.4431,agent.scheduling.0.child:MainThread,unit.000422,AGENT_SCHEDULING,publish,
+1489473160.4432,agent.scheduling.0.child:MainThread,unit.000422,,schedule,allocation failed
+1489473160.4432,agent.scheduling.0.child:MainThread,unit.000422,AGENT_SCHEDULING_PENDING,work done ,
+1489473177.5816,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473237.6057,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473297.6096,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473357.6851,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473417.7079,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473477.7476,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473492.8894,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001660,,unschedule,
+1489473492.8896,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001660,,unschedule,released
+1489473492.8903,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489473492.8906,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000422,,schedule,allocated
+1489473492.8907,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000422,AGENT_EXECUTING_PENDING,advance,
+1489473492.8909,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000422,AGENT_EXECUTING_PENDING,publish,
+1489473492.8912,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000422,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489473492.8913,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000422,,unqueue,re-allocation done
+1489473492.8914,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489473498.2760,agent.scheduling.0.child:MainThread,unit.001444,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489473498.2760,agent.scheduling.0.child:MainThread,unit.001444,AGENT_SCHEDULING_PENDING,work start,
+1489473498.2760,agent.scheduling.0.child:MainThread,unit.001444,AGENT_SCHEDULING,advance,
+1489473498.2763,agent.scheduling.0.child:MainThread,unit.001444,AGENT_SCHEDULING,publish,
+1489473498.2763,agent.scheduling.0.child:MainThread,unit.001444,,schedule,allocation failed
+1489473498.2764,agent.scheduling.0.child:MainThread,unit.001444,AGENT_SCHEDULING_PENDING,work done ,
+1489473537.8283,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473597.8821,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473657.9262,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473718.0166,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473778.0209,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473838.0435,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473838.2750,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000422,,unschedule,
+1489473838.2752,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000422,,unschedule,released
+1489473838.2757,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489473838.2759,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001444,,schedule,allocated
+1489473838.2760,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001444,AGENT_EXECUTING_PENDING,advance,
+1489473838.2764,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001444,AGENT_EXECUTING_PENDING,publish,
+1489473838.2767,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001444,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489473838.2768,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001444,,unqueue,re-allocation done
+1489473838.2769,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489473841.3256,agent.scheduling.0.child:MainThread,unit.000332,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489473841.3256,agent.scheduling.0.child:MainThread,unit.000332,AGENT_SCHEDULING_PENDING,work start,
+1489473841.3256,agent.scheduling.0.child:MainThread,unit.000332,AGENT_SCHEDULING,advance,
+1489473841.3259,agent.scheduling.0.child:MainThread,unit.000332,AGENT_SCHEDULING,publish,
+1489473841.3259,agent.scheduling.0.child:MainThread,unit.000332,,schedule,allocation failed
+1489473841.3260,agent.scheduling.0.child:MainThread,unit.000332,AGENT_SCHEDULING_PENDING,work done ,
+1489473898.1403,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489473958.2308,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474018.2696,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474078.3494,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474138.4055,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474179.6680,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001444,,unschedule,
+1489474179.6683,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001444,,unschedule,released
+1489474179.6689,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489474179.6691,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000332,,schedule,allocated
+1489474179.6693,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000332,AGENT_EXECUTING_PENDING,advance,
+1489474179.6696,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000332,AGENT_EXECUTING_PENDING,publish,
+1489474179.6698,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000332,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489474179.6700,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000332,,unqueue,re-allocation done
+1489474179.6701,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489474187.0581,agent.scheduling.0.child:MainThread,unit.000752,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489474187.0581,agent.scheduling.0.child:MainThread,unit.000752,AGENT_SCHEDULING_PENDING,work start,
+1489474187.0581,agent.scheduling.0.child:MainThread,unit.000752,AGENT_SCHEDULING,advance,
+1489474187.0584,agent.scheduling.0.child:MainThread,unit.000752,AGENT_SCHEDULING,publish,
+1489474187.0584,agent.scheduling.0.child:MainThread,unit.000752,,schedule,allocation failed
+1489474187.0585,agent.scheduling.0.child:MainThread,unit.000752,AGENT_SCHEDULING_PENDING,work done ,
+1489474198.5041,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474258.5251,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474318.5380,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474378.5820,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474438.6746,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474498.7238,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474520.0737,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000332,,unschedule,
+1489474520.0739,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000332,,unschedule,released
+1489474520.0748,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489474520.0750,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000752,,schedule,allocated
+1489474520.0752,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000752,AGENT_EXECUTING_PENDING,advance,
+1489474520.0754,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000752,AGENT_EXECUTING_PENDING,publish,
+1489474520.0757,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000752,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489474520.0759,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000752,,unqueue,re-allocation done
+1489474520.0760,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489474523.1542,agent.scheduling.0.child:MainThread,unit.000878,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489474523.1542,agent.scheduling.0.child:MainThread,unit.000878,AGENT_SCHEDULING_PENDING,work start,
+1489474523.1542,agent.scheduling.0.child:MainThread,unit.000878,AGENT_SCHEDULING,advance,
+1489474523.1545,agent.scheduling.0.child:MainThread,unit.000878,AGENT_SCHEDULING,publish,
+1489474523.1545,agent.scheduling.0.child:MainThread,unit.000878,,schedule,allocation failed
+1489474523.1546,agent.scheduling.0.child:MainThread,unit.000878,AGENT_SCHEDULING_PENDING,work done ,
+1489474558.7864,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474618.8701,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474678.9117,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474738.9118,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474798.9835,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474859.0037,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474860.4528,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000752,,unschedule,
+1489474860.4530,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000752,,unschedule,released
+1489474860.4536,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489474860.4539,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000878,,schedule,allocated
+1489474860.4540,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000878,AGENT_EXECUTING_PENDING,advance,
+1489474860.4542,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000878,AGENT_EXECUTING_PENDING,publish,
+1489474860.4545,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000878,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489474860.4546,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000878,,unqueue,re-allocation done
+1489474860.4547,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489474863.9988,agent.scheduling.0.child:MainThread,unit.001880,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489474863.9988,agent.scheduling.0.child:MainThread,unit.001880,AGENT_SCHEDULING_PENDING,work start,
+1489474863.9988,agent.scheduling.0.child:MainThread,unit.001880,AGENT_SCHEDULING,advance,
+1489474863.9991,agent.scheduling.0.child:MainThread,unit.001880,AGENT_SCHEDULING,publish,
+1489474863.9991,agent.scheduling.0.child:MainThread,unit.001880,,schedule,allocation failed
+1489474863.9991,agent.scheduling.0.child:MainThread,unit.001880,AGENT_SCHEDULING_PENDING,work done ,
+1489474919.0976,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489474979.1675,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475039.2436,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475099.3362,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475159.4325,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475200.8238,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000878,,unschedule,
+1489475200.8241,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000878,,unschedule,released
+1489475200.8246,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489475200.8248,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001880,,schedule,allocated
+1489475200.8249,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001880,AGENT_EXECUTING_PENDING,advance,
+1489475200.8252,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001880,AGENT_EXECUTING_PENDING,publish,
+1489475200.8254,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001880,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489475200.8256,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001880,,unqueue,re-allocation done
+1489475200.8257,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489475209.9895,agent.scheduling.0.child:MainThread,unit.001300,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489475209.9895,agent.scheduling.0.child:MainThread,unit.001300,AGENT_SCHEDULING_PENDING,work start,
+1489475209.9895,agent.scheduling.0.child:MainThread,unit.001300,AGENT_SCHEDULING,advance,
+1489475209.9898,agent.scheduling.0.child:MainThread,unit.001300,AGENT_SCHEDULING,publish,
+1489475209.9898,agent.scheduling.0.child:MainThread,unit.001300,,schedule,allocation failed
+1489475209.9898,agent.scheduling.0.child:MainThread,unit.001300,AGENT_SCHEDULING_PENDING,work done ,
+1489475219.5293,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475279.5367,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475339.6028,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475399.6058,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475459.6922,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475519.7268,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475544.2113,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001880,,unschedule,
+1489475544.2116,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001880,,unschedule,released
+1489475544.2122,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489475544.2124,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001300,,schedule,allocated
+1489475544.2125,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001300,AGENT_EXECUTING_PENDING,advance,
+1489475544.2128,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001300,AGENT_EXECUTING_PENDING,publish,
+1489475544.2130,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001300,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489475544.2132,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001300,,unqueue,re-allocation done
+1489475544.2133,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489475550.1208,agent.scheduling.0.child:MainThread,unit.000090,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489475550.1208,agent.scheduling.0.child:MainThread,unit.000090,AGENT_SCHEDULING_PENDING,work start,
+1489475550.1209,agent.scheduling.0.child:MainThread,unit.000090,AGENT_SCHEDULING,advance,
+1489475550.1211,agent.scheduling.0.child:MainThread,unit.000090,AGENT_SCHEDULING,publish,
+1489475550.1212,agent.scheduling.0.child:MainThread,unit.000090,,schedule,allocation failed
+1489475550.1212,agent.scheduling.0.child:MainThread,unit.000090,AGENT_SCHEDULING_PENDING,work done ,
+1489475579.7745,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475639.8042,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475699.8477,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475759.8934,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475819.9436,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475879.9941,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489475891.5849,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001300,,unschedule,
+1489475891.5851,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001300,,unschedule,released
+1489475891.5857,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489475891.5859,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000090,,schedule,allocated
+1489475891.5860,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000090,AGENT_EXECUTING_PENDING,advance,
+1489475891.5863,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000090,AGENT_EXECUTING_PENDING,publish,
+1489475891.5866,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000090,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489475891.5867,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000090,,unqueue,re-allocation done
+1489475891.5868,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489475898.1219,agent.scheduling.0.child:MainThread,unit.001659,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489475898.1219,agent.scheduling.0.child:MainThread,unit.001659,AGENT_SCHEDULING_PENDING,work start,
+1489475898.1219,agent.scheduling.0.child:MainThread,unit.001659,AGENT_SCHEDULING,advance,
+1489475898.1222,agent.scheduling.0.child:MainThread,unit.001659,AGENT_SCHEDULING,publish,
+1489475898.1222,agent.scheduling.0.child:MainThread,unit.001659,,schedule,allocation failed
+1489475898.1222,agent.scheduling.0.child:MainThread,unit.001659,AGENT_SCHEDULING_PENDING,work done ,
+1489475940.0134,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476000.0919,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476060.0927,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476120.1843,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476180.2810,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476229.9702,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000090,,unschedule,
+1489476229.9704,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000090,,unschedule,released
+1489476229.9711,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489476229.9713,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001659,,schedule,allocated
+1489476229.9714,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001659,AGENT_EXECUTING_PENDING,advance,
+1489476229.9717,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001659,AGENT_EXECUTING_PENDING,publish,
+1489476229.9720,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001659,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489476229.9721,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001659,,unqueue,re-allocation done
+1489476229.9722,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489476236.8065,agent.scheduling.0.child:MainThread,unit.002026,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489476236.8065,agent.scheduling.0.child:MainThread,unit.002026,AGENT_SCHEDULING_PENDING,work start,
+1489476236.8066,agent.scheduling.0.child:MainThread,unit.002026,AGENT_SCHEDULING,advance,
+1489476236.8068,agent.scheduling.0.child:MainThread,unit.002026,AGENT_SCHEDULING,publish,
+1489476236.8069,agent.scheduling.0.child:MainThread,unit.002026,,schedule,allocation failed
+1489476236.8069,agent.scheduling.0.child:MainThread,unit.002026,AGENT_SCHEDULING_PENDING,work done ,
+1489476240.3162,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476300.4105,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476360.4262,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476420.4593,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476480.5233,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476540.5308,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476569.3584,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001659,,unschedule,
+1489476569.3587,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001659,,unschedule,released
+1489476569.3592,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489476569.3594,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.002026,,schedule,allocated
+1489476569.3595,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.002026,AGENT_EXECUTING_PENDING,advance,
+1489476569.3599,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.002026,AGENT_EXECUTING_PENDING,publish,
+1489476569.3601,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.002026,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489476569.3603,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.002026,,unqueue,re-allocation done
+1489476569.3604,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489476577.8161,agent.scheduling.0.child:MainThread,unit.000324,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489476577.8161,agent.scheduling.0.child:MainThread,unit.000324,AGENT_SCHEDULING_PENDING,work start,
+1489476577.8161,agent.scheduling.0.child:MainThread,unit.000324,AGENT_SCHEDULING,advance,
+1489476577.8164,agent.scheduling.0.child:MainThread,unit.000324,AGENT_SCHEDULING,publish,
+1489476577.8164,agent.scheduling.0.child:MainThread,unit.000324,,schedule,allocation failed
+1489476577.8165,agent.scheduling.0.child:MainThread,unit.000324,AGENT_SCHEDULING_PENDING,work done ,
+1489476600.5996,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476660.6232,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476720.6323,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476780.7277,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476840.7324,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476900.7811,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489476909.7498,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.002026,,unschedule,
+1489476909.7501,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.002026,,unschedule,released
+1489476909.7505,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489476909.7507,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000324,,schedule,allocated
+1489476909.7508,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000324,AGENT_EXECUTING_PENDING,advance,
+1489476909.7511,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000324,AGENT_EXECUTING_PENDING,publish,
+1489476909.7514,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000324,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489476909.7515,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000324,,unqueue,re-allocation done
+1489476909.7516,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489476913.3286,agent.scheduling.0.child:MainThread,unit.001918,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489476913.3286,agent.scheduling.0.child:MainThread,unit.001918,AGENT_SCHEDULING_PENDING,work start,
+1489476913.3286,agent.scheduling.0.child:MainThread,unit.001918,AGENT_SCHEDULING,advance,
+1489476913.3288,agent.scheduling.0.child:MainThread,unit.001918,AGENT_SCHEDULING,publish,
+1489476913.3289,agent.scheduling.0.child:MainThread,unit.001918,,schedule,allocation failed
+1489476913.3289,agent.scheduling.0.child:MainThread,unit.001918,AGENT_SCHEDULING_PENDING,work done ,
+1489476960.8607,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477020.9366,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477080.9979,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477141.0028,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477201.0144,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477257.1351,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000324,,unschedule,
+1489477257.1355,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000324,,unschedule,released
+1489477257.1361,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489477257.1363,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001918,,schedule,allocated
+1489477257.1364,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001918,AGENT_EXECUTING_PENDING,advance,
+1489477257.1367,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001918,AGENT_EXECUTING_PENDING,publish,
+1489477257.1370,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001918,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489477257.1371,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001918,,unqueue,re-allocation done
+1489477257.1372,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489477261.1135,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477266.7937,agent.scheduling.0.child:MainThread,unit.001046,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489477266.7938,agent.scheduling.0.child:MainThread,unit.001046,AGENT_SCHEDULING_PENDING,work start,
+1489477266.7938,agent.scheduling.0.child:MainThread,unit.001046,AGENT_SCHEDULING,advance,
+1489477266.7940,agent.scheduling.0.child:MainThread,unit.001046,AGENT_SCHEDULING,publish,
+1489477266.7941,agent.scheduling.0.child:MainThread,unit.001046,,schedule,allocation failed
+1489477266.7941,agent.scheduling.0.child:MainThread,unit.001046,AGENT_SCHEDULING_PENDING,work done ,
+1489477321.1280,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477381.1381,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477441.1981,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477501.2698,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477561.3158,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477594.5091,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001918,,unschedule,
+1489477594.5093,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001918,,unschedule,released
+1489477594.5099,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489477594.5102,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001046,,schedule,allocated
+1489477594.5103,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001046,AGENT_EXECUTING_PENDING,advance,
+1489477594.5106,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001046,AGENT_EXECUTING_PENDING,publish,
+1489477594.5109,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001046,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489477594.5110,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001046,,unqueue,re-allocation done
+1489477594.5111,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489477600.4380,agent.scheduling.0.child:MainThread,unit.001319,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489477600.4380,agent.scheduling.0.child:MainThread,unit.001319,AGENT_SCHEDULING_PENDING,work start,
+1489477600.4380,agent.scheduling.0.child:MainThread,unit.001319,AGENT_SCHEDULING,advance,
+1489477600.4382,agent.scheduling.0.child:MainThread,unit.001319,AGENT_SCHEDULING,publish,
+1489477600.4383,agent.scheduling.0.child:MainThread,unit.001319,,schedule,allocation failed
+1489477600.4383,agent.scheduling.0.child:MainThread,unit.001319,AGENT_SCHEDULING_PENDING,work done ,
+1489477621.3982,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477681.4543,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477741.4999,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477801.5500,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477861.5966,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477921.6629,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489477933.8814,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001046,,unschedule,
+1489477933.8817,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001046,,unschedule,released
+1489477933.8823,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489477933.8825,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001319,,schedule,allocated
+1489477933.8826,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001319,AGENT_EXECUTING_PENDING,advance,
+1489477933.8829,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001319,AGENT_EXECUTING_PENDING,publish,
+1489477933.8832,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001319,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489477933.8833,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001319,,unqueue,re-allocation done
+1489477933.8834,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489477946.2531,agent.scheduling.0.child:MainThread,unit.000132,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489477946.2531,agent.scheduling.0.child:MainThread,unit.000132,AGENT_SCHEDULING_PENDING,work start,
+1489477946.2531,agent.scheduling.0.child:MainThread,unit.000132,AGENT_SCHEDULING,advance,
+1489477946.2534,agent.scheduling.0.child:MainThread,unit.000132,AGENT_SCHEDULING,publish,
+1489477946.2534,agent.scheduling.0.child:MainThread,unit.000132,,schedule,allocation failed
+1489477946.2534,agent.scheduling.0.child:MainThread,unit.000132,AGENT_SCHEDULING_PENDING,work done ,
+1489477981.7059,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478041.7971,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478101.8490,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478161.8945,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478221.9839,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478273.2555,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001319,,unschedule,
+1489478273.2557,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001319,,unschedule,released
+1489478273.2561,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489478273.2564,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000132,,schedule,allocated
+1489478273.2565,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000132,AGENT_EXECUTING_PENDING,advance,
+1489478273.2568,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000132,AGENT_EXECUTING_PENDING,publish,
+1489478273.2571,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000132,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489478273.2572,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000132,,unqueue,re-allocation done
+1489478273.2573,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489478281.8948,agent.scheduling.0.child:MainThread,unit.001581,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489478281.8948,agent.scheduling.0.child:MainThread,unit.001581,AGENT_SCHEDULING_PENDING,work start,
+1489478281.8948,agent.scheduling.0.child:MainThread,unit.001581,AGENT_SCHEDULING,advance,
+1489478281.8950,agent.scheduling.0.child:MainThread,unit.001581,AGENT_SCHEDULING,publish,
+1489478281.8951,agent.scheduling.0.child:MainThread,unit.001581,,schedule,allocation failed
+1489478281.8951,agent.scheduling.0.child:MainThread,unit.001581,AGENT_SCHEDULING_PENDING,work done ,
+1489478282.0015,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478342.0282,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478402.0885,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478462.1539,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478522.2343,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478582.3296,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478613.6385,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000132,,unschedule,
+1489478613.6387,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000132,,unschedule,released
+1489478613.6391,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489478613.6393,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001581,,schedule,allocated
+1489478613.6395,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001581,AGENT_EXECUTING_PENDING,advance,
+1489478613.6397,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001581,AGENT_EXECUTING_PENDING,publish,
+1489478613.6400,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001581,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489478613.6401,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001581,,unqueue,re-allocation done
+1489478613.6402,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489478622.0481,agent.scheduling.0.child:MainThread,unit.001215,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489478622.0481,agent.scheduling.0.child:MainThread,unit.001215,AGENT_SCHEDULING_PENDING,work start,
+1489478622.0481,agent.scheduling.0.child:MainThread,unit.001215,AGENT_SCHEDULING,advance,
+1489478622.0483,agent.scheduling.0.child:MainThread,unit.001215,AGENT_SCHEDULING,publish,
+1489478622.0484,agent.scheduling.0.child:MainThread,unit.001215,,schedule,allocation failed
+1489478622.0484,agent.scheduling.0.child:MainThread,unit.001215,AGENT_SCHEDULING_PENDING,work done ,
+1489478642.3492,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478702.4147,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478762.4280,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478822.4819,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478882.5359,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478942.6212,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489478956.0121,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001581,,unschedule,
+1489478956.0124,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001581,,unschedule,released
+1489478956.0129,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489478956.0131,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001215,,schedule,allocated
+1489478956.0133,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001215,AGENT_EXECUTING_PENDING,advance,
+1489478956.0135,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001215,AGENT_EXECUTING_PENDING,publish,
+1489478956.0138,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001215,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489478956.0139,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001215,,unqueue,re-allocation done
+1489478956.0140,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489478962.7727,agent.scheduling.0.child:MainThread,unit.000173,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489478962.7727,agent.scheduling.0.child:MainThread,unit.000173,AGENT_SCHEDULING_PENDING,work start,
+1489478962.7728,agent.scheduling.0.child:MainThread,unit.000173,AGENT_SCHEDULING,advance,
+1489478962.7730,agent.scheduling.0.child:MainThread,unit.000173,AGENT_SCHEDULING,publish,
+1489478962.7730,agent.scheduling.0.child:MainThread,unit.000173,,schedule,allocation failed
+1489478962.7731,agent.scheduling.0.child:MainThread,unit.000173,AGENT_SCHEDULING_PENDING,work done ,
+1489479002.7057,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479062.7558,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479122.8046,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479182.8468,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479242.8941,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479298.3827,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001215,,unschedule,
+1489479298.3829,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001215,,unschedule,released
+1489479298.3834,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489479298.3836,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000173,,schedule,allocated
+1489479298.3837,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000173,AGENT_EXECUTING_PENDING,advance,
+1489479298.3840,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000173,AGENT_EXECUTING_PENDING,publish,
+1489479298.3844,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000173,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489479298.3845,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000173,,unqueue,re-allocation done
+1489479298.3846,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489479302.9774,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479303.4301,agent.scheduling.0.child:MainThread,unit.001677,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489479303.4301,agent.scheduling.0.child:MainThread,unit.001677,AGENT_SCHEDULING_PENDING,work start,
+1489479303.4301,agent.scheduling.0.child:MainThread,unit.001677,AGENT_SCHEDULING,advance,
+1489479303.4303,agent.scheduling.0.child:MainThread,unit.001677,AGENT_SCHEDULING,publish,
+1489479303.4304,agent.scheduling.0.child:MainThread,unit.001677,,schedule,allocation failed
+1489479303.4304,agent.scheduling.0.child:MainThread,unit.001677,AGENT_SCHEDULING_PENDING,work done ,
+1489479363.0381,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479423.0781,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479483.1277,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479543.1805,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479603.2292,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479640.7563,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000173,,unschedule,
+1489479640.7567,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000173,,unschedule,released
+1489479640.7577,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489479640.7578,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001677,,schedule,allocated
+1489479640.7579,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001677,AGENT_EXECUTING_PENDING,advance,
+1489479640.7582,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001677,AGENT_EXECUTING_PENDING,publish,
+1489479640.7584,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001677,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489479640.7586,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001677,,unqueue,re-allocation done
+1489479640.7587,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489479644.3756,agent.scheduling.0.child:MainThread,unit.000410,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489479644.3756,agent.scheduling.0.child:MainThread,unit.000410,AGENT_SCHEDULING_PENDING,work start,
+1489479644.3756,agent.scheduling.0.child:MainThread,unit.000410,AGENT_SCHEDULING,advance,
+1489479644.3759,agent.scheduling.0.child:MainThread,unit.000410,AGENT_SCHEDULING,publish,
+1489479644.3759,agent.scheduling.0.child:MainThread,unit.000410,,schedule,allocation failed
+1489479644.3759,agent.scheduling.0.child:MainThread,unit.000410,AGENT_SCHEDULING_PENDING,work done ,
+1489479663.2756,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479723.3280,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479783.3354,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479843.3771,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479903.4338,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479963.4761,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489479981.1247,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001677,,unschedule,
+1489479981.1249,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001677,,unschedule,released
+1489479981.1256,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489479981.1258,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000410,,schedule,allocated
+1489479981.1259,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000410,AGENT_EXECUTING_PENDING,advance,
+1489479981.1261,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000410,AGENT_EXECUTING_PENDING,publish,
+1489479981.1264,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000410,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489479981.1265,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000410,,unqueue,re-allocation done
+1489479981.1266,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489479990.1668,agent.scheduling.0.child:MainThread,unit.001520,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489479990.1668,agent.scheduling.0.child:MainThread,unit.001520,AGENT_SCHEDULING_PENDING,work start,
+1489479990.1668,agent.scheduling.0.child:MainThread,unit.001520,AGENT_SCHEDULING,advance,
+1489479990.1671,agent.scheduling.0.child:MainThread,unit.001520,AGENT_SCHEDULING,publish,
+1489479990.1671,agent.scheduling.0.child:MainThread,unit.001520,,schedule,allocation failed
+1489479990.1671,agent.scheduling.0.child:MainThread,unit.001520,AGENT_SCHEDULING_PENDING,work done ,
+1489480023.5321,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480083.5693,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480143.6399,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480203.6835,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480263.7577,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480320.4937,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000410,,unschedule,
+1489480320.4940,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000410,,unschedule,released
+1489480320.4945,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489480320.4946,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001520,,schedule,allocated
+1489480320.4948,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001520,AGENT_EXECUTING_PENDING,advance,
+1489480320.4951,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001520,AGENT_EXECUTING_PENDING,publish,
+1489480320.4954,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001520,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489480320.4955,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001520,,unqueue,re-allocation done
+1489480320.4956,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489480323.8364,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480325.9472,agent.scheduling.0.child:MainThread,unit.001738,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489480325.9472,agent.scheduling.0.child:MainThread,unit.001738,AGENT_SCHEDULING_PENDING,work start,
+1489480325.9473,agent.scheduling.0.child:MainThread,unit.001738,AGENT_SCHEDULING,advance,
+1489480325.9475,agent.scheduling.0.child:MainThread,unit.001738,AGENT_SCHEDULING,publish,
+1489480325.9476,agent.scheduling.0.child:MainThread,unit.001738,,schedule,allocation failed
+1489480325.9476,agent.scheduling.0.child:MainThread,unit.001738,AGENT_SCHEDULING_PENDING,work done ,
+1489480383.9305,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480443.9768,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480504.0220,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480564.0691,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480624.1624,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480659.8699,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001520,,unschedule,
+1489480659.8702,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001520,,unschedule,released
+1489480659.8707,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489480659.8709,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001738,,schedule,allocated
+1489480659.8710,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001738,AGENT_EXECUTING_PENDING,advance,
+1489480659.8712,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001738,AGENT_EXECUTING_PENDING,publish,
+1489480659.8715,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001738,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489480659.8716,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001738,,unqueue,re-allocation done
+1489480659.8717,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489480666.9317,agent.scheduling.0.child:MainThread,unit.001207,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489480666.9317,agent.scheduling.0.child:MainThread,unit.001207,AGENT_SCHEDULING_PENDING,work start,
+1489480666.9318,agent.scheduling.0.child:MainThread,unit.001207,AGENT_SCHEDULING,advance,
+1489480666.9320,agent.scheduling.0.child:MainThread,unit.001207,AGENT_SCHEDULING,publish,
+1489480666.9320,agent.scheduling.0.child:MainThread,unit.001207,,schedule,allocation failed
+1489480666.9321,agent.scheduling.0.child:MainThread,unit.001207,AGENT_SCHEDULING_PENDING,work done ,
+1489480684.2234,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480744.2980,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480804.3406,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480864.3863,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480924.4407,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489480984.4969,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481001.2008,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001738,,unschedule,
+1489481001.2010,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001738,,unschedule,released
+1489481001.2017,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489481001.2020,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001207,,schedule,allocated
+1489481001.2021,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001207,AGENT_EXECUTING_PENDING,advance,
+1489481001.2024,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001207,AGENT_EXECUTING_PENDING,publish,
+1489481001.2026,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001207,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489481001.2027,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.001207,,unqueue,re-allocation done
+1489481001.2028,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489481007.8059,agent.scheduling.0.child:MainThread,unit.000774,AGENT_SCHEDULING_PENDING,get,agent.scheduling.queue.output
+1489481007.8059,agent.scheduling.0.child:MainThread,unit.000774,AGENT_SCHEDULING_PENDING,work start,
+1489481007.8059,agent.scheduling.0.child:MainThread,unit.000774,AGENT_SCHEDULING,advance,
+1489481007.8062,agent.scheduling.0.child:MainThread,unit.000774,AGENT_SCHEDULING,publish,
+1489481007.8062,agent.scheduling.0.child:MainThread,unit.000774,,schedule,allocation failed
+1489481007.8062,agent.scheduling.0.child:MainThread,unit.000774,AGENT_SCHEDULING_PENDING,work done ,
+1489481044.5379,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481104.5756,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481164.6201,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481224.6563,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481284.7085,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481338.5670,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001207,,unschedule,
+1489481338.5673,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.001207,,unschedule,released
+1489481338.5679,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489481338.5681,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000774,,schedule,allocated
+1489481338.5682,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000774,AGENT_EXECUTING_PENDING,advance,
+1489481338.5685,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000774,AGENT_EXECUTING_PENDING,publish,
+1489481338.5687,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000774,AGENT_EXECUTING_PENDING,put,agent.executing.queue.input
+1489481338.5689,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,unit.000774,,unqueue,re-allocation done
+1489481338.5690,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489481344.7528,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481404.8022,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481464.8454,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481524.9157,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481584.9597,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481645.0075,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481676.9234,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000774,,unschedule,
+1489481676.9236,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.unschedule_cb,unit.000774,,unschedule,released
+1489481676.9242,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,pilot.0019,,reschedule,
+1489481676.9244,agent.scheduling.0.child:agent.scheduling.0.child.subscriber.reschedule_cb,,,reschedule done,
+1489481705.0679,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481765.1431,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481825.1965,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481885.2581,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489481945.3297,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482005.4191,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482065.4192,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482125.4282,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482185.4705,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482245.5473,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482305.5798,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482365.6286,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482425.6333,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482485.6617,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482545.6779,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482605.6995,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482665.7400,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482725.7818,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482785.8244,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482845.8861,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482905.9488,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489482966.0023,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489483026.0573,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489483086.1496,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489483146.1954,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489483206.2416,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489483266.2559,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
+1489483326.2630,agent.scheduling.0.child:agent.scheduling.0.child.idler._profile_flush_cb,,,flush,
