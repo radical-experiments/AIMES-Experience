@@ -14,7 +14,7 @@
   . ../../bin/fix_prof_2.sh
   ```
 
-The sessions can be now loaded into a RADICAL-Analytics (RA) Session object. Once constructed the Session object see [RA API](https://github.com/radical-cybertools/radical.analytics/blob/master/docs/source/apidoc.rst).
+Each session can now be loaded into a RADICAL-Analytics (RA) Session object. Once constructed the Session object see [RA API](https://github.com/radical-cybertools/radical.analytics/blob/master/docs/source/apidoc.rst).
 
 ## Wrangling
 
