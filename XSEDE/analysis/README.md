@@ -1,5 +1,16 @@
 # Analysis workflow
 
+## Prerequisites 
+
+The following parameters were set in RADICAL-Pilot at runtime:
+
+* export RADICAL_PROFILE="True"
+* cud.cleanup = False (default)
+* session.close(cleanup=False)
+* pd.cleanup = False (default) 
+
+## Retrieve raw data
+
 1. Download json file of the session:
   ```
   radicalpilot-close-session -m export -d <mongodb session DB address> -s <session_id>
@@ -20,9 +31,10 @@ Each session can now be loaded into a RADICAL-Analytics (RA) Session object. Onc
 
 When analyzing multiple sessions, this [wrangler](https://github.com/radical-experiments/AIMES-Experience/blob/master/XSEDE/analysis/bin/wranglermp.py) may be useful. **Please note**:
 
-1. this is just an ack that will require editing a couple of variables for configuration and may not collect all the durations you may need for your analysis. Contributions to the code are welcome.
-2. See the list of imported modules for the packages that need to be installed in a virtual environment.
-3. The wrangler is not memory-optimized yet. Keeyp an eye on system memory consumption.
+1. this is just an hack. Editing of At least two variables is needed (`datadir` and `experiment_tag`).
+2. The wrangler may not collect all the durations needed for an analysis. Contributions to the code are welcome.
+3. See the list of imported modules for the packages that need to be installed in a virtual environment.
+4. The wrangler is not memory-optimized yet. Keeyp an eye on system memory consumption.
 
 ## Analysis
 
